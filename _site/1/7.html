@@ -2,7 +2,7 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <title>STEP1-7.データベースを作成してみる / チームラボ オンラインスキルアップ課題</title>
+    <title>STEP1-7.入力チェックを作ってみる / チームラボ オンラインスキルアップ課題</title>
     <link rel="stylesheet" href="../stylesheets/styles.css">
     <link rel="stylesheet" href="../stylesheets/pygment_trac.css">
     <!--[if lt IE 9]>
@@ -23,75 +23,113 @@
           <ul>
             <li><a href="../index.html">はじめに</a>
           </ul>
-          
-          <h3>STEP1 掲示板を作ろう</h3>
+          <h3>STEP1 TODOリスト（フロントエンド）を作ろう</h3>
           <ul>
-            <li><a href="../1/1.html">1.インターネットのしくみ</a>
-            <li><a href="../1/2.html">2.HTTPのしくみ</a>
-            <li><a href="../1/3.html">3.Webサーバを立ててみる</a>
+            <li><a href="../1/1.html">1.サンプルコードを動かしてみる</a>
+            <li><a href="../1/2.html">2.Gitを使ってみる</a>
+            <li><a href="../1/3.html">3.JavaScriptを書いてみる</a>
             <li><a href="../1/4.html">4.HTML,CSSを書いてみる</a>
-            <li><a href="../1/5.html">5.PHPを書いてみる</a>
-            <li><a href="../1/6.html">6.PHPでGET,POSTを受け取る</a>
-            <li><a href="../1/7.html">7.データベースを作成してみる</a>
-            <li><a href="../1/8.html">8.SQLを書いてみる</a>
-            <li><a href="../1/9.html">9.PHPからデータベースを操作してみる</a>
-            <li><a href="../1/s1.html">10.サイトを公開してみる</a>
-            <li><a href="../1/10.html">最終課題</a>
+            <li><a href="../1/5.html">5.jQueryを使ってみる</a>
+            <li><a href="../1/6.html">6.ローカルストレージを使ってみる</a>
+            <li><a href="../1/7.html">7.入力チェックを作ってみる</a>
+            <li><a href="../1/8.html">最終課題</a>
           </ul>
           
-          <h3>STEP2 Twitterもどきを作ろう</h3>
+          <h3>STEP2 TODOリスト（フロントエンド＋サーバサイドバージョン）を作ろう</h3>
           <ul>
-            <li><a href="../2/1.html">1.JavaScriptを書いてみる</a>
-            <li><a href="../2/2.html">2.ログイン機能を作ってみる</a>
-            <li><a href="../2/3.html">3.入力チェックを作ってみる</a>
-            <li><a href="../2/4.html">4.ログイン機能をクラス化してみる</a>
-            <li><a href="../2/5.html">5.フレームワークとは</a>
-            <li><a href="../2/6.html">6.CakePHPの基本</a>
-            <li><a href="../2/7.html">7.CakePHPでログイン機能を書いてみる</a>
-            <li><a href="../2/8.html">8.画面仕様書とは</a>
-            <li><a href="../2/9.html">9.データベースを設計してみる</a>
+            <li><a href="../2/1.html">1.インターネットのしくみ</a>
+            <li><a href="../2/2.html">2.HTTPのしくみ</a>
+            <li><a href="../2/3.html">3.NodeJSとは</a>
+            <li><a href="../2/4.html">4.パッケージマネージャのnpmとは</a>
+            <li><a href="../2/5.html">5.npmを使ってexpressをインストールして使ってみる</a>
+            <li><a href="../2/6.html">6.MongoDBをインストールして使ってみる</a>
+            <li><a href="../2/7.html">7.MongoDBを設計してみる</a>
+            <li><a href="../2/8.html">8.ブラウザ（JavaScript）とサーバ（NodeJS）を連携してみる</a>
+            <li><a href="../2/9.html">9.画面仕様書を満たす</a>
             <li><a href="../2/10.html">最終課題</a>
           </ul>
           
-          <h3>STEP3 オリジナルサイトを作ろう</h3>
+          <h3>STEP3 オリジナルチャットシステムを作ろう</h3>
           <ul>
-            <li><a href="../3/1.html">1.Ajaxを使ってみる</a>
+            <li><a href="../3/1.html">1.websocketを使ってみる</a>
             <li><a href="../3/2.html">2.画面仕様書,スケジュールを作ってみる</a>
             <li><a href="../3/3.html">3.テストとは</a>
             <li><a href="../3/4.html">4.単体テストを書いてみる</a>
-            <li><a href="../3/5.html">5.IDEを使ってみる</a>
-            <li><a href="../3/6.html">6.バージョン管理をしてみる</a>
-            <li>7.CentOSとは
-            <li>8.CentOS上でサイトを公開してみる
-            <li><a href="../3/9.html">9.セキュリティ対策をしてみる</a>
-            <li><a href="../3/10.html">最終課題</a>
+            <li><a href="../3/5.html">5.Herokuとは</a></li>
+            <li><a href="../3/6.html">6.Herokuを使って公開してみる</a></li>
+            <li><a href="../3/7.html">最終課題</a>
           </ul>
         </div>
         <div id="contents">
-          <h1>STEP1-7.データベースを作成してみる</h1>
+          <h1>STEP1-7.入力チェックを作ってみる</h1>
 
-<p>データの送信と受け取りができるようになったので次は保存です。</p>
+<p>前回の例ではテキストボックスにどのような値が入力されていても関係なくローカルストレージに保存していました。
+そこで文字数や内容からローカルストレージに保存するかどうかの制限をしてみようと思います。</p>
 
-<p>データは普通データベースに保存されます。データベースにも様々な種類があり、リレーショナルデータベースかそれ以外かに大別されます。ここではMySQLというリレーショナルデータベースシステムを使用します。リレーショナルデータベースとは、データを表（テーブル）に保存し、複数の表の関係を連結することで1つのデータを表現するシステムです。<a href="3.html">3.WEBサーバを立ててみる</a>で起動したコントロールパネルからMySQLを起動します。</p>
+<h3>HTMLの入力チェック</h3>
 
-<p>データベースの操作はコンソールから行うこともできますが、<a href="http://localhost/phpmyadmin/">http://localhost/phpmyadmin/</a>からブラウザ上で行うこともできます。ページ上部の[データベース]から適当な名前でデータベースを作成してみましょう。この際、とりあえず照合順序はutf8_general_ciで作成します。データベースが作成できたら左側のメニューから今作成したデータベースに移動します。</p>
+<p>チェックはHTMLとJavaScriptで2回行います。
+テキストボックスに入力するときにチェックできる方がユーザにとって親切になるからです。
+ですが直接JavaScriptを実行するなどでチェックを避けることができるためJavaScriptでもチェックを行います。</p>
 
-<p>掲示板に必要なデータを考えてみると、名前、本文、投稿日時は最低限必要であると思われます。これらを保存するためのテーブルを作成しましょう。名前:datas、カラム数:3でテーブルを作成します。カラム(列)とは保存する項目のことです。以下のようにカラムを設定します。
-<table>
-<tr><th>名前</th><th>データ型</th><th>照合順序</th><th>デフォルト値</th></tr>
-<tr><td>name</td><td>TEXT</td><td>utf8_general_ci</td><td></td></tr>
-<tr><td>message</td><td>TEXT</td><td>utf8_general_ci</td><td></td></tr
-<tr><td>created</td><td>TIMESTAMP</td><td></td><td>CURRENT_TIMESTAMP</td></tr>
-</table></p>
+<p>前回のHTMLのフォームにmaxlengthプロパティを指定することで入力できる文字数を制限できます。
+テキストボックスの中に「maxlength=&quot;20&quot;」を追加してください。</p>
+<div class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;input</span> <span class="na">id=</span><span class="s">&quot;formText&quot;</span> <span class="na">type=</span><span class="s">&quot;text&quot;</span> <span class="na">size=</span><span class="s">&quot;50&quot;</span> <span class="na">maxlength=</span><span class="s">&quot;20&quot;</span><span class="nt">&gt;</span>
+</code></pre></div>
+<p>するとテキストボックスに20字より多く入力することができなくなるはずです。</p>
 
-<p>データ型とはプログラミング言語にある型と同じようなもので、どのような種類のデータを格納するかを指定するものです。詳しくはSTEP2で扱いますが、とりあえずINT（整数）, TEXT（文字列）, TIMESTAMP（日時）が分かれば大丈夫です。</p>
+<h3>JavaScriptの入力チェック</h3>
 
-<p>これでdatasテーブルが完成しました。テーブルの追加や削除もこの画面から行えるのでチェックしてみましょう。</p>
+<p>前回のJavaScriptのソースコードのローカルストレージに保存する前にチェックする関数を追加します。
+HTMLと同様に文字数をチェックします。
+またそれだけでなくHTMLに使われる文字のエスケープや同じ内容が入力されていないかのチェックを行います。</p>
 
-<hr>
+<p>前回のJavaScriptのソースコードのsaveText()内を「if(checkText(text.val())) { /* ローカルストレージに保存する処理 */ }」という風に書き換えます。
+そして以下のチェック関数をソースコードに追加します。</p>
+<div class="highlight"><pre><code class="language-js" data-lang="js"><span class="kd">var</span> <span class="nx">val</span> <span class="o">=</span> <span class="nx">escapeText</span><span class="p">(</span><span class="nx">text</span><span class="p">.</span><span class="nx">val</span><span class="p">());</span>
+<span class="k">if</span><span class="p">(</span><span class="nx">checkText</span><span class="p">(</span><span class="nx">val</span><span class="p">))</span> <span class="p">{</span>
+  <span class="nx">localStorage</span><span class="p">.</span><span class="nx">setItem</span><span class="p">(</span><span class="nx">time</span><span class="p">,</span> <span class="nx">escape</span><span class="p">(</span><span class="nx">val</span><span class="p">));</span>
+  <span class="c1">// テキストボックスを空にする</span>
+  <span class="nx">text</span><span class="p">.</span><span class="nx">val</span><span class="p">(</span><span class="s2">&quot;&quot;</span><span class="p">);</span>
+<span class="p">}</span>
+</code></pre></div><div class="highlight"><pre><code class="language-js" data-lang="js"><span class="c1">// 文字をエスケープする</span>
+<span class="kd">function</span> <span class="nx">escapeText</span><span class="p">(</span><span class="nx">text</span><span class="p">)</span> <span class="p">{</span>
+  <span class="k">return</span> <span class="nx">$</span><span class="p">(</span><span class="s2">&quot;&lt;div&gt;&quot;</span><span class="p">).</span><span class="nx">text</span><span class="p">(</span><span class="nx">text</span><span class="p">).</span><span class="nx">html</span><span class="p">();</span>
+<span class="p">}</span>
 
-<p><strong>[課題]テーブルを変更してみよう</strong><br>
-前回の課題で名前と本文以外の情報も送信できるようにした人はその内容も保存できるようにテーブルの構造を変更してみましょう。</p>
+<span class="c1">// 入力チェックを行う</span>
+<span class="kd">function</span> <span class="nx">checkText</span><span class="p">(</span><span class="nx">text</span><span class="p">)</span> <span class="p">{</span>
+  <span class="c1">// 文字数が0または20以上は不可</span>
+  <span class="k">if</span> <span class="p">(</span><span class="mi">0</span> <span class="o">===</span> <span class="nx">text</span><span class="p">.</span><span class="nx">length</span> <span class="o">||</span> <span class="mi">20</span> <span class="o">&lt;</span> <span class="nx">text</span><span class="p">.</span><span class="nx">length</span><span class="p">)</span> <span class="p">{</span>
+    <span class="nx">alert</span><span class="p">(</span><span class="s2">&quot;文字数は1〜20字にしてください&quot;</span><span class="p">);</span>
+    <span class="k">return</span> <span class="kc">false</span><span class="p">;</span>
+  <span class="p">}</span>
+
+  <span class="c1">// すでに入力された値があれば不可</span>
+  <span class="kd">var</span> <span class="nx">length</span> <span class="o">=</span> <span class="nx">localStorage</span><span class="p">.</span><span class="nx">length</span><span class="p">;</span>
+  <span class="k">for</span> <span class="p">(</span><span class="kd">var</span> <span class="nx">i</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span> <span class="nx">i</span> <span class="o">&lt;</span> <span class="nx">length</span><span class="p">;</span> <span class="nx">i</span><span class="o">++</span><span class="p">)</span> <span class="p">{</span>
+    <span class="kd">var</span> <span class="nx">key</span> <span class="o">=</span> <span class="nx">localStorage</span><span class="p">.</span><span class="nx">key</span><span class="p">(</span><span class="nx">i</span><span class="p">);</span>
+    <span class="kd">var</span> <span class="nx">value</span> <span class="o">=</span> <span class="nx">localStorage</span><span class="p">.</span><span class="nx">getItem</span><span class="p">(</span><span class="nx">key</span><span class="p">);</span>
+    <span class="c1">// 内容が一致するものがあるか比較</span>
+    <span class="k">if</span> <span class="p">(</span><span class="nx">text</span> <span class="o">===</span> <span class="nx">value</span><span class="p">)</span> <span class="p">{</span>
+      <span class="nx">alert</span><span class="p">(</span><span class="s2">&quot;同じ内容は避けてください&quot;</span><span class="p">);</span>
+      <span class="k">return</span> <span class="kc">false</span><span class="p">;</span>
+    <span class="p">}</span>
+  <span class="p">}</span>
+
+  <span class="c1">// すべてのチェックを通過できれば可</span>
+  <span class="k">return</span> <span class="kc">true</span><span class="p">;</span>
+<span class="p">}</span>
+</code></pre></div>
+<p>このチェックが正しく動いているか確認してみてください。
+何も入力しなかったり、表示している内容と同じテキストを入力してボタンを押すと、注意メッセージが表示されるはずです。</p>
+
+<p>今回は文字数な内容でチェックを行いましたが、例えば英数字のみやメールアドレスかどうかなどの入力チェックをする場合もあります。
+また文字列に対して複雑なチェックをする場合は<a href="http://www.mnet.ne.jp/%7Enakama/">正規表現</a>と呼ばれる方法がよく使われています。
+STEP2ではサーバサイドにも触れますが、サーバを使うときはサーバ側でも入力チェックを行わなければなりません。</p>
+
+<p>すこし面倒かもしれませんが、入力チェックはユーザにサービスを正しい方法で使ってもらうためにとても必要なことの１つです。
+またエスケープ処理などはWebサイトの書き換えなどに対するセキュリティ対策にもなります。</p>
 
         </div>
       </section>

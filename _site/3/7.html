@@ -2,7 +2,7 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <title>STEP2-1.インターネットのしくみ / チームラボ オンラインスキルアップ課題</title>
+    <title>STEP3 最終課題：オリジナルチャットシステムを作ろう / チームラボ オンラインスキルアップ課題</title>
     <link rel="stylesheet" href="../stylesheets/styles.css">
     <link rel="stylesheet" href="../stylesheets/pygment_trac.css">
     <!--[if lt IE 9]>
@@ -61,29 +61,40 @@
           </ul>
         </div>
         <div id="contents">
-          <h1>STEP2-1.インターネットのしくみ</h1>
+          <h1>STEP3 最終課題：オリジナルチャットシステムを作ろう</h1>
 
-<p>インターネットとは、家庭内LANや企業内LAN、携帯電話網などのネットワーク同士を繋ぐ、世界規模の通信網のことです。インターネットに接続するには<a href="http://ja.wikipedia.org/wiki/%E3%83%AB%E3%83%BC%E3%82%BF">ルータ</a>などの機器を使用します。インターネットに接続する機器には<a href="http://ja.wikipedia.org/wiki/IP%E3%82%A2%E3%83%89%E3%83%AC%E3%82%B9">IPアドレス</a>と呼ばれる固有番号(176.32.93.81 など)が割り当てられており、通信の際にはIPアドレスを用いて接続先を指定することになっています。しかし、IPアドレスは数値列であり人間には分かり辛いため、一般には英数字列で名前（<a href="http://ja.wikipedia.org/wiki/%E3%83%89%E3%83%A1%E3%82%A4%E3%83%B3%E5%90%8D">ドメイン名</a>と呼ばれる www.team-lab.com など）を付け、IPアドレスとドメイン名を関連付けることによって、IPアドレスの代わりにドメイン名で接続することができるようになっています。</p>
+<p>STEP3では新しい技術や業務としてのプログラム開発手法、公開方法について勉強しました。ここで学んだことを利用して、オリジナルWebサイトを作ってみましょう。</p>
 
-<p><img src="../images/1_1_1.png" alt=""></p>
+<h3>工程</h3>
 
-<p>上記の図を見て分かるとおり、各ルータなどのネットワーク機器は他の全ての機器と接続されているわけではありません。そのため、例えばAがBへ送信したデータはCを中継してバケツリレー方式で受信されることになります。</p>
+<ol>
+<li>仕様書の作成</li>
+<li>スケジュールの作成</li>
+<li>開発</li>
+<li>テスト</li>
+<li>サーバ上に公開</li>
+</ol>
 
-<p>インターネットにおいて、<a href="http://e-words.jp/w/E383AAE382AFE382A8E382B9E38388.html">リクエスト</a>を送信する側をクライアント、それを受けて<a href="http://e-words.jp/w/E383ACE382B9E3839DE383B3E382B9.html">レスポンス</a>を返す側をサーバと呼びます。クライアントとサーバはプロトコル（通信規約）に従い通信を行います。サーバには様々な種類のものがあります。一般に1つのIPアドレス上で複数の種類のサーバが動いてることが多く、通信の際にこれらを区別するためにポート番号という0から65535までの数値が用いられます。</p>
+<h3>製作環境</h3>
 
-<table>
-<tr><th>プロトコル</th><th>主なポート番号</th><th>用途</th></tr>
-<tr><td>HTTP</td><td>80</td><td>Webサーバとの送受信</td></tr>
-<tr><td>FTP</td><td>20, 21</td><td>ファイル転送</td></tr>
-<tr><td>SMTP</td><td>25</td><td>メール送信</td></tr>
-<tr><td>POP3</td><td>110</td><td>メール受信</td></tr>
-<tr><td>SSH</td><td>22</td><td>暗号化通信</td></tr>
-</table>
+<ul>
+<li>言語：HTML, CSS, JavaScript(jQuery)</li>
+<li>フレームワーク：express</li>
+<li>データベース：MongoDB</li>
+<li>文字コード：ファイルはUTF-8</li>
+<li>IE10以上、Firefox、Chrome、Safariのいずれかで動作すること</li>
+<li><strong>Ajax,WebSocketを少なくとも1箇所に使用すること</strong></li>
+</ul>
 
-<hr>
+<h3>提出方法</h3>
 
-<p><strong>[課題]DNSについて調べよう</strong><br>
-DNSはIPアドレスとドメイン名を関連付けるシステムです。どのような動作をするのか調べてみましょう。</p>
+<p>最終的に完成したサイトはHerokuを用いてサーバ上に公開し、チームラボ社内にて発表していただきます。その前に以下の3つのファイルを順に提出していただきます。</p>
+
+<ol>
+<li>画面仕様書</li>
+<li>スケジュール</li>
+<li>テスト項目書</li>
+</ol>
 
         </div>
       </section>

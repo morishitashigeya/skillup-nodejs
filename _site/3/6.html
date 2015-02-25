@@ -2,7 +2,7 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <title>STEP3-6.バージョン管理をしてみる / チームラボ オンラインスキルアップ課題</title>
+    <title>STEP3-6.Herokuを使って公開してみる / チームラボ オンラインスキルアップ課題</title>
     <link rel="stylesheet" href="../stylesheets/styles.css">
     <link rel="stylesheet" href="../stylesheets/pygment_trac.css">
     <!--[if lt IE 9]>
@@ -23,81 +23,152 @@
           <ul>
             <li><a href="../index.html">はじめに</a>
           </ul>
-          
-          <h3>STEP1 掲示板を作ろう</h3>
+          <h3>STEP1 TODOリスト（フロントエンド）を作ろう</h3>
           <ul>
-            <li><a href="../1/1.html">1.インターネットのしくみ</a>
-            <li><a href="../1/2.html">2.HTTPのしくみ</a>
-            <li><a href="../1/3.html">3.Webサーバを立ててみる</a>
+            <li><a href="../1/1.html">1.サンプルコードを動かしてみる</a>
+            <li><a href="../1/2.html">2.Gitを使ってみる</a>
+            <li><a href="../1/3.html">3.JavaScriptを書いてみる</a>
             <li><a href="../1/4.html">4.HTML,CSSを書いてみる</a>
-            <li><a href="../1/5.html">5.PHPを書いてみる</a>
-            <li><a href="../1/6.html">6.PHPでGET,POSTを受け取る</a>
-            <li><a href="../1/7.html">7.データベースを作成してみる</a>
-            <li><a href="../1/8.html">8.SQLを書いてみる</a>
-            <li><a href="../1/9.html">9.PHPからデータベースを操作してみる</a>
-            <li><a href="../1/s1.html">10.サイトを公開してみる</a>
-            <li><a href="../1/10.html">最終課題</a>
+            <li><a href="../1/5.html">5.jQueryを使ってみる</a>
+            <li><a href="../1/6.html">6.ローカルストレージを使ってみる</a>
+            <li><a href="../1/7.html">7.入力チェックを作ってみる</a>
+            <li><a href="../1/8.html">最終課題</a>
           </ul>
           
-          <h3>STEP2 Twitterもどきを作ろう</h3>
+          <h3>STEP2 TODOリスト（フロントエンド＋サーバサイドバージョン）を作ろう</h3>
           <ul>
-            <li><a href="../2/1.html">1.JavaScriptを書いてみる</a>
-            <li><a href="../2/2.html">2.ログイン機能を作ってみる</a>
-            <li><a href="../2/3.html">3.入力チェックを作ってみる</a>
-            <li><a href="../2/4.html">4.ログイン機能をクラス化してみる</a>
-            <li><a href="../2/5.html">5.フレームワークとは</a>
-            <li><a href="../2/6.html">6.CakePHPの基本</a>
-            <li><a href="../2/7.html">7.CakePHPでログイン機能を書いてみる</a>
-            <li><a href="../2/8.html">8.画面仕様書とは</a>
-            <li><a href="../2/9.html">9.データベースを設計してみる</a>
+            <li><a href="../2/1.html">1.インターネットのしくみ</a>
+            <li><a href="../2/2.html">2.HTTPのしくみ</a>
+            <li><a href="../2/3.html">3.NodeJSとは</a>
+            <li><a href="../2/4.html">4.パッケージマネージャのnpmとは</a>
+            <li><a href="../2/5.html">5.npmを使ってexpressをインストールして使ってみる</a>
+            <li><a href="../2/6.html">6.MongoDBをインストールして使ってみる</a>
+            <li><a href="../2/7.html">7.MongoDBを設計してみる</a>
+            <li><a href="../2/8.html">8.ブラウザ（JavaScript）とサーバ（NodeJS）を連携してみる</a>
+            <li><a href="../2/9.html">9.画面仕様書を満たす</a>
             <li><a href="../2/10.html">最終課題</a>
           </ul>
           
-          <h3>STEP3 オリジナルサイトを作ろう</h3>
+          <h3>STEP3 オリジナルチャットシステムを作ろう</h3>
           <ul>
-            <li><a href="../3/1.html">1.Ajaxを使ってみる</a>
+            <li><a href="../3/1.html">1.websocketを使ってみる</a>
             <li><a href="../3/2.html">2.画面仕様書,スケジュールを作ってみる</a>
             <li><a href="../3/3.html">3.テストとは</a>
             <li><a href="../3/4.html">4.単体テストを書いてみる</a>
-            <li><a href="../3/5.html">5.IDEを使ってみる</a>
-            <li><a href="../3/6.html">6.バージョン管理をしてみる</a>
-            <li>7.CentOSとは
-            <li>8.CentOS上でサイトを公開してみる
-            <li><a href="../3/9.html">9.セキュリティ対策をしてみる</a>
-            <li><a href="../3/10.html">最終課題</a>
+            <li><a href="../3/5.html">5.Herokuとは</a></li>
+            <li><a href="../3/6.html">6.Herokuを使って公開してみる</a></li>
+            <li><a href="../3/7.html">最終課題</a>
           </ul>
         </div>
         <div id="contents">
-          <h1>STEP3-6.バージョン管理をしてみる</h1>
+          <h1>STEP3-6.Herokuを使って公開してみる</h1>
 
-<h2>バージョン管理システムとは</h2>
+<h2>Herokuを使う準備</h2>
 
-<p>バージョン管理システムとはファイルの変更履歴の保存・バックアップをするためのシステムです。複数人での大規模な開発では、最新ファイルがどれか分からなくなったり、同じファイルを複数人で編集してしまったりという問題が発生しますが、バージョン管理システムを導入することによってこれらの問題を軽減することができます。また、バージョン管理システムは個人での開発でも有用で、バグが発生した際などにすぐに元に戻すことができるなどの利点があります。</p>
+<p>今回はWebアプリをHerokuで公開します。</p>
 
-<p>バージョン管理システムには集中型と分散型の2種類があります。集中型ではプロジェクトの本体がサーバ上に1つだけ存在し、各ユーザはそこに対してファイルの変更を送信したり、そこからファイルの変更履歴を取得したりします。分散型では各ユーザがそれぞれプロジェクト全体を履歴も含めて保存しており、作業のほとんどをローカルで行うことができます。</p>
+<p><a href="https://id.heroku.com/signup/www-home-top">Signup</a>ページにアクセスしてHerokuのアカウントを作成します。
+Herokuは基本的には無料で使うことができます。</p>
 
-<h2>使い方</h2>
+<p>次にPCからHerokuをコマンドで操作するツールである<a href="https://toolbelt.heroku.com/">Toolbelt</a>をインストールします。
+インストールが終わったらコマンドプロンプトを起動して以下のコマンドを入力します。</p>
+<div class="highlight"><pre><code class="language-text" data-lang="text">&gt; heroku login
+</code></pre></div>
+<p>するとHerokuに登録したメールアドレスとパスワードを聞かれるので入力します。
+同時にHeroku上のGitにアクセスするときに使用するため秘密鍵もアップロードされます。
+これで準備はできました。</p>
 
-<p>分散型で有名なものにGitがあります。Gitの詳しい使い方については<a href="http://www.backlog.jp/">Backlog</a>というGitリポジトリを作成できるサイトのコンテンツである<a href="http://www.backlog.jp/git-guide/">サルでもわかるGit入門</a>を読んでください。また、上記サイトではTortoiseGitというGitクライアントをインストールしていますが、NetBeansには既にGitクライアントが内蔵されているため、それを使用することをお勧めします。例えばローカルリポジトリの作成は上部メニュー→チーム→Git→初期化から行います。</p>
+<h2>アプリケーションを作ってみる</h2>
 
-<p>集中型で有名なものにSubversionがあります。こちらも<a href="http://www.backlog.jp/">Backlog</a>上にリポジトリを作成できる上に、NetBeansに内蔵されているためGitと同じような感覚で使えると思います。</p>
+<p>Expressの雛形を作成してHeroku上で動かしてみます。</p>
 
-<h2>複数人での開発における注意点</h2>
+<p>以下のプログラムをweb.jsという名前で保存します。</p>
+<div class="highlight"><pre><code class="language-js" data-lang="js"><span class="kd">var</span> <span class="nx">express</span> <span class="o">=</span> <span class="nx">require</span><span class="p">(</span><span class="s2">&quot;express&quot;</span><span class="p">);</span>
+<span class="kd">var</span> <span class="nx">app</span> <span class="o">=</span> <span class="nx">express</span><span class="p">();</span>
 
-<p>ここでは更に複数人での開発における注意点を紹介します。</p>
+<span class="nx">app</span><span class="p">.</span><span class="nx">get</span><span class="p">(</span><span class="s1">&#39;/&#39;</span><span class="p">,</span> <span class="kd">function</span><span class="p">(</span><span class="nx">req</span><span class="p">,</span> <span class="nx">res</span><span class="p">)</span> <span class="p">{</span>
+  <span class="nx">res</span><span class="p">.</span><span class="nx">send</span><span class="p">(</span><span class="s1">&#39;Hello World!&#39;</span><span class="p">);</span>
+<span class="p">});</span>
 
-<h3>コーディング規約を決めておく</h3>
+<span class="kd">var</span> <span class="nx">port</span> <span class="o">=</span> <span class="nb">Number</span><span class="p">(</span><span class="nx">process</span><span class="p">.</span><span class="nx">env</span><span class="p">.</span><span class="nx">PORT</span> <span class="o">||</span> <span class="mi">5000</span><span class="p">);</span>
+<span class="nx">app</span><span class="p">.</span><span class="nx">listen</span><span class="p">(</span><span class="nx">port</span><span class="p">,</span> <span class="kd">function</span><span class="p">()</span> <span class="p">{</span>
+  <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s2">&quot;Listening on &quot;</span> <span class="o">+</span> <span class="nx">port</span><span class="p">);</span>
+<span class="p">});</span>
+</code></pre></div>
+<p>Herokuはpackage.jsonの有無によってNode.jsのプログラムだと認識しているので、package.jsonを保存します。
+コマンドプロンプトで以下のコマンドを実行することで生成します。</p>
+<div class="highlight"><pre><code class="language-text" data-lang="text">npm init
+</code></pre></div>
+<p>アプリケーションの名前やバージョンについて聞かれますが、すべて入力しなくても大丈夫です。
+package.jsonが生成されたらアプリケーションで用いるパッケージをインストールします。
+今はExpressをインストールしておきます。</p>
+<div class="highlight"><pre><code class="language-text" data-lang="text">npm install express --save
+</code></pre></div>
+<p>インストール後にpackage.jsonを開くと、deoendencies要素の中にexpressが追加されているはずです。
+package.json内にengines要素を追加することで、Herokuで使用するNode.jsのバージョンを指定することができます。
+バージョン指定を行うとpackage.jsonは以下のようになるはずです。</p>
+<div class="highlight"><pre><code class="language-js" data-lang="js"><span class="p">{</span>
+  <span class="s2">&quot;name&quot;</span><span class="o">:</span> <span class="s2">&quot;appName&quot;</span><span class="p">,</span>
+  <span class="s2">&quot;version&quot;</span><span class="o">:</span> <span class="s2">&quot;0.0.0&quot;</span><span class="p">,</span>
+  <span class="s2">&quot;description&quot;</span><span class="o">:</span> <span class="s2">&quot;&quot;</span><span class="p">,</span>
+  <span class="s2">&quot;main&quot;</span><span class="o">:</span> <span class="s2">&quot;index.js&quot;</span><span class="p">,</span>
+  <span class="s2">&quot;scripts&quot;</span><span class="o">:</span> <span class="p">{</span>
+    <span class="s2">&quot;test&quot;</span><span class="o">:</span> <span class="s2">&quot;echo \&quot;Error: no test specified\&quot; &amp;&amp; exit 1&quot;</span>
+  <span class="p">},</span>
+  <span class="s2">&quot;author&quot;</span><span class="o">:</span> <span class="s2">&quot;&quot;</span><span class="p">,</span>
+  <span class="s2">&quot;license&quot;</span><span class="o">:</span> <span class="s2">&quot;ISC&quot;</span><span class="p">,</span>
+  <span class="s2">&quot;dependencies&quot;</span><span class="o">:</span> <span class="p">{</span>
+    <span class="s2">&quot;express&quot;</span><span class="o">:</span> <span class="s2">&quot;^4.6.1&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;logfmt&quot;</span><span class="o">:</span> <span class="s2">&quot;^1.1.2&quot;</span>
+  <span class="p">},</span>
+  <span class="s2">&quot;engines&quot;</span><span class="o">:</span> <span class="p">{</span>
+    <span class="s2">&quot;node&quot;</span><span class="o">:</span> <span class="s2">&quot;0.10.29&quot;</span>
+  <span class="p">}</span>
+<span class="p">}</span>
+</code></pre></div>
+<p>最後にHerokuがWebサーバとして実行するコマンドを設定しなければいけません。
+Herokuが実行するコマンドは、自分のPCと同じようにNode.jsを実行するコマンドです。
+以下のコマンドを<code>Procfile</code>という名前で保存します。(拡張子は不要です)</p>
+<div class="highlight"><pre><code class="language-text" data-lang="text">web: node web.js
+</code></pre></div>
+<p>これでHerokuにアップロードする準備はできました。
+自分のPC環境で実行できることが確認できたら、Gitを使ってアップロードします。
+以下のコマンドでGitの準備を行います。</p>
+<div class="highlight"><pre><code class="language-text" data-lang="text">git init  # gitの初期設定を行う
+git add . # ディレクトリ内すべてのファイルをアップする
+git commit -m &#39;init&#39;
+</code></pre></div>
+<p>Gitの準備が終わると自分のPCで行うべきことはほぼ終了です。
+以下のコマンドを実行し、アップロードするHerokuに新しいアプリケーションを作成します。</p>
 
-<p>コードの見た目を統一することによって読みやすくなるだけでなく、コードのフォーマットを直しただけのコミットなどの無駄操作が減るということにも繋がります。CakePHPでは<a href="../2/5.html">STEP2-5.フレームワークとは</a>で示したように細かく規約が定められています。</p>
+<p>heroku上にアプリケーションを生成します。
+<code>heroku create (アプリケーション名)</code> で新しいアプリケーションが作成され、Gitのリモートリポジトリの設定が追加されています。
+そのリモートリポジトリ先にPushすることで、作ったアプリケーションをアップロードします。</p>
+<div class="highlight"><pre><code class="language-text" data-lang="text"># node-test-123というアプリケーションの場合
+&gt; heroku create node-test-123
+</code></pre></div>
+<p>アプリケーション名はサブドメイン名にもなります。
+上の場合アプリケーションのURLは <code>http://node-test-123.herokuapp.com/</code> となります。</p>
 
-<h3>分かりやすいコミットメッセージを書く</h3>
+<p>gitのリモートリポジトリをチェックして、プッシュしてみましょう。</p>
+<div class="highlight"><pre><code class="language-text" data-lang="text">git remote -v           # 追加されたリモートリポジトリを確認
+git push heroku master  # アプリケーションをアップロード
+heroku open             # Herokuで動いているアプリを開く
+</code></pre></div>
+<p>もしsshの設定でプッシュに失敗する場合は、この<a href="http://sekai.hateblo.jp/entry/2013/09/08/071406">記事</a>等を参考に設定してください。</p>
 
-<p>コミットメッセージには、何を変更したかという内容の他に、なぜその変更を施したかという理由も書いておきましょう。何を変更したかという情報はソースコードを見れば分かりますが、なぜ変更したかという情報はソースコードを見ても分からないためです。また、1回のコミットで複数の変更を行うと変更が追いにくくなるため、1回のコミットは1つの内容に絞りましょう。例えば、機能追加と誤字修正は別々のコミットにします。</p>
+<p>アップロードを行ってからWebブラウザでhttp://（アプリケーション名）.herokuapp.com にアクセスすると、自分の作ったアプリケーションが公開できたことが確認できるはずです。</p>
 
-<hr>
+<!-- ## アドオンを使ってみる -->
 
-<p><strong>[課題]Gitを使ってみよう</strong><br>
-使い方に従ってGitを使ってみましょう。リモートリポジトリが作成できるサービスにはBacklogの他に<a href="https://github.com/">Github</a>や<a href="https://bitbucket.org/">Bitbucket</a>などがあります。次回以降に説明するサーバにGit環境を構築しても良いでしょう。</p>
+<!-- クレカ登録しないと無料のアドオンすら使えない -->
+
+<!-- ## MongoDBを使ってみる -->
+
+<!-- Heroku addons:mongolab
+npm install mongodb --save -->
+
+<!-- ## アクセス解析してみたかった… -->
 
         </div>
       </section>

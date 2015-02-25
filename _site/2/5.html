@@ -2,7 +2,7 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <title>STEP2-5.フレームワークとは / チームラボ オンラインスキルアップ課題</title>
+    <title>STEP2-5.npmを使ってexpressをインストールして使ってみる / チームラボ オンラインスキルアップ課題</title>
     <link rel="stylesheet" href="../stylesheets/styles.css">
     <link rel="stylesheet" href="../stylesheets/pygment_trac.css">
     <!--[if lt IE 9]>
@@ -23,104 +23,112 @@
           <ul>
             <li><a href="../index.html">はじめに</a>
           </ul>
-          
-          <h3>STEP1 掲示板を作ろう</h3>
+          <h3>STEP1 TODOリスト（フロントエンド）を作ろう</h3>
           <ul>
-            <li><a href="../1/1.html">1.インターネットのしくみ</a>
-            <li><a href="../1/2.html">2.HTTPのしくみ</a>
-            <li><a href="../1/3.html">3.Webサーバを立ててみる</a>
+            <li><a href="../1/1.html">1.サンプルコードを動かしてみる</a>
+            <li><a href="../1/2.html">2.Gitを使ってみる</a>
+            <li><a href="../1/3.html">3.JavaScriptを書いてみる</a>
             <li><a href="../1/4.html">4.HTML,CSSを書いてみる</a>
-            <li><a href="../1/5.html">5.PHPを書いてみる</a>
-            <li><a href="../1/6.html">6.PHPでGET,POSTを受け取る</a>
-            <li><a href="../1/7.html">7.データベースを作成してみる</a>
-            <li><a href="../1/8.html">8.SQLを書いてみる</a>
-            <li><a href="../1/9.html">9.PHPからデータベースを操作してみる</a>
-            <li><a href="../1/s1.html">10.サイトを公開してみる</a>
-            <li><a href="../1/10.html">最終課題</a>
+            <li><a href="../1/5.html">5.jQueryを使ってみる</a>
+            <li><a href="../1/6.html">6.ローカルストレージを使ってみる</a>
+            <li><a href="../1/7.html">7.入力チェックを作ってみる</a>
+            <li><a href="../1/8.html">最終課題</a>
           </ul>
           
-          <h3>STEP2 Twitterもどきを作ろう</h3>
+          <h3>STEP2 TODOリスト（フロントエンド＋サーバサイドバージョン）を作ろう</h3>
           <ul>
-            <li><a href="../2/1.html">1.JavaScriptを書いてみる</a>
-            <li><a href="../2/2.html">2.ログイン機能を作ってみる</a>
-            <li><a href="../2/3.html">3.入力チェックを作ってみる</a>
-            <li><a href="../2/4.html">4.ログイン機能をクラス化してみる</a>
-            <li><a href="../2/5.html">5.フレームワークとは</a>
-            <li><a href="../2/6.html">6.CakePHPの基本</a>
-            <li><a href="../2/7.html">7.CakePHPでログイン機能を書いてみる</a>
-            <li><a href="../2/8.html">8.画面仕様書とは</a>
-            <li><a href="../2/9.html">9.データベースを設計してみる</a>
+            <li><a href="../2/1.html">1.インターネットのしくみ</a>
+            <li><a href="../2/2.html">2.HTTPのしくみ</a>
+            <li><a href="../2/3.html">3.NodeJSとは</a>
+            <li><a href="../2/4.html">4.パッケージマネージャのnpmとは</a>
+            <li><a href="../2/5.html">5.npmを使ってexpressをインストールして使ってみる</a>
+            <li><a href="../2/6.html">6.MongoDBをインストールして使ってみる</a>
+            <li><a href="../2/7.html">7.MongoDBを設計してみる</a>
+            <li><a href="../2/8.html">8.ブラウザ（JavaScript）とサーバ（NodeJS）を連携してみる</a>
+            <li><a href="../2/9.html">9.画面仕様書を満たす</a>
             <li><a href="../2/10.html">最終課題</a>
           </ul>
           
-          <h3>STEP3 オリジナルサイトを作ろう</h3>
+          <h3>STEP3 オリジナルチャットシステムを作ろう</h3>
           <ul>
-            <li><a href="../3/1.html">1.Ajaxを使ってみる</a>
+            <li><a href="../3/1.html">1.websocketを使ってみる</a>
             <li><a href="../3/2.html">2.画面仕様書,スケジュールを作ってみる</a>
             <li><a href="../3/3.html">3.テストとは</a>
             <li><a href="../3/4.html">4.単体テストを書いてみる</a>
-            <li><a href="../3/5.html">5.IDEを使ってみる</a>
-            <li><a href="../3/6.html">6.バージョン管理をしてみる</a>
-            <li>7.CentOSとは
-            <li>8.CentOS上でサイトを公開してみる
-            <li><a href="../3/9.html">9.セキュリティ対策をしてみる</a>
-            <li><a href="../3/10.html">最終課題</a>
+            <li><a href="../3/5.html">5.Herokuとは</a></li>
+            <li><a href="../3/6.html">6.Herokuを使って公開してみる</a></li>
+            <li><a href="../3/7.html">最終課題</a>
           </ul>
         </div>
         <div id="contents">
-          <h1>STEP2-5.フレームワークとは</h1>
+          <h1>STEP2-5.npmを使ってexpressをインストールして使ってみる</h1>
 
-<p>フレームワーク（アプリケーションフレームワーク）とは、プログラム開発で共通して使用されるであろう標準的な機能を再利用可能な形でまとめたものです。特にWeb開発で用いられるフレームワークではデータベースアクセス、セッション管理、入力チェックなど、今までの講座で扱ったようなものが簡単に記述できるような機能が提供されることが多く、フレームワークをうまく使うことで開発スピードが上がったり、セキュリティが向上したりします。</p>
+<h3>expressとは</h3>
 
-<p>今回はCakePHPというフレームワークを使用します。CakePHPはMVCアーキテクチャを採用しています。MVCアーキテクチャとは、プログラムをModel（モデル）、View（ビュー）、Controller（コントローラ）の3つに分割して設計・記述することで、プログラムを分かりやすく、拡張性が高いものにするという構造です。モデルはデータの管理・処理を、ビューはHTMLの出力を、コントローラはユーザ入力の処理やモデル・ビューの制御を担当します。</p>
+<p><a href="https://www.npmjs.org/package/express">express</a>とはWebアプリケーションフレームワークと呼ばれるものの１つです。
+Webアプリケーションを効率よく作るための雛形や骨組みのようなものです。</p>
 
-<p><img src="../images/2_5_1.png" alt=""></p>
+<h3>expressのインストールと実行</h3>
 
-<p>CakePHPの他に有名なフレームワークとしては(Zend Framework)[http://framework.zend.com/]や(Symfony)[http://symfony.com/]などがありますが、いずれもMVCアーキテクチャを採用しています。CakePHPを紹介する理由は、日本で最も使用されているからです。</p>
+<p>npmを利用してexpressをインストールします。
+まずexpressのプロジェクトを作成する<a href="https://www.npmjs.org/package/express-generator">express-generator</a>をグローバルにインストールします。</p>
+<div class="highlight"><pre><code class="language-text" data-lang="text">&gt; npm install -g express-generator
+</code></pre></div>
+<p>そしてプロジェクトを作成します。</p>
+<div class="highlight"><pre><code class="language-text" data-lang="text">&gt; express firstApp
+</code></pre></div>
+<p>以上を実行すると、firstAppというディレクトリが作成され、その中にexpressのひな形が生成されます。</p>
 
-<p>それではCakePHPをインストールしてみましょう。<a href="http://cakephp.jp/">CakePHP</a>から安定版をダウンロードします。zipファイルを解凍し、フォルダごとhtdocsに置き、適当にフォルダ名を変更します。（cakephpに変更したものとして話を進めます。）Webブラウザから<a href="http://localhost/cakephp/">http://localhost/cakephp/</a>にアクセスしてみるとCakePHPの初期ページが表示されるはずです。いくつかエラーが表示されていると思います。/app/Config/core.phpを開いてSecurity.saltとSecurity.cipherSeedを適当な値に変更しておきましょう。これらは今まで説明したようにハッシュ化や暗号化をより解析されにくくするための値ですが、初期値のままにしておくとバレバレですのでsaltの意味を成さなくなってしまいます。</p>
+<p>firstAppディレクトリに移動し、<code>npm install</code>を実行します。<br>
+<code>npm install</code>は実行したディレクトリ(ここではfirstApp)内にある<code>package.json</code>の中に記載されているパッケージをインストールします。</p>
+<div class="highlight"><pre><code class="language-text" data-lang="text">&gt; cd firstApp
+&gt; npm install
+</code></pre></div>
+<p>サーバを起動します。</p>
+<div class="highlight"><pre><code class="language-text" data-lang="text">&gt; npm start
+</code></pre></div>
+<p>ブラウザでlocalhost:3000にアクセスしてください。
+expressが動いていることが確認できるはずです。</p>
 
-<h1>規約</h1>
+<p>ポートが今までの1337ではなく3000になっているのは、expressのデフォルトが3000になっているからです。
+ポート番号は他の値に変更することができます。</p>
 
-<p>CakePHPでは細かく命名規則などの規約が定められています。これには2つ目的があり、1つは規約を統一することによって多人数での開発の際にコードを統一し、大規模開発をしやすくするため、もう1つは規約で定めておくことによって設定ファイルに記述する内容を最小限に抑えるためです。</p>
+<h3>expressを使ってみる</h3>
 
-<p>以下は複数の単語からなる語の表し方です。</p>
+<p>expressの使い方は<a href="http://expressjs.com/guide.html">Getting started</a>や古いバージョンですが日本語訳の<a href="http://hideyukisaito.github.io/expressjs-doc_ja/guide/">ガイド</a>が参考になります。</p>
 
-<ul>
-<li>キャメル記法：単語ごとに、1文字目を大文字にする記法
+<p>express実行時の起点となるファイルは同ディレクトリの<code>app.js</code>になります。
+中身を見てみると処理の途中でルーティングを行っていることが分かります。</p>
+<div class="highlight"><pre><code class="language-js" data-lang="js"><span class="kd">var</span> <span class="nx">routes</span> <span class="o">=</span> <span class="nx">require</span><span class="p">(</span><span class="s1">&#39;./routes/index&#39;</span><span class="p">);</span>
+<span class="kd">var</span> <span class="nx">users</span> <span class="o">=</span> <span class="nx">require</span><span class="p">(</span><span class="s1">&#39;./routes/users&#39;</span><span class="p">);</span>
 
-<ul>
-<li>アッパーキャメルケース(UCC)の例：GetDatas</li>
-<li>ローワーキャメルケース(LCC)の例：getDatas</li>
-</ul></li>
-<li>スネーク記法：単語の区切りをアンダースコア(_)で表す記法
+<span class="p">...</span><span class="err">中略</span><span class="p">...</span>
 
-<ul>
-<li>例：get_datas</li>
-</ul></li>
-</ul>
+<span class="nx">app</span><span class="p">.</span><span class="nx">use</span><span class="p">(</span><span class="s1">&#39;/&#39;</span><span class="p">,</span> <span class="nx">routes</span><span class="p">);</span>
+<span class="nx">app</span><span class="p">.</span><span class="nx">use</span><span class="p">(</span><span class="s1">&#39;/users&#39;</span><span class="p">,</span> <span class="nx">users</span><span class="p">);</span>
+</code></pre></div>
+<p>ルーティングとはURLと実行するプログラムを紐付けるもので、上の場合、
+「localhost:3000/」にアクセスしたときはroutesディレクトリのindex.jsが、<br>
+「localhost:3000/users」にアクセスしたときはroutesディレクトリのusers.jsがそれぞれ実行されます。</p>
 
-<p>CakePHPでは使用箇所に応じて上記3つの記法が混在して使用されています。</p>
+<p>次にroutesディレクトリのindex.jsを確認してみます。</p>
+<div class="highlight"><pre><code class="language-js" data-lang="js"><span class="nx">router</span><span class="p">.</span><span class="nx">get</span><span class="p">(</span><span class="s1">&#39;/&#39;</span><span class="p">,</span> <span class="kd">function</span><span class="p">(</span><span class="nx">req</span><span class="p">,</span> <span class="nx">res</span><span class="p">)</span> <span class="p">{</span>
+  <span class="nx">res</span><span class="p">.</span><span class="nx">render</span><span class="p">(</span><span class="s1">&#39;index&#39;</span><span class="p">,</span> <span class="p">{</span> <span class="nx">title</span><span class="o">:</span> <span class="s1">&#39;Express&#39;</span> <span class="p">});</span>
+<span class="p">});</span>
+</code></pre></div>
+<p><code>res.render</code>というメソッドでブラウザ上に表示するデータを指定します。
+最初の引数の&#39;index&#39;とはviewsディレクトリのindex.jadeを指定しています。</p>
 
-<ul>
-<li>クラス名はUCC、変数名・関数名はLCC、定数は全て大文字のスネーク記法とする。</li>
-<li>privateやprotectedなメソッドはアンダースコア(_)ではじめる。</li>
-<li>ファイル名はクラス名と同じにする。</li>
-<li>コントローラ名は複数形でUCCで最後にControllerを付ける。
+<p>このファイルは<a href="http://jade-lang.com/">Jade</a>で書かれています。
+JadeとはHTMLを簡略して書くことができるテンプレートエンジンです。
+Jadeについては<a href="https://gist.github.com/japboy/5402844">Jadeとは何か</a>が参考になります。</p>
 
-<ul>
-<li>例：UserCommentsController</li>
-</ul></li>
-<li>モデル名は単数形でUCCに、データベース名は複数形でスネーク記法にする。
-
-<ul>
-<li>例：モデル名 UserComment データベース名 user_comments</li>
-</ul></li>
-<li>ビューファイル名はスネーク記法にする。</li>
-</ul>
-
-<p>詳しくは<a href="http://book.cakephp.org/2.0/ja/getting-started/cakephp-conventions.html">CakePHPの規約</a>に載っています。また、<a href="http://book.cakephp.org/2.0/ja/contributing/cakephp-coding-conventions.html">コーディング規約</a>も統一されています。</p>
-
+<p>2番目の引数は、ページに表示する値を設定しており、
+以下のように変更することで表示される文字列が変わっていることが確認できます。</p>
+<div class="highlight"><pre><code class="language-js" data-lang="js"><span class="nx">router</span><span class="p">.</span><span class="nx">get</span><span class="p">(</span><span class="s1">&#39;/&#39;</span><span class="p">,</span> <span class="kd">function</span><span class="p">(</span><span class="nx">req</span><span class="p">,</span> <span class="nx">res</span><span class="p">)</span> <span class="p">{</span>
+  <span class="nx">res</span><span class="p">.</span><span class="nx">render</span><span class="p">(</span><span class="s1">&#39;index&#39;</span><span class="p">,</span> <span class="p">{</span> <span class="nx">title</span><span class="o">:</span> <span class="s1">&#39;FirstApp&#39;</span> <span class="p">});</span>
+<span class="p">});</span>
+</code></pre></div>
         </div>
       </section>
     </div>

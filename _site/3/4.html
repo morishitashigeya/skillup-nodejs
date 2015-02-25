@@ -23,48 +23,41 @@
           <ul>
             <li><a href="../index.html">はじめに</a>
           </ul>
-          
-          <h3>STEP1 掲示板を作ろう</h3>
+          <h3>STEP1 TODOリスト（フロントエンド）を作ろう</h3>
           <ul>
-            <li><a href="../1/1.html">1.インターネットのしくみ</a>
-            <li><a href="../1/2.html">2.HTTPのしくみ</a>
-            <li><a href="../1/3.html">3.Webサーバを立ててみる</a>
+            <li><a href="../1/1.html">1.サンプルコードを動かしてみる</a>
+            <li><a href="../1/2.html">2.Gitを使ってみる</a>
+            <li><a href="../1/3.html">3.JavaScriptを書いてみる</a>
             <li><a href="../1/4.html">4.HTML,CSSを書いてみる</a>
-            <li><a href="../1/5.html">5.PHPを書いてみる</a>
-            <li><a href="../1/6.html">6.PHPでGET,POSTを受け取る</a>
-            <li><a href="../1/7.html">7.データベースを作成してみる</a>
-            <li><a href="../1/8.html">8.SQLを書いてみる</a>
-            <li><a href="../1/9.html">9.PHPからデータベースを操作してみる</a>
-            <li><a href="../1/s1.html">10.サイトを公開してみる</a>
-            <li><a href="../1/10.html">最終課題</a>
+            <li><a href="../1/5.html">5.jQueryを使ってみる</a>
+            <li><a href="../1/6.html">6.ローカルストレージを使ってみる</a>
+            <li><a href="../1/7.html">7.入力チェックを作ってみる</a>
+            <li><a href="../1/8.html">最終課題</a>
           </ul>
           
-          <h3>STEP2 Twitterもどきを作ろう</h3>
+          <h3>STEP2 TODOリスト（フロントエンド＋サーバサイドバージョン）を作ろう</h3>
           <ul>
-            <li><a href="../2/1.html">1.JavaScriptを書いてみる</a>
-            <li><a href="../2/2.html">2.ログイン機能を作ってみる</a>
-            <li><a href="../2/3.html">3.入力チェックを作ってみる</a>
-            <li><a href="../2/4.html">4.ログイン機能をクラス化してみる</a>
-            <li><a href="../2/5.html">5.フレームワークとは</a>
-            <li><a href="../2/6.html">6.CakePHPの基本</a>
-            <li><a href="../2/7.html">7.CakePHPでログイン機能を書いてみる</a>
-            <li><a href="../2/8.html">8.画面仕様書とは</a>
-            <li><a href="../2/9.html">9.データベースを設計してみる</a>
+            <li><a href="../2/1.html">1.インターネットのしくみ</a>
+            <li><a href="../2/2.html">2.HTTPのしくみ</a>
+            <li><a href="../2/3.html">3.NodeJSとは</a>
+            <li><a href="../2/4.html">4.パッケージマネージャのnpmとは</a>
+            <li><a href="../2/5.html">5.npmを使ってexpressをインストールして使ってみる</a>
+            <li><a href="../2/6.html">6.MongoDBをインストールして使ってみる</a>
+            <li><a href="../2/7.html">7.MongoDBを設計してみる</a>
+            <li><a href="../2/8.html">8.ブラウザ（JavaScript）とサーバ（NodeJS）を連携してみる</a>
+            <li><a href="../2/9.html">9.画面仕様書を満たす</a>
             <li><a href="../2/10.html">最終課題</a>
           </ul>
           
-          <h3>STEP3 オリジナルサイトを作ろう</h3>
+          <h3>STEP3 オリジナルチャットシステムを作ろう</h3>
           <ul>
-            <li><a href="../3/1.html">1.Ajaxを使ってみる</a>
+            <li><a href="../3/1.html">1.websocketを使ってみる</a>
             <li><a href="../3/2.html">2.画面仕様書,スケジュールを作ってみる</a>
             <li><a href="../3/3.html">3.テストとは</a>
             <li><a href="../3/4.html">4.単体テストを書いてみる</a>
-            <li><a href="../3/5.html">5.IDEを使ってみる</a>
-            <li><a href="../3/6.html">6.バージョン管理をしてみる</a>
-            <li>7.CentOSとは
-            <li>8.CentOS上でサイトを公開してみる
-            <li><a href="../3/9.html">9.セキュリティ対策をしてみる</a>
-            <li><a href="../3/10.html">最終課題</a>
+            <li><a href="../3/5.html">5.Herokuとは</a></li>
+            <li><a href="../3/6.html">6.Herokuを使って公開してみる</a></li>
+            <li><a href="../3/7.html">最終課題</a>
           </ul>
         </div>
         <div id="contents">
@@ -80,116 +73,117 @@
 <li><strong>検証</strong> 実行した結果、期待値と同じかどうか検証します。例えばデータベースが、送信したメッセージが書き込んだ状態になっているか、画面に出力したデータにそれらの文字が所定の場所に入っているか、出したメールの内容にそれらの文字が含まれているか、等です。</li>
 </ul>
 
-<p>自働テストでは、プログラムを実行した結果が、期待した通りかどうかを調べます。例えば引数が２倍にして返す double($i) という関数をテストするためには、</p>
-<div class="highlight"><pre><code class="php language-php" data-lang="php"><span class="cp">&lt;?php</span>
-<span class="k">if</span><span class="p">(</span><span class="nx">double</span><span class="p">(</span><span class="mi">1</span><span class="p">)</span> <span class="o">==</span> <span class="mi">2</span><span class="p">){</span>
-  <span class="nx">println</span><span class="p">(</span><span class="s2">&quot;OK&quot;</span><span class="p">);</span>
+<p>自働テストでは、プログラムを実行した結果が、期待した通りかどうかを調べます。例えば引数を２倍にして返す double(num) という関数があるとします。
+<code>js
+function double(num){
+  return num * 2;
+}
+</code></p>
+
+<p>この関数をテストするためには、</p>
+<div class="highlight"><pre><code class="language-js" data-lang="js"><span class="kd">var</span> <span class="nx">num</span> <span class="o">=</span> <span class="kr">double</span><span class="p">(</span><span class="mi">1</span><span class="p">);</span>
+<span class="k">if</span><span class="p">(</span><span class="nx">num</span> <span class="o">===</span> <span class="mi">2</span><span class="p">){</span>
+  <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s2">&quot;OK&quot;</span><span class="p">);</span>
 <span class="p">}</span><span class="k">else</span><span class="p">{</span>
-  <span class="nx">println</span><span class="p">(</span><span class="s2">&quot;NG&quot;</span><span class="p">);</span>
+  <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s2">&quot;NG&quot;</span><span class="p">);</span>
 <span class="p">}</span>
-<span class="cp">?&gt;</span><span class="x"></span>
 </code></pre></div>
-<p>のようにします。これから紹介する PHPUnit では assertEquals というメソッドが用意されています。</p>
-<div class="highlight"><pre><code class="php language-php" data-lang="php"><span class="cp">&lt;?php</span>
-<span class="k">class</span> <span class="nc">DoubleTest</span> <span class="k">extends</span> <span class="nx">CakeTestCase</span> <span class="p">{</span>
-  <span class="k">public</span> <span class="k">function</span> <span class="nf">testDouble</span><span class="p">(){</span>
-    <span class="nv">$this</span><span class="o">-&gt;</span><span class="na">assertEquals</span><span class="p">(</span><span class="mi">2</span><span class="p">,</span> <span class="nx">double</span><span class="p">(</span><span class="mi">1</span><span class="p">));</span>
-  <span class="p">}</span>
-<span class="p">}</span>
-<span class="cp">?&gt;</span><span class="x"></span>
+<p>のようにします。これから紹介する Jasmine では toEqual というメソッドが用意されています。</p>
+<div class="highlight"><pre><code class="language-js" data-lang="js"><span class="nx">it</span><span class="p">(</span><span class="s2">&quot;equal?&quot;</span><span class="p">,</span> <span class="kd">function</span><span class="p">()</span> <span class="p">{</span>
+  <span class="kd">var</span> <span class="nx">num</span> <span class="o">=</span> <span class="kr">double</span><span class="p">(</span><span class="mi">1</span><span class="p">);</span>
+  <span class="nx">expect</span><span class="p">(</span><span class="nx">num</span><span class="p">).</span><span class="nx">toEqual</span><span class="p">(</span><span class="mi">2</span><span class="p">);</span>
+<span class="p">});</span>
 </code></pre></div>
-<h2>実際にテストを書いてみる</h2>
+<h2>テストを実行してみる</h2>
 
-<p>実際に単体テストを書いてみましょう。CakePHPでのテストの仕方は<a href="http://book.cakephp.org/2.0/ja/development/testing.html">コチラ</a>が詳しいです。</p>
+<p>実際に単体テストを実行してみましょう。Jasmineでのテストの仕方は<a href="http://mitsuruog.github.io/jasmine/">公式サイトの日本語訳版</a>や<a href="http://qiita.com/opengl-8080/items/cf3acafda9756f4b04c9">Jasmine使い方メモ</a>が詳しいです。</p>
 
-<p>CakePHPでは PHPUnitというテストツールを使用して単体テストを自動化することができます。まずはPHPUnitをインストールします。phpをインストールしたディレクトリ（WindowsならC:\xampp\php）に移動し、以下のコマンドを管理者権限で実行します。</p>
-<div class="highlight"><pre><code class="text language-text" data-lang="text">pear upgrade PEAR
-pear config-set auto_discover 1
-pear install pear.phpunit.de/PHPUnit
+<p>まずJasmineの<a href="https://github.com/pivotal/jasmine">GitHubページ</a>からダウンロードし、
+ダウンロードしたディレクトリ内にあるjasmine/dist/jasmine-standalone-2.0.0.zipを解凍します。
+解凍したディレクトリをテストしたいプロジェクト内に配置します。今回はそのまま使ってみます。</p>
+
+<p>ディレクトリ内にあるSpecRunner.htmlをWebブラウザで表示することでテストの結果を確認できます。
+確認してみると「5 specs, 0 failures」つまり5項目のテストで0の失敗と表示されるはずです。</p>
+
+<p>SpecRunner.htmlのソースコードを確認してみます。</p>
+<div class="highlight"><pre><code class="language-html" data-lang="html">  <span class="c">&lt;!-- Jasmineの読み込み --&gt;</span>
+  <span class="nt">&lt;script </span><span class="na">type=</span><span class="s">&quot;text/javascript&quot;</span> <span class="na">src=</span><span class="s">&quot;lib/jasmine-2.0.0/jasmine.js&quot;</span><span class="nt">&gt;&lt;/script&gt;</span>
+  <span class="nt">&lt;script </span><span class="na">type=</span><span class="s">&quot;text/javascript&quot;</span> <span class="na">src=</span><span class="s">&quot;lib/jasmine-2.0.0/jasmine-html.js&quot;</span><span class="nt">&gt;&lt;/script&gt;</span>
+  <span class="nt">&lt;script </span><span class="na">type=</span><span class="s">&quot;text/javascript&quot;</span> <span class="na">src=</span><span class="s">&quot;lib/jasmine-2.0.0/boot.js&quot;</span><span class="nt">&gt;&lt;/script&gt;</span>
+
+  <span class="c">&lt;!-- 実際に動作させるプログラムを読み込む --&gt;</span>
+  <span class="nt">&lt;script </span><span class="na">type=</span><span class="s">&quot;text/javascript&quot;</span> <span class="na">src=</span><span class="s">&quot;src/Player.js&quot;</span><span class="nt">&gt;&lt;/script&gt;</span>
+  <span class="nt">&lt;script </span><span class="na">type=</span><span class="s">&quot;text/javascript&quot;</span> <span class="na">src=</span><span class="s">&quot;src/Song.js&quot;</span><span class="nt">&gt;&lt;/script&gt;</span>
+
+  <span class="c">&lt;!-- テスト内容を読み込む --&gt;</span>
+  <span class="nt">&lt;script </span><span class="na">type=</span><span class="s">&quot;text/javascript&quot;</span> <span class="na">src=</span><span class="s">&quot;spec/SpecHelper.js&quot;</span><span class="nt">&gt;&lt;/script&gt;</span>
+  <span class="nt">&lt;script </span><span class="na">type=</span><span class="s">&quot;text/javascript&quot;</span> <span class="na">src=</span><span class="s">&quot;spec/PlayerSpec.js&quot;</span><span class="nt">&gt;&lt;/script&gt;</span>
 </code></pre></div>
-<p>さらに、コード網羅率を調べるためにXdebugというデバッグツールをインストールします。網羅率とは、プログラム中のどれくらいの割合をテストしたかを示す数値です。</p>
-<div class="highlight"><pre><code class="text language-text" data-lang="text">pecl install xdebug
-</code></pre></div>
-<p>Xdebugを有効にするため、PHPの設定を変更します。phpをインストールしたディレクトリにあるphp.iniを編集します。下部に以下のような行があるので先頭のセミコロンを削除してコメントアウトを外し、Apacheを再起動します。</p>
-<div class="highlight"><pre><code class="text language-text" data-lang="text">;zend_extension = &quot;C:\xampp\php\ext\php_xdebug.dll&quot;
-</code></pre></div>
-<p>次にテスト用のデータベースを作成します。phpmyadminを利用して、構造のみをエクスポート・インポートすると簡単です。テスト用データベースの接続情報を/app/Config/database.php内のDATABASE_CONFIGクラスにある$testに記述します。これでテストを実行する準備が整いました。<a href="http://localhost/cakephp/test.php">http://localhost/cakephp/test.php</a>にアクセスするとCakePHP Test Suiteというページが表示されるはずです。</p>
+<p>先に実際のWebサイトで動かしているプログラムを読み込み、後でそのプログラムに対するテストが書かれたプログラムを読み込んでいます。</p>
 
 <h2>実際のテスト</h2>
 
-<p>テストケースを作成してみましょう。今回は<a href="../2/7.html">STEP2-7.CakePHPでログイン機能を書いてみる</a>で作成したUserモデルのバリデーションのテストを作成します。以下の内容を/app/Test/Case/Model/UserTest.phpという名前で保存します(規約：テストを含むPHPファイルは、 app/Test/Case/ 以下のディレクトリに置きます。ファイル名の最後は必ず Test.php とします)。</p>
-<div class="highlight"><pre><code class="php language-php" data-lang="php"><span class="cp">&lt;?php</span>
-<span class="c1">//Authコンポーネントを読み込んでおく</span>
-<span class="nx">App</span><span class="o">::</span><span class="na">uses</span><span class="p">(</span><span class="s1">&#39;AuthComponent&#39;</span><span class="p">,</span> <span class="s1">&#39;Controller/Component&#39;</span><span class="p">);</span>
+<p>テストケースを作成してみましょう。
+今回はJasmineを解凍したとき最初にあるプログラムを編集してテストを作成します。
+src/Song.jsとspec/PlayerSpec.jsを編集します。</p>
 
-<span class="c1">// 規約：テストを含むクラスは必ず CakeTestCase または ControllerTestCase, PHPUnit_Framework_TestCase を継承します。他のクラスと同じく、テストケースのクラスを書いたファイル名もクラス名と同じにします。たとえば、 RouterTest.php は class RouterTest extends CakeTestCase を含んでいなければなりません。</span>
-<span class="k">class</span> <span class="nc">UserTest</span> <span class="k">extends</span> <span class="nx">CakeTestCase</span> <span class="p">{</span>
-  <span class="c1">//規約：テストを含むメソッド(つまりアサーションを含むメソッド)はいずれも testPublished() といったように test で始まる名前にします。 @test という注釈をメソッドにマークすることでテストメソッドとすることもできます。</span>
-  <span class="k">public</span> <span class="k">function</span> <span class="nf">testValidation</span><span class="p">(){</span>
-    <span class="c1">// 準備 -------------------------------</span>
-    <span class="c1">//Userモデルを読み込む</span>
-    <span class="nv">$this</span><span class="o">-&gt;</span><span class="na">User</span> <span class="o">=</span> <span class="nx">ClassRegistry</span><span class="o">::</span><span class="na">init</span><span class="p">(</span><span class="s1">&#39;User&#39;</span><span class="p">);</span>
-
-    <span class="c1">// 実行 -------------------------------</span>
-    <span class="nv">$this</span><span class="o">-&gt;</span><span class="na">User</span><span class="o">-&gt;</span><span class="na">create</span><span class="p">(</span><span class="k">array</span><span class="p">(</span>
-          <span class="s1">&#39;username&#39;</span> <span class="o">=&gt;</span> <span class="s1">&#39;testUser&#39;</span><span class="p">,</span>
-          <span class="s1">&#39;password&#39;</span> <span class="o">=&gt;</span> <span class="s1">&#39;&#39;</span>
-        <span class="p">));</span>
-    <span class="c1">//エラーになる列名をkeyとした連想配列を返す</span>
-    <span class="nv">$results</span> <span class="o">=</span> <span class="nv">$this</span><span class="o">-&gt;</span><span class="na">User</span><span class="o">-&gt;</span><span class="na">invalidFields</span><span class="p">();</span>
-
-    <span class="c1">// 検証 -------------------------------</span>
-    <span class="c1">//usernameはエラーではないためkeyに存在しないはず</span>
-    <span class="nv">$this</span><span class="o">-&gt;</span><span class="na">assertEquals</span><span class="p">(</span><span class="nb">array_key_exists</span><span class="p">(</span><span class="s1">&#39;username&#39;</span><span class="p">,</span> <span class="nv">$results</span><span class="p">),</span> <span class="k">false</span><span class="p">);</span>
-    <span class="c1">//passwordはエラーであるためkeyに存在するはず</span>
-    <span class="nv">$this</span><span class="o">-&gt;</span><span class="na">assertEquals</span><span class="p">(</span><span class="nb">array_key_exists</span><span class="p">(</span><span class="s1">&#39;password&#39;</span><span class="p">,</span> <span class="nv">$results</span><span class="p">),</span> <span class="k">true</span><span class="p">);</span>
-  <span class="p">}</span>
-<span class="p">}</span>
-<span class="cp">?&gt;</span><span class="x"></span>
+<p>まずsrc/Song.jsの最後に以下のソースコードを追加します。</p>
+<div class="highlight"><pre><code class="language-js" data-lang="js"><span class="c1">// 歌の名前を取得する</span>
+<span class="nx">Song</span><span class="p">.</span><span class="nx">prototype</span><span class="p">.</span><span class="nx">getName</span> <span class="o">=</span> <span class="kd">function</span><span class="p">()</span> <span class="p">{</span>
+  <span class="k">return</span> <span class="s1">&#39;好きな歌の名前&#39;</span><span class="p">;</span>
+<span class="p">};</span>
 </code></pre></div>
-<p>もう一度<a href="http://localhost/cakephp/app/webroot/test.php">http://localhost/cakephp/app/webroot/test.php</a>にアクセスしてみます。テストケースに「Model / User」という項目ができていると思います。クリックしてみましょう。クリックするとUserTestが実行されます。成功したケースは緑色、失敗したケースは赤色で示されます。「Analyze Code Coverage」をクリックするとコード網羅率を調べることもできます。</p>
+<p>そして先ほど追加した処理をテストするようにspec/PlayerSpec.jsを以下のように編集します。</p>
+<div class="highlight"><pre><code class="language-js" data-lang="js"><span class="nx">describe</span><span class="p">(</span><span class="s2">&quot;Player&quot;</span><span class="p">,</span> <span class="kd">function</span><span class="p">()</span> <span class="p">{</span>
 
-<p>また、上記の検証コードは他の検証メソッドを利用することにより以下のように書くこともできます。PHPUnitの詳しい使用方法は<a href="http://phpunit.de/manual/3.8/ja/writing-tests-for-phpunit.html">第4章 PHPUnit 用のテストの書き方</a>を参照してください。</p>
-<div class="highlight"><pre><code class="php language-php" data-lang="php"><span class="cp">&lt;?php</span>
-<span class="nv">$this</span><span class="o">-&gt;</span><span class="na">assertArrayNotHasKey</span><span class="p">(</span><span class="s1">&#39;username&#39;</span><span class="p">,</span> <span class="nv">$results</span><span class="p">)</span>
-<span class="nv">$this</span><span class="o">-&gt;</span><span class="na">assertArrayHasKey</span><span class="p">(</span><span class="s1">&#39;password&#39;</span><span class="p">,</span> <span class="nv">$results</span><span class="p">);</span>
-<span class="cp">?&gt;</span><span class="x"></span>
+  <span class="c1">// 〜省略〜</span>
+
+  <span class="nx">it</span><span class="p">(</span><span class="s1">&#39;歌の名前を取得できるか&#39;</span><span class="p">,</span> <span class="kd">function</span><span class="p">()</span> <span class="p">{</span>
+    <span class="nx">expect</span><span class="p">(</span><span class="nx">song</span><span class="p">.</span><span class="nx">getName</span><span class="p">()).</span><span class="nx">toEqual</span><span class="p">(</span><span class="s1">&#39;好きな歌の名前&#39;</span><span class="p">);</span>
+  <span class="p">});</span>
+<span class="p">});</span>
 </code></pre></div>
+<p>もう一度SpecRunner.htmlを開いてみます。
+テストケース一覧の一番下に「歌の名前を取得できるか」という項目ができていると思います。クリックしてみましょう。
+クリックするとUserTestが実行されます。成功したケースは緑色、失敗したケースは赤色で示されます。
+ページの右上にはテストにどれくらい時間がかかったのか表示されます。</p>
+
+<p>また、検証コードは他の検証メソッドを利用して書くこともできます。
+検証用メソッドについては<a href="http://mitsuruog.github.io/jasmine/#section-Matchers">日本語訳サイト/Matchers</a>や<a href="https://github.com/pivotal/jasmine/wiki/Matchers">GitHubのWiki</a>を参照してください。</p>
+
 <h2>網羅率（カバレッジ）</h2>
 
 <p>テストをどこまで行えばよいのか、というのは大きな問題です。自働テストでは網羅率という考え方があります。テスト時に実行された構造の割合を網羅率（カバレッジ）といいます。網羅基準は3種類あり、例えば以下のようなコードのテストケースは次のようになります。</p>
-<div class="highlight"><pre><code class="php language-php" data-lang="php"><span class="cp">&lt;?</span>
-<span class="k">if</span><span class="p">(</span><span class="nv">$a</span> <span class="o">&amp;&amp;</span> <span class="nv">$b</span><span class="p">){</span>
+<div class="highlight"><pre><code class="language-js" data-lang="js"><span class="k">if</span><span class="p">(</span><span class="nx">a</span> <span class="o">&amp;&amp;</span> <span class="nx">b</span><span class="p">){</span>
   <span class="nx">do1</span><span class="p">();</span>
-<span class="p">}</span><span class="k">else</span> <span class="k">if</span><span class="p">(</span><span class="nv">$c</span><span class="p">){</span>
+<span class="p">}</span><span class="k">else</span> <span class="k">if</span><span class="p">(</span><span class="nx">c</span><span class="p">){</span>
   <span class="nx">do2</span><span class="p">();</span>
 <span class="p">}</span>
-<span class="cp">?&gt;</span><span class="x"></span>
 </code></pre></div>
 <ul>
 <li>C0:命令網羅　全ての命令を少なくとも1回実行するようにテストケースを作成する。</li>
 </ul>
-<div class="highlight"><pre><code class="text language-text" data-lang="text">[1]$a = true,  $b = true,  $c = true;  //do1()を実行するケース
-[2]$a = true,  $b = false, $c = true;  //do2()を実行するケース
+<div class="highlight"><pre><code class="language-text" data-lang="text">[1]a = true,  b = true,  c = true;  //do1()を実行するケース
+[2]a = true,  b = false, c = true;  //do2()を実行するケース
 </code></pre></div>
 <ul>
 <li>C1:分岐網羅　全ての分岐を少なくとも1回実行するようにテストケースを作成する。</li>
 </ul>
-<div class="highlight"><pre><code class="text language-text" data-lang="text">[1]$a = true,  $b = true,  $c = true;  //do1()を実行するケース
-[2]$a = true,  $b = false, $c = true;  //do2()を実行するケース
-[3]$a = true,  $b = false, $c = false; //何も実行しないケース
+<div class="highlight"><pre><code class="language-text" data-lang="text">[1]a = true,  b = true,  c = true;  //do1()を実行するケース
+[2]a = true,  b = false, c = true;  //do2()を実行するケース
+[3]a = true,  b = false, c = false; //何も実行しないケース
 </code></pre></div>
 <ul>
 <li>C2:条件網羅　全ての条件の組み合わせでテストケースを作成する。</li>
 </ul>
-<div class="highlight"><pre><code class="text language-text" data-lang="text">[1]$a = true,  $b = true,  $c = true;
-[2]$a = true,  $b = true,  $c = false;
-[3]$a = true,  $b = false, $c = true;
-[4]$a = true,  $b = false, $c = false;
-[5]$a = false, $b = true,  $c = true;
-[6]$a = false, $b = true,  $c = false;
-[7]$a = false, $b = false, $c = true;
-[8]$a = false, $b = false, $c = false;
+<div class="highlight"><pre><code class="language-text" data-lang="text">[1]a = true,  b = true,  c = true;
+[2]a = true,  b = true,  c = false;
+[3]a = true,  b = false, c = true;
+[4]a = true,  b = false, c = false;
+[5]a = false, b = true,  c = true;
+[6]a = false, b = true,  c = false;
+[7]a = false, b = false, c = true;
+[8]a = false, b = false, c = false;
 </code></pre></div>
 <p>理想はC3の網羅率を100%にするテストケースを作成することですが、条件の数が多くなると現実的ではなくないため、通常はC0の命令網羅率をもってテストの網羅率とします。</p>
 

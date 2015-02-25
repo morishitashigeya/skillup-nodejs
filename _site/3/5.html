@@ -2,7 +2,7 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <title>STEP3-5.IDEを使ってみる / チームラボ オンラインスキルアップ課題</title>
+    <title>STEP3-5.Herokuとは / チームラボ オンラインスキルアップ課題</title>
     <link rel="stylesheet" href="../stylesheets/styles.css">
     <link rel="stylesheet" href="../stylesheets/pygment_trac.css">
     <!--[if lt IE 9]>
@@ -23,112 +23,80 @@
           <ul>
             <li><a href="../index.html">はじめに</a>
           </ul>
-          
-          <h3>STEP1 掲示板を作ろう</h3>
+          <h3>STEP1 TODOリスト（フロントエンド）を作ろう</h3>
           <ul>
-            <li><a href="../1/1.html">1.インターネットのしくみ</a>
-            <li><a href="../1/2.html">2.HTTPのしくみ</a>
-            <li><a href="../1/3.html">3.Webサーバを立ててみる</a>
+            <li><a href="../1/1.html">1.サンプルコードを動かしてみる</a>
+            <li><a href="../1/2.html">2.Gitを使ってみる</a>
+            <li><a href="../1/3.html">3.JavaScriptを書いてみる</a>
             <li><a href="../1/4.html">4.HTML,CSSを書いてみる</a>
-            <li><a href="../1/5.html">5.PHPを書いてみる</a>
-            <li><a href="../1/6.html">6.PHPでGET,POSTを受け取る</a>
-            <li><a href="../1/7.html">7.データベースを作成してみる</a>
-            <li><a href="../1/8.html">8.SQLを書いてみる</a>
-            <li><a href="../1/9.html">9.PHPからデータベースを操作してみる</a>
-            <li><a href="../1/s1.html">10.サイトを公開してみる</a>
-            <li><a href="../1/10.html">最終課題</a>
+            <li><a href="../1/5.html">5.jQueryを使ってみる</a>
+            <li><a href="../1/6.html">6.ローカルストレージを使ってみる</a>
+            <li><a href="../1/7.html">7.入力チェックを作ってみる</a>
+            <li><a href="../1/8.html">最終課題</a>
           </ul>
           
-          <h3>STEP2 Twitterもどきを作ろう</h3>
+          <h3>STEP2 TODOリスト（フロントエンド＋サーバサイドバージョン）を作ろう</h3>
           <ul>
-            <li><a href="../2/1.html">1.JavaScriptを書いてみる</a>
-            <li><a href="../2/2.html">2.ログイン機能を作ってみる</a>
-            <li><a href="../2/3.html">3.入力チェックを作ってみる</a>
-            <li><a href="../2/4.html">4.ログイン機能をクラス化してみる</a>
-            <li><a href="../2/5.html">5.フレームワークとは</a>
-            <li><a href="../2/6.html">6.CakePHPの基本</a>
-            <li><a href="../2/7.html">7.CakePHPでログイン機能を書いてみる</a>
-            <li><a href="../2/8.html">8.画面仕様書とは</a>
-            <li><a href="../2/9.html">9.データベースを設計してみる</a>
+            <li><a href="../2/1.html">1.インターネットのしくみ</a>
+            <li><a href="../2/2.html">2.HTTPのしくみ</a>
+            <li><a href="../2/3.html">3.NodeJSとは</a>
+            <li><a href="../2/4.html">4.パッケージマネージャのnpmとは</a>
+            <li><a href="../2/5.html">5.npmを使ってexpressをインストールして使ってみる</a>
+            <li><a href="../2/6.html">6.MongoDBをインストールして使ってみる</a>
+            <li><a href="../2/7.html">7.MongoDBを設計してみる</a>
+            <li><a href="../2/8.html">8.ブラウザ（JavaScript）とサーバ（NodeJS）を連携してみる</a>
+            <li><a href="../2/9.html">9.画面仕様書を満たす</a>
             <li><a href="../2/10.html">最終課題</a>
           </ul>
           
-          <h3>STEP3 オリジナルサイトを作ろう</h3>
+          <h3>STEP3 オリジナルチャットシステムを作ろう</h3>
           <ul>
-            <li><a href="../3/1.html">1.Ajaxを使ってみる</a>
+            <li><a href="../3/1.html">1.websocketを使ってみる</a>
             <li><a href="../3/2.html">2.画面仕様書,スケジュールを作ってみる</a>
             <li><a href="../3/3.html">3.テストとは</a>
             <li><a href="../3/4.html">4.単体テストを書いてみる</a>
-            <li><a href="../3/5.html">5.IDEを使ってみる</a>
-            <li><a href="../3/6.html">6.バージョン管理をしてみる</a>
-            <li>7.CentOSとは
-            <li>8.CentOS上でサイトを公開してみる
-            <li><a href="../3/9.html">9.セキュリティ対策をしてみる</a>
-            <li><a href="../3/10.html">最終課題</a>
+            <li><a href="../3/5.html">5.Herokuとは</a></li>
+            <li><a href="../3/6.html">6.Herokuを使って公開してみる</a></li>
+            <li><a href="../3/7.html">最終課題</a>
           </ul>
         </div>
         <div id="contents">
-          <h1>STEP3-5.IDEを使ってみる</h1>
+          <h1>STEP3-5.Herokuとは</h1>
 
-<p>コードを書くには、エディタを使用するかIDEを使用するかという2つの方法があります。IDEとは統合開発環境の略で、コード補完やデバッガをはじめとした、開発が便利になる機能がまとまったものです。エディタはファイル単位での編集操作のみですが、IDEはプロジェクト全体にわたって管理してくれます。ここではNetBeansというCakePHPとの相性がよいIDEの使い方を紹介します。Javaの実行環境をインストールしていない人は<a href="http://java.com/ja/download/">無料Javaのダウンロード</a>からインストールしておきましょう。</p>
+<h2>Webアプリの公開</h2>
 
-<p>まずは<a href="https://netbeans.org/downloads/">NetBeans IDE ダウンロード</a>から5種類あるうちのPHP用のNetBeans IDEをダウンロード・インストールします。インストールが終わったら起動してみましょう。</p>
+<p>これまではJavaScriptやMongoDB、HTML、CSSを使ったWebアプリの作り方について話してきました。
+作成したアプリを自分のPCで実行してきたと思います。
+そして、そろそろ自分が作ったアプリをインターネット上に公開したいと思っている人もいると思います。
+今回は作成したアプリケーションを公開してみます。</p>
 
-<p>ファイル→新規プロジェクトからプロジェクトを作成します。以下のように[既存のソースを使用するPHPアプリケーション]を選択します。</p>
+<h2>公開方法</h2>
 
-<p><img src="../images/3_5_1.png" alt=""></p>
+<p>公開する方法としては、PCを<a href="http://ja.wikipedia.org/wiki/%E3%82%B5%E3%83%BC%E3%83%90">サーバ</a>として使う方法とアプリケーションを動かすサービスを利用する方法があります。</p>
 
-<p>以上でプロジェクトの作成が完了しました。あとは通常のエディタのように使用できます。ただし、PHPの文法に従って色分け（シンタックスハイライト）してくれたり、PHPの文法上のエラーがあるとエラー箇所と内容をリアルタイムで表示してくれるといった便利な機能があります。</p>
+<p>まずPCをサーバとして使う場合は、自分のPCを<a href="http://ja.wikipedia.org/wiki/Web%E3%82%B5%E3%83%BC%E3%83%90">Webサーバ</a>として使えるよう設定を行い常に起動しておかなければいけません。
+または<a href="http://ja.wikipedia.org/wiki/%E3%83%9B%E3%82%B9%E3%83%86%E3%82%A3%E3%83%B3%E3%82%B0%E3%82%B5%E3%83%BC%E3%83%90">レンタルサーバ</a>という遠隔にあるWebサーバを設定して動かすこともできます。
+自分のPCをWebサーバにする場合は管理や電気代が必要になります。またレンタルサーバを使う場合は費用がかかるという問題があります。</p>
 
-<h2>コード補完</h2>
+<p>もう一方のサービスを利用した場合は、<a href="http://ja.wikipedia.org/wiki/PaaS">Paas</a>と呼ばれるものがよく使われています。
+PaaSはPlatform as a Serviceの頭文字をとったもので、アプリケーションを構築して稼働させる環境（プラットフォーム）を提供するサービスのことです。
+アプリケーションを動作させるだけでなく、サーバ自体を構築しなくて良いという設定の手軽さ、クラウドを利用した高い<a href="http://ja.wikipedia.org/wiki/%E5%8F%AF%E7%94%A8%E6%80%A7">稼働率</a>、<a href="http://ja.wikipedia.org/wiki/%E3%82%B9%E3%82%B1%E3%83%BC%E3%83%A9%E3%83%93%E3%83%AA%E3%83%86%E3%82%A3">スケーリング</a>やデータのバックアップ等の様々なのメリットがあります。<br>
+代表的なサービスとして、
+<a href="https://www.heroku.com/">Heroku</a>、<a href="https://appengine.google.com">GoogleAppEngine</a>、<a href="https://www.engineyard.co.jp/">EngineYard</a>などがあります。<br>
+また、それらのベースとなっている<a href="http://aws.amazon.com/jp/">AmazonWebServices</a>、<a href="http://azure.microsoft.com/ja-jp/">MicrosoftAzure</a>があります。 こちらは<a href="http://ja.wikipedia.org/wiki/IaaS">Iaas</a>(Infrastructure as a Service)と呼ばれます。</p>
 
-<p>NetBeansにはコード補完機能があり、何か1文字打つと定義した変数や関数の一覧が表示されたり、その際に変数や関数の説明が表示されたりします。これはphpDocumentor形式でコメントを書くことにより変数や関数の説明が表示されるという仕組みです。CakePHPはphpDocumentor形式でコメントが書かれているため、CakePHPの変数や関数も説明が表示されます。</p>
+<p>今回は有名なPaaSであるHerokuについて説明します。</p>
 
-<p>自分で書いたコードにも説明が表示されるようにしてみましょう。以下は前回のDatasController.phpにphpDocumentor形式のコメントを追加したものです。詳しい書き方は<a href="http://phpspot.net/php/pgphpDocumentor%E7%94%A8%E3%82%B3%E3%83%A1%E3%83%B3%E3%83%88%E3%81%AE%E6%9B%B8%E3%81%8D%E6%96%B9.html">phpDocumentor用コメントの書き方</a>を参照してください。</p>
-<div class="highlight"><pre><code class="php language-php" data-lang="php"><span class="cp">&lt;?php</span>
-<span class="nx">App</span><span class="o">::</span><span class="na">uses</span><span class="p">(</span><span class="s1">&#39;AppController&#39;</span><span class="p">,</span> <span class="s1">&#39;Controller&#39;</span><span class="p">);</span>
+<h2>Herokuとは</h2>
 
-<span class="k">class</span> <span class="nc">DatasController</span> <span class="k">extends</span> <span class="nx">AppController</span> <span class="p">{</span>
+<p>Herokuは2007年に登場したプラットフォームのサービスで、新しく作ったサービスを公開したり企業のWebサイトの運用としてよく使われています。
+Ruby、Java、Node.js、Scala、Clojure、Python、PHPなど様々なプログラミング言語をサポートしており、PostgreSQL、MySQL、Cloudant、Couchbase Server、MongoDB、Redisなどのデータベースや、アクセス解析、ログ収集、システム監視などの豊富なアドオンを使えることが人気の理由です。</p>
 
-  <span class="sd">/**</span>
-<span class="sd">   * Helloを表示する</span>
-<span class="sd">   */</span>
-  <span class="k">public</span> <span class="k">function</span> <span class="nf">index</span><span class="p">()</span> <span class="p">{</span>
-    <span class="nv">$this</span><span class="o">-&gt;</span><span class="na">set</span><span class="p">(</span><span class="s1">&#39;message&#39;</span><span class="p">,</span><span class="s1">&#39;Hello&#39;</span><span class="p">);</span>
-  <span class="p">}</span>
+<p>ユーザ登録すると無料で最大5つまでアプリケーションを稼働させることができます。
+STEP1-2で使ったGitを用いて、自分の作ったアプリケーションをHeroku上に配置（デプロイ）します。
+もちろん今までNode.jsやMongoDBを使い開発していたアプリケーションを動かすことができます。</p>
 
-  <span class="sd">/**</span>
-<span class="sd">   * 指定したユーザのデータを取得する</span>
-<span class="sd">   * @param string $name ユーザ名</span>
-<span class="sd">   */</span>
-  <span class="k">public</span> <span class="k">function</span> <span class="nf">get</span><span class="p">(</span><span class="nv">$name</span><span class="p">){</span>
-    <span class="nv">$options</span> <span class="o">=</span> <span class="k">array</span><span class="p">(</span><span class="s1">&#39;conditions&#39;</span> <span class="o">=&gt;</span> <span class="k">array</span><span class="p">(</span><span class="s1">&#39;name&#39;</span> <span class="o">=&gt;</span> <span class="nv">$name</span><span class="p">));</span>
-    <span class="nv">$datas</span> <span class="o">=</span> <span class="nv">$this</span><span class="o">-&gt;</span><span class="na">Data</span><span class="o">-&gt;</span><span class="na">find</span><span class="p">(</span><span class="s1">&#39;all&#39;</span><span class="p">,</span> <span class="nv">$options</span><span class="p">);</span>
-    <span class="nv">$this</span><span class="o">-&gt;</span><span class="na">set</span><span class="p">(</span><span class="s1">&#39;datas&#39;</span><span class="p">,</span> <span class="nv">$datas</span><span class="p">);</span>
-    <span class="nv">$this</span><span class="o">-&gt;</span><span class="na">set</span><span class="p">(</span><span class="s1">&#39;name&#39;</span><span class="p">,</span> <span class="nv">$name</span><span class="p">);</span>
-  <span class="p">}</span>
-<span class="p">}</span>
-</code></pre></div>
-<p>これによって以下のように関数の説明が表示されるようになりました。</p>
-
-<p><img src="../images/3_5_2.png" alt=""></p>
-
-<h2>デバッガ</h2>
-
-<p>前回デバッグツールのXdebugをインストールしました。NetBeansではこれを利用してデバッグを行うことができます。php.iniの下部に以下のような行があるので先頭のセミコロンを削除してコメントアウトを外し、xdebug.remote_enableだけ0になっているので1に変更し、Apacheを再起動します。</p>
-<div class="highlight"><pre><code class="text language-text" data-lang="text">xdebug.remote_enable = 1
-xdebug.remote_handler = &quot;dbgp&quot;
-xdebug.remote_host = &quot;127.0.0.1&quot;
-xdebug.trace_output_dir = &quot;C:\xampp\tmp&quot;
-xdebug.remote_port = 9000
-</code></pre></div>
-<p>次にNetBeansでメニューバーよりツール→オプション→PHP→デバッグを選択し、「最初の行で停止」のチェックを外します。更にファイル→プロジェクトプロパティ→実行構成の開始ファイルをapp/webroot/index.phpに設定します。これで準備が整いました。</p>
-
-<p>行番号の部分をクリックすると以下のようにその行が赤くなります。これはブレークポイントといって、実行がこの行で一時停止するようになります。</p>
-
-<p><img src="../images/3_5_3.png" alt=""></p>
-
-<p>この状態でメニューバーよりデバッグ→プロジェクトをデバッグを選択するとブラウザが起動します。実行が先ほど設定したブレークポイントの部分になるとIDEの下部に変数の内容や呼出しスタックなどが表示されます。これらの情報を利用して効率的にデバッグしましょう。</p>
+<p>次回は実際にHeorkuを使ってアプリケーションを動かしてみましょう。</p>
 
         </div>
       </section>
