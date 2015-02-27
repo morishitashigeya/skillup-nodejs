@@ -2,7 +2,7 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <title>STEP3-1.Ajaxを使ってみる / チームラボ オンラインスキルアップ課題</title>
+    <title>STEP3-1.WebSocketを使ってみる / チームラボ オンラインスキルアップ課題</title>
     <link rel="stylesheet" href="../stylesheets/styles.css">
     <link rel="stylesheet" href="../stylesheets/pygment_trac.css">
     <!--[if lt IE 9]>
@@ -23,145 +23,163 @@
           <ul>
             <li><a href="../index.html">はじめに</a>
           </ul>
-          
-          <h3>STEP1 掲示板を作ろう</h3>
+          <h3>STEP1 TODOリスト（フロントエンド）を作ろう</h3>
           <ul>
-            <li><a href="../1/1.html">1.インターネットのしくみ</a>
-            <li><a href="../1/2.html">2.HTTPのしくみ</a>
-            <li><a href="../1/3.html">3.Webサーバを立ててみる</a>
+            <li><a href="../1/1.html">1.サンプルコードを動かしてみる</a>
+            <li><a href="../1/2.html">2.Gitを使ってみる</a>
+            <li><a href="../1/3.html">3.JavaScriptを書いてみる</a>
             <li><a href="../1/4.html">4.HTML,CSSを書いてみる</a>
-            <li><a href="../1/5.html">5.PHPを書いてみる</a>
-            <li><a href="../1/6.html">6.PHPでGET,POSTを受け取る</a>
-            <li><a href="../1/7.html">7.データベースを作成してみる</a>
-            <li><a href="../1/8.html">8.SQLを書いてみる</a>
-            <li><a href="../1/9.html">9.PHPからデータベースを操作してみる</a>
-            <li><a href="../1/s1.html">10.サイトを公開してみる</a>
-            <li><a href="../1/10.html">最終課題</a>
+            <li><a href="../1/5.html">5.jQueryを使ってみる</a>
+            <li><a href="../1/6.html">6.ローカルストレージを使ってみる</a>
+            <li><a href="../1/7.html">7.入力チェックを作ってみる</a>
+            <li><a href="../1/8.html">最終課題</a>
           </ul>
           
-          <h3>STEP2 Twitterもどきを作ろう</h3>
+          <h3>STEP2 TODOリスト（フロントエンド＋サーバサイドバージョン）を作ろう</h3>
           <ul>
-            <li><a href="../2/1.html">1.JavaScriptを書いてみる</a>
-            <li><a href="../2/2.html">2.ログイン機能を作ってみる</a>
-            <li><a href="../2/3.html">3.入力チェックを作ってみる</a>
-            <li><a href="../2/4.html">4.ログイン機能をクラス化してみる</a>
-            <li><a href="../2/5.html">5.フレームワークとは</a>
-            <li><a href="../2/6.html">6.CakePHPの基本</a>
-            <li><a href="../2/7.html">7.CakePHPでログイン機能を書いてみる</a>
-            <li><a href="../2/8.html">8.画面仕様書とは</a>
-            <li><a href="../2/9.html">9.データベースを設計してみる</a>
+            <li><a href="../2/1.html">1.インターネットのしくみ</a>
+            <li><a href="../2/2.html">2.HTTPのしくみ</a>
+            <li><a href="../2/3.html">3.NodeJSとは</a>
+            <li><a href="../2/4.html">4.パッケージマネージャのnpmとは</a>
+            <li><a href="../2/5.html">5.npmを使ってexpressをインストールして使ってみる</a>
+            <li><a href="../2/6.html">6.MongoDBをインストールして使ってみる</a>
+            <li><a href="../2/7.html">7.MongoDBを設計してみる</a>
+            <li><a href="../2/8.html">8.ブラウザ（JavaScript）とサーバ（NodeJS）を連携してみる</a>
+            <li><a href="../2/9.html">9.画面仕様書を満たす</a>
             <li><a href="../2/10.html">最終課題</a>
           </ul>
           
-          <h3>STEP3 オリジナルサイトを作ろう</h3>
+          <h3>STEP3 オリジナルチャットシステムを作ろう</h3>
           <ul>
-            <li><a href="../3/1.html">1.Ajaxを使ってみる</a>
+            <li><a href="../3/1.html">1.websocketを使ってみる</a>
             <li><a href="../3/2.html">2.画面仕様書,スケジュールを作ってみる</a>
             <li><a href="../3/3.html">3.テストとは</a>
             <li><a href="../3/4.html">4.単体テストを書いてみる</a>
-            <li><a href="../3/5.html">5.IDEを使ってみる</a>
-            <li><a href="../3/6.html">6.バージョン管理をしてみる</a>
-            <li>7.CentOSとは
-            <li>8.CentOS上でサイトを公開してみる
-            <li><a href="../3/9.html">9.セキュリティ対策をしてみる</a>
-            <li><a href="../3/10.html">最終課題</a>
+            <li><a href="../3/5.html">5.Herokuとは</a></li>
+            <li><a href="../3/6.html">6.Herokuを使って公開してみる</a></li>
+            <li><a href="../3/7.html">最終課題</a>
           </ul>
         </div>
         <div id="contents">
-          <h1>STEP3-1.Ajaxを使ってみる</h1>
+          <h1>STEP3-1.WebSocketを使ってみる</h1>
 
-<p>Ajaxとは、JavaScriptなどからHTTP通信をすることによって、ページのリロードをせずにサーバとデータのやり取りをする技術です。ここでは1秒ごとに自動で再読み込みを行うような簡単なチャットを作成してみます。</p>
+<h3>WebSocketとは</h3>
 
-<p>まずはAjaxで取得するデータを用意しましょう。データはSTEP1で作成した掲示板のデータを流用することにします。以下の内容をajax_get_data.phpという名前で保存します。今回はCakePHPは使用しませんのでhtdocsに保存してください。</p>
-<div class="highlight"><pre><code class="php language-php" data-lang="php"><span class="cp">&lt;?php</span>
-<span class="nv">$mysqli</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">mysqli</span><span class="p">(</span><span class="s1">&#39;localhost&#39;</span><span class="p">,</span> <span class="s1">&#39;root&#39;</span><span class="p">,</span> <span class="s1">&#39;&#39;</span><span class="p">,</span> <span class="s1">&#39;board&#39;</span><span class="p">);</span>
-<span class="nv">$json</span> <span class="o">=</span> <span class="k">array</span><span class="p">();</span>
-<span class="nv">$result</span> <span class="o">=</span> <span class="nv">$mysqli</span><span class="o">-&gt;</span><span class="na">query</span><span class="p">(</span><span class="s2">&quot;SELECT * FROM datas ORDER BY created DESC&quot;</span><span class="p">);</span>
-<span class="k">if</span><span class="p">(</span><span class="nv">$result</span><span class="p">){</span>
-  <span class="k">while</span><span class="p">(</span><span class="nv">$row</span> <span class="o">=</span> <span class="nv">$result</span><span class="o">-&gt;</span><span class="na">fetch_object</span><span class="p">()){</span>
-    <span class="nv">$json</span><span class="p">[]</span> <span class="o">=</span> <span class="nv">$row</span><span class="p">;</span>
-  <span class="p">}</span>
-<span class="p">}</span>
-<span class="k">print</span> <span class="nb">json_encode</span><span class="p">(</span><span class="nv">$json</span><span class="p">);</span>
-<span class="cp">?&gt;</span><span class="x"></span>
-</code></pre></div>
-<p>これは1つの連想配列にdatasテーブルのデータを全て入れた後、JSONという形式に変換して出力しているコードです。<a href="http://localhost/skillup/ajax_get_data.php">http://localhost/skillup/ajax_get_data.php</a>にアクセスして実際のJSONデータを見てみましょう。そのままでは非常に分かりにくいので<a href="https://chrome.google.com/webstore/detail/jsonview/chklaanhfefbnpoihckbnefhakgolnmc">JSONView</a>などを使用すると良いでしょう。JSON形式はとても簡単にJavaScriptのオブジェクトに変換できるためAjaxではよく使用されています。</p>
+<p>STEP2-9ではAjaxを使うことでページを再読み込みせずに動作するWebサイトを作成しました。
+Ajaxでは毎回HTTP通信を行い、その応答を受け取って処理を実行していました。
+Ajaxにより動的なWebサイトを作ることができますが、リアルタイム性を重視するアプリケーションではHTTP通信にかかる時間を無視することはできません。</p>
 
-<p>次は発言を保存する処理を書きます。以下の内容をajax_submit.phpという名前で保存します。</p>
-<div class="highlight"><pre><code class="php language-php" data-lang="php"><span class="cp">&lt;?php</span>
-<span class="k">if</span><span class="p">(</span><span class="o">!</span><span class="k">empty</span><span class="p">(</span><span class="nv">$_POST</span><span class="p">[</span><span class="s2">&quot;name&quot;</span><span class="p">])</span> <span class="o">&amp;&amp;</span> <span class="o">!</span><span class="k">empty</span><span class="p">(</span><span class="nv">$_POST</span><span class="p">[</span><span class="s2">&quot;message&quot;</span><span class="p">])){</span>
-  <span class="nv">$mysqli</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">mysqli</span><span class="p">(</span><span class="s1">&#39;localhost&#39;</span><span class="p">,</span> <span class="s1">&#39;root&#39;</span><span class="p">,</span> <span class="s1">&#39;&#39;</span><span class="p">,</span> <span class="s1">&#39;board&#39;</span><span class="p">);</span>
-  <span class="nv">$stmt</span> <span class="o">=</span> <span class="nv">$mysqli</span><span class="o">-&gt;</span><span class="na">prepare</span><span class="p">(</span><span class="s2">&quot;INSERT INTO datas (name, message) VALUES (?, ?)&quot;</span><span class="p">);</span>
-  <span class="nv">$stmt</span><span class="o">-&gt;</span><span class="na">bind_param</span><span class="p">(</span><span class="s1">&#39;ss&#39;</span><span class="p">,</span> <span class="nv">$_POST</span><span class="p">[</span><span class="s2">&quot;name&quot;</span><span class="p">],</span> <span class="nv">$_POST</span><span class="p">[</span><span class="s2">&quot;message&quot;</span><span class="p">]);</span>
-  <span class="nv">$stmt</span><span class="o">-&gt;</span><span class="na">execute</span><span class="p">();</span>
-<span class="p">}</span>
-<span class="cp">?&gt;</span><span class="x"></span>
+<p>そこで今回は<a href="http://ja.wikipedia.org/wiki/WebSocket">WebSocket</a>というWeb上でのリアルタイム相互通信を使ってみます。
+WebSocketはHTML5で新しく追加された規格で、通信を確立するとクライアントとサーバ間でリアルタイムにデータの送受信をすることができます。
+新しい規格なのでWebブラウザによっては実装されておらず動かないことがあります。
+現在の<a href="http://ja.wikipedia.org/wiki/WebSocket#.E5.AE.9F.E8.A3.85.E7.8A.B6.E6.B3.81">実装状況</a>によるとInternetExplorer10、Firefox6、GoogleChrome4、Safari5以上で動作します。</p>
+
+<p>WebSocketについては<a href="http://www.slideshare.net/mawarimichi/websocketwebrtc?qid=32be5242-8125-4949-abd9-9543000c397a&amp;v=qf1&amp;b=&amp;from_search=12">WebSocket / WebRTCの技術紹介</a>に詳しく書かれています。</p>
+
+<h3>Socket.ioを使ってみる</h3>
+
+<p>Node.jsでWebSocketを扱うことのできる<a href="http://socket.io">Socket.io</a>というライブラリを使ってチャットを作ってみます。</p>
+
+<p>まず、Expressのコマンドでアプリケーションのひな形を作成します。</p>
+<div class="highlight"><pre><code class="language-text" data-lang="text">&gt; express socketTest
 </code></pre></div>
-<p>さて、いよいよクライアント側です。以下の内容をchat.htmlに保存します。</p>
-<div class="highlight"><pre><code class="html language-html" data-lang="html"><span class="cp">&lt;!DOCTYPE html&gt;</span>
-<span class="nt">&lt;html&gt;</span>
-  <span class="nt">&lt;head&gt;</span>
-    <span class="nt">&lt;meta</span> <span class="na">charset=</span><span class="s">&quot;UTF-8&quot;</span> <span class="nt">/&gt;</span>
-    <span class="nt">&lt;title&gt;</span>簡易チャット<span class="nt">&lt;/title&gt;</span>
-    <span class="nt">&lt;script </span><span class="na">src=</span><span class="s">&quot;http://code.jquery.com/jquery-2.0.0.min.js&quot;</span><span class="nt">&gt;&lt;/script&gt;</span>
-    <span class="nt">&lt;script </span><span class="na">src=</span><span class="s">&quot;chat.js&quot;</span><span class="nt">&gt;&lt;/script&gt;</span>
-  <span class="nt">&lt;/head&gt;</span>
-  <span class="nt">&lt;body&gt;</span>
-    <span class="nt">&lt;h1&gt;</span>簡易チャット<span class="nt">&lt;/h1&gt;</span>
-    名前：<span class="nt">&lt;input</span> <span class="na">id=</span><span class="s">&quot;name&quot;</span> <span class="na">name=</span><span class="s">&quot;name&quot;</span> <span class="nt">/&gt;</span>
-    内容：<span class="nt">&lt;input</span> <span class="na">id=</span><span class="s">&quot;message&quot;</span> <span class="na">name=</span><span class="s">&quot;message&quot;</span> <span class="nt">/&gt;</span>
-    <span class="nt">&lt;button</span> <span class="na">id=</span><span class="s">&quot;submit&quot;</span><span class="nt">&gt;</span>発言<span class="nt">&lt;/button&gt;</span>
-    <span class="nt">&lt;hr</span> <span class="nt">/&gt;</span>
-    <span class="nt">&lt;div</span> <span class="na">id=</span><span class="s">&quot;main&quot;</span><span class="nt">&gt;&lt;/div&gt;</span>
-  <span class="nt">&lt;/body&gt;</span>
-<span class="nt">&lt;/html&gt;</span>
-</code></pre></div>
-<p>chat.jsは以下のように記述します。</p>
-<div class="highlight"><pre><code class="js language-js" data-lang="js"><span class="c1">//ajax_get_data.phpからJSONデータを受け取ってHTMLを書き換える関数</span>
-<span class="kd">function</span> <span class="nx">update</span><span class="p">(){</span>
-  <span class="c1">//JSON形式のデータを読み込む</span>
-  <span class="c1">//成功時、dataにJSONデータが格納されている</span>
-  <span class="nx">$</span><span class="p">.</span><span class="nx">getJSON</span><span class="p">(</span><span class="s2">&quot;ajax_get_data.php&quot;</span><span class="p">,</span> <span class="kd">function</span><span class="p">(</span><span class="nx">data</span><span class="p">){</span>
-    <span class="c1">//htmlを組み立ててmainを書き換え</span>
-    <span class="kd">var</span> <span class="nx">html</span> <span class="o">=</span> <span class="s2">&quot;&quot;</span><span class="p">;</span>
-    <span class="k">for</span><span class="p">(</span><span class="nx">i</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span> <span class="nx">i</span> <span class="o">&lt;</span> <span class="nx">data</span><span class="p">.</span><span class="nx">length</span><span class="p">;</span> <span class="nx">i</span><span class="o">++</span><span class="p">){</span>
-      <span class="nx">html</span> <span class="o">+=</span> <span class="s2">&quot;&lt;b&gt;&quot;</span> <span class="o">+</span> <span class="nx">h</span><span class="p">(</span><span class="nx">data</span><span class="p">[</span><span class="nx">i</span><span class="p">][</span><span class="s2">&quot;name&quot;</span><span class="p">])</span> <span class="o">+</span> <span class="s2">&quot;&lt;/b&gt; &quot;</span> <span class="o">+</span> <span class="nx">h</span><span class="p">(</span><span class="nx">data</span><span class="p">[</span><span class="nx">i</span><span class="p">][</span><span class="s2">&quot;message&quot;</span><span class="p">]);</span>
-      <span class="nx">html</span> <span class="o">+=</span> <span class="s2">&quot; (&quot;</span> <span class="o">+</span> <span class="nx">h</span><span class="p">(</span><span class="nx">data</span><span class="p">[</span><span class="nx">i</span><span class="p">][</span><span class="s2">&quot;created&quot;</span><span class="p">])</span> <span class="o">+</span> <span class="s2">&quot;)&lt;hr /&gt;&quot;</span><span class="p">;</span>
-    <span class="p">}</span>
-    <span class="nx">$</span><span class="p">(</span><span class="s2">&quot;#main&quot;</span><span class="p">).</span><span class="nx">html</span><span class="p">(</span><span class="nx">html</span><span class="p">);</span>
+<p>パッケージのインストールをします。
+```</p>
+
+<blockquote>
+<p>cd ajaxTest &amp;&amp; npm install
+```</p>
+</blockquote>
+
+<p>Socket.ioのインストールをします。
+```</p>
+
+<blockquote>
+<p>npm install socket.io --save-dev
+```</p>
+</blockquote>
+
+<p>bin/wwwの最後に以下のソースコードを追加して、Socket.ioを実行するようにします</p>
+<div class="highlight"><pre><code class="language-js" data-lang="js"><span class="kd">var</span> <span class="nx">io</span> <span class="o">=</span> <span class="nx">require</span><span class="p">(</span><span class="s1">&#39;socket.io&#39;</span><span class="p">).</span><span class="nx">listen</span><span class="p">(</span><span class="nx">server</span><span class="p">);</span>
+
+<span class="nx">io</span><span class="p">.</span><span class="nx">sockets</span><span class="p">.</span><span class="nx">on</span><span class="p">(</span><span class="s1">&#39;connection&#39;</span><span class="p">,</span> <span class="kd">function</span><span class="p">(</span><span class="nx">socket</span><span class="p">)</span> <span class="p">{</span>
+  <span class="c1">//接続のidを確認</span>
+  <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s1">&#39;connected&#39;</span><span class="p">,</span> <span class="nx">socket</span><span class="p">.</span><span class="nx">id</span><span class="p">);</span>
+
+  <span class="c1">// chatというイベントを受信したとき、送られた内容をすべてのクライアントに送信する</span>
+  <span class="nx">socket</span><span class="p">.</span><span class="nx">on</span><span class="p">(</span><span class="s1">&#39;chat&#39;</span><span class="p">,</span> <span class="kd">function</span><span class="p">(</span><span class="nx">chat</span><span class="p">)</span> <span class="p">{</span>
+    <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s1">&#39;message : &#39;</span> <span class="o">+</span> <span class="nx">chat</span><span class="p">.</span><span class="nx">message</span><span class="p">);</span>
+    <span class="nx">io</span><span class="p">.</span><span class="nx">emit</span><span class="p">(</span><span class="s1">&#39;chat&#39;</span><span class="p">,</span> <span class="nx">chat</span><span class="p">);</span>
   <span class="p">});</span>
-<span class="p">}</span>
 
-<span class="c1">//HTMLエスケープをする関数</span>
-<span class="kd">function</span> <span class="nx">h</span><span class="p">(</span><span class="nx">text</span><span class="p">){</span>
-  <span class="k">return</span> <span class="nx">text</span><span class="p">.</span><span class="nx">replace</span><span class="p">(</span><span class="sr">/&amp;/g</span><span class="p">,</span><span class="s2">&quot;&amp;amp;&quot;</span><span class="p">).</span><span class="nx">replace</span><span class="p">(</span><span class="sr">/&quot;/g</span><span class="p">,</span><span class="s2">&quot;&amp;quot;&quot;</span><span class="p">).</span><span class="nx">replace</span><span class="p">(</span><span class="sr">/&#39;/g</span><span class="p">,</span><span class="s2">&quot;&amp;#039;&quot;</span><span class="p">).</span><span class="nx">replace</span><span class="p">(</span><span class="sr">/&lt;/g</span><span class="p">,</span><span class="s2">&quot;&amp;lt;&quot;</span><span class="p">).</span><span class="nx">replace</span><span class="p">(</span><span class="sr">/&gt;/g</span><span class="p">,</span><span class="s2">&quot;&amp;gt;&quot;</span><span class="p">);</span>
-<span class="p">}</span>
-
-<span class="nx">$</span><span class="p">(</span><span class="kd">function</span><span class="p">(){</span>
-  <span class="c1">//1秒ごとに読み込み</span>
-  <span class="nx">setInterval</span><span class="p">(</span><span class="nx">update</span><span class="p">,</span> <span class="mi">1000</span><span class="p">);</span>
-
-  <span class="c1">//発言ボタンを押したときの動作</span>
-  <span class="nx">$</span><span class="p">(</span><span class="s2">&quot;#submit&quot;</span><span class="p">).</span><span class="nx">click</span><span class="p">(</span><span class="kd">function</span><span class="p">(){</span>
-    <span class="c1">//送信するデータを準備</span>
-    <span class="kd">var</span> <span class="nx">data</span> <span class="o">=</span> <span class="p">{</span>
-      <span class="nx">name</span><span class="o">:</span> <span class="nx">$</span><span class="p">(</span><span class="s2">&quot;#name&quot;</span><span class="p">).</span><span class="nx">val</span><span class="p">(),</span>
-      <span class="nx">message</span><span class="o">:</span> <span class="nx">$</span><span class="p">(</span><span class="s2">&quot;#message&quot;</span><span class="p">).</span><span class="nx">val</span><span class="p">()</span>
-    <span class="p">};</span>
-    <span class="c1">//POSTで送信</span>
-    <span class="c1">//引数はURL, 送信するデータ, 成功時に実行される関数</span>
-    <span class="nx">$</span><span class="p">.</span><span class="nx">post</span><span class="p">(</span><span class="s2">&quot;ajax_submit.php&quot;</span><span class="p">,</span> <span class="nx">data</span><span class="p">,</span> <span class="nx">update</span><span class="p">);</span>
+  <span class="c1">// 接続が切断したとき</span>
+  <span class="nx">socket</span><span class="p">.</span><span class="nx">on</span><span class="p">(</span><span class="s1">&#39;disconnect&#39;</span><span class="p">,</span> <span class="kd">function</span><span class="p">()</span> <span class="p">{</span>
+    <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s1">&#39;disconnect&#39;</span><span class="p">);</span>
   <span class="p">});</span>
 <span class="p">});</span>
 </code></pre></div>
-<p>ここでは$.getJSON関数と$.post関数を使用しました。他にAjaxに使用できる関数は<a href="http://semooh.jp/jquery/api/ajax/">Ajax - jQuery 日本語リファレンス</a>を参照してください。</p>
+<p>これでloalhostにWebSocketで接続できるようになります。
+次はこれにアクセスするためのクライアント側を書いていきます。</p>
 
-<p>では<a href="http://localhost/skillup/chat.html">http://localhost/skillup/chat.html</a>を見てみましょう。ページ読み込み後、しばらくしたら発言一覧が表示されるはずです。ウインドウを2つ用意して、両方に<a href="http://localhost/skillup/chat.html">http://localhost/skillup/chat.html</a>を表示させた状態で、片方から発言してみましょう。しばらくするともう片方も更新されて発言した内容が表示されるはずです。</p>
+<p>まずはクライアント側でSocket.ioを使うためにJavaScriptを読み込み、チャットに使用する入力フォームを用意します。
+views/index.jadeのblock contentを以下のように書き換えます。</p>
+<div class="highlight"><pre><code class="language-jade" data-lang="jade"><span class="nt">block</span> content
+  <span class="nt">h1</span><span class="p">=</span> <span class="n">title</span>
 
-<hr>
+  <span class="nt">label</span>(<span class="na">for=</span><span class="s">&#39;name&#39;</span>) 名前
+  <span class="nt">input</span>(<span class="na">type=</span><span class="s">&#39;text&#39;</span><span class="err">,</span><span class="na">id=</span><span class="s">&#39;name&#39;</span>)
+  <span class="nt">label</span>(<span class="na">for=</span><span class="s">&#39;text&#39;</span>) 内容
+  <span class="nt">input</span>(<span class="na">type=</span><span class="s">&#39;text&#39;</span><span class="err">,</span><span class="na">id=</span><span class="s">&#39;text&#39;</span>)
+  <span class="nt">button</span><span class="nf">#send</span> 送信
 
-<p><strong>[課題]CakePHPでのJSONの使用方法を調べよう</strong><br>
-CakePHPでもJSON形式での出力をサポートしています。JSON形式で出力する方法を調べて使ってみましょう。</p>
+  <span class="nt">ul</span><span class="nf">#messages</span>
+
+  <span class="nt">script</span>(<span class="na">src=</span><span class="s">&#39;/socket.io/socket.io.js&#39;</span>)
+  <span class="nt">script</span>(<span class="na">src=</span><span class="s">&#39;javascripts/chat.js&#39;</span>)
+</code></pre></div>
+<p>最後にSocket.ioでチャットを行う処理をjavascripts/chat.jsに書いていきます。</p>
+<div class="highlight"><pre><code class="language-js" data-lang="js"><span class="kd">var</span> <span class="nx">socket</span> <span class="o">=</span> <span class="nx">io</span><span class="p">();</span>
+
+<span class="c1">// chatというイベントを受信したらHTML要素に追加する</span>
+<span class="nx">socket</span><span class="p">.</span><span class="nx">on</span><span class="p">(</span><span class="s1">&#39;chat&#39;</span><span class="p">,</span> <span class="kd">function</span><span class="p">(</span><span class="nx">chat</span><span class="p">)</span> <span class="p">{</span>
+  <span class="kd">var</span> <span class="nx">messages</span> <span class="o">=</span> <span class="nb">document</span><span class="p">.</span><span class="nx">getElementById</span><span class="p">(</span><span class="s1">&#39;messages&#39;</span><span class="p">);</span>
+  <span class="c1">// 新しいメッセージは既にある要素より上に表示させる</span>
+  <span class="kd">var</span> <span class="nx">newChat</span> <span class="o">=</span> <span class="s1">&#39;&lt;li&gt;&#39;</span> <span class="o">+</span> <span class="nx">chat</span><span class="p">.</span><span class="nx">name</span> <span class="o">+</span> <span class="s1">&#39;「&#39;</span> <span class="o">+</span> <span class="nx">chat</span><span class="p">.</span><span class="nx">message</span> <span class="o">+</span> <span class="s1">&#39;」&lt;/li&gt;&#39;</span><span class="p">;</span>
+  <span class="kd">var</span> <span class="nx">oldChat</span> <span class="o">=</span> <span class="nx">messages</span><span class="p">.</span><span class="nx">innerHTML</span><span class="p">;</span>
+  <span class="nx">messages</span><span class="p">.</span><span class="nx">innerHTML</span> <span class="o">=</span> <span class="nx">newChat</span> <span class="o">+</span> <span class="nx">oldChat</span><span class="p">;</span>
+<span class="p">});</span>
+
+<span class="c1">//送信ボタンにイベントを定義</span>
+<span class="kd">var</span> <span class="nx">sendButton</span> <span class="o">=</span> <span class="nb">document</span><span class="p">.</span><span class="nx">getElementById</span><span class="p">(</span><span class="s1">&#39;send&#39;</span><span class="p">);</span>
+<span class="nx">sendButton</span><span class="p">.</span><span class="nx">addEventListener</span><span class="p">(</span><span class="s1">&#39;click&#39;</span><span class="p">,</span> <span class="nx">sendMessage</span><span class="p">);</span>
+
+<span class="c1">// メッセージを送信する</span>
+<span class="kd">function</span> <span class="nx">sendMessage</span><span class="p">()</span> <span class="p">{</span>
+  <span class="c1">// 名前と内容を取得する</span>
+  <span class="kd">var</span> <span class="nx">nameElement</span> <span class="o">=</span> <span class="nb">document</span><span class="p">.</span><span class="nx">getElementById</span><span class="p">(</span><span class="s1">&#39;name&#39;</span><span class="p">);</span>
+  <span class="kd">var</span> <span class="nx">messageElement</span> <span class="o">=</span> <span class="nb">document</span><span class="p">.</span><span class="nx">getElementById</span><span class="p">(</span><span class="s1">&#39;text&#39;</span><span class="p">);</span>
+  <span class="kd">var</span> <span class="nx">name</span> <span class="o">=</span> <span class="nx">nameElement</span><span class="p">.</span><span class="nx">value</span><span class="p">;</span>
+  <span class="kd">var</span> <span class="nx">message</span> <span class="o">=</span> <span class="nx">messageElement</span><span class="p">.</span><span class="nx">value</span><span class="p">;</span>
+
+  <span class="c1">// chatイベントを送信する</span>
+  <span class="nx">socket</span><span class="p">.</span><span class="nx">emit</span><span class="p">(</span><span class="s1">&#39;chat&#39;</span><span class="p">,</span> <span class="p">{</span>
+    <span class="nx">name</span><span class="o">:</span><span class="nx">name</span><span class="p">,</span>
+    <span class="nx">message</span><span class="o">:</span><span class="nx">message</span>
+  <span class="p">});</span>
+
+  <span class="c1">// 内容をリセットする</span>
+  <span class="nx">messageElement</span><span class="p">.</span><span class="nx">value</span> <span class="o">=</span> <span class="s1">&#39;&#39;</span><span class="p">;</span>
+<span class="p">}</span>
+</code></pre></div>
+<p>これでチャットができます。</p>
+<div class="highlight"><pre><code class="language-text" data-lang="text">&gt; npm start
+</code></pre></div>
+<p>以上のコマンドで実行するとサーバが起動するので、
+ブラウザでlocalhost:3000を開きます。
+複数のタブでチャットを開いて、それぞれ送信するとリアルタイムに表示されることが確認できます。</p>
+
+<p>Socket.ioは現在のバージョンが1.1.0ですが検索すると古いバージョンの記事がたくさん出てきます。
+Googleで検索するときは期間を1ヶ月以内に指定して検索することができるので、おすすめです。</p>
 
         </div>
       </section>

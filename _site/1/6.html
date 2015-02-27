@@ -2,7 +2,7 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <title>STEP1-6.PHPでGET,POSTを受け取る / チームラボ オンラインスキルアップ課題</title>
+    <title>STEP1-6.ローカルストレージを使ってみる / チームラボ オンラインスキルアップ課題</title>
     <link rel="stylesheet" href="../stylesheets/styles.css">
     <link rel="stylesheet" href="../stylesheets/pygment_trac.css">
     <!--[if lt IE 9]>
@@ -23,90 +23,184 @@
           <ul>
             <li><a href="../index.html">はじめに</a>
           </ul>
-          
-          <h3>STEP1 掲示板を作ろう</h3>
+          <h3>STEP1 TODOリスト（フロントエンド）を作ろう</h3>
           <ul>
-            <li><a href="../1/1.html">1.インターネットのしくみ</a>
-            <li><a href="../1/2.html">2.HTTPのしくみ</a>
-            <li><a href="../1/3.html">3.Webサーバを立ててみる</a>
+            <li><a href="../1/1.html">1.サンプルコードを動かしてみる</a>
+            <li><a href="../1/2.html">2.Gitを使ってみる</a>
+            <li><a href="../1/3.html">3.JavaScriptを書いてみる</a>
             <li><a href="../1/4.html">4.HTML,CSSを書いてみる</a>
-            <li><a href="../1/5.html">5.PHPを書いてみる</a>
-            <li><a href="../1/6.html">6.PHPでGET,POSTを受け取る</a>
-            <li><a href="../1/7.html">7.データベースを作成してみる</a>
-            <li><a href="../1/8.html">8.SQLを書いてみる</a>
-            <li><a href="../1/9.html">9.PHPからデータベースを操作してみる</a>
-            <li><a href="../1/s1.html">10.サイトを公開してみる</a>
-            <li><a href="../1/10.html">最終課題</a>
+            <li><a href="../1/5.html">5.jQueryを使ってみる</a>
+            <li><a href="../1/6.html">6.ローカルストレージを使ってみる</a>
+            <li><a href="../1/7.html">7.入力チェックを作ってみる</a>
+            <li><a href="../1/8.html">最終課題</a>
           </ul>
           
-          <h3>STEP2 Twitterもどきを作ろう</h3>
+          <h3>STEP2 TODOリスト（フロントエンド＋サーバサイドバージョン）を作ろう</h3>
           <ul>
-            <li><a href="../2/1.html">1.JavaScriptを書いてみる</a>
-            <li><a href="../2/2.html">2.ログイン機能を作ってみる</a>
-            <li><a href="../2/3.html">3.入力チェックを作ってみる</a>
-            <li><a href="../2/4.html">4.ログイン機能をクラス化してみる</a>
-            <li><a href="../2/5.html">5.フレームワークとは</a>
-            <li><a href="../2/6.html">6.CakePHPの基本</a>
-            <li><a href="../2/7.html">7.CakePHPでログイン機能を書いてみる</a>
-            <li><a href="../2/8.html">8.画面仕様書とは</a>
-            <li><a href="../2/9.html">9.データベースを設計してみる</a>
+            <li><a href="../2/1.html">1.インターネットのしくみ</a>
+            <li><a href="../2/2.html">2.HTTPのしくみ</a>
+            <li><a href="../2/3.html">3.NodeJSとは</a>
+            <li><a href="../2/4.html">4.パッケージマネージャのnpmとは</a>
+            <li><a href="../2/5.html">5.npmを使ってexpressをインストールして使ってみる</a>
+            <li><a href="../2/6.html">6.MongoDBをインストールして使ってみる</a>
+            <li><a href="../2/7.html">7.MongoDBを設計してみる</a>
+            <li><a href="../2/8.html">8.ブラウザ（JavaScript）とサーバ（NodeJS）を連携してみる</a>
+            <li><a href="../2/9.html">9.画面仕様書を満たす</a>
             <li><a href="../2/10.html">最終課題</a>
           </ul>
           
-          <h3>STEP3 オリジナルサイトを作ろう</h3>
+          <h3>STEP3 オリジナルチャットシステムを作ろう</h3>
           <ul>
-            <li><a href="../3/1.html">1.Ajaxを使ってみる</a>
+            <li><a href="../3/1.html">1.websocketを使ってみる</a>
             <li><a href="../3/2.html">2.画面仕様書,スケジュールを作ってみる</a>
             <li><a href="../3/3.html">3.テストとは</a>
             <li><a href="../3/4.html">4.単体テストを書いてみる</a>
-            <li><a href="../3/5.html">5.IDEを使ってみる</a>
-            <li><a href="../3/6.html">6.バージョン管理をしてみる</a>
-            <li>7.CentOSとは
-            <li>8.CentOS上でサイトを公開してみる
-            <li><a href="../3/9.html">9.セキュリティ対策をしてみる</a>
-            <li><a href="../3/10.html">最終課題</a>
+            <li><a href="../3/5.html">5.Herokuとは</a></li>
+            <li><a href="../3/6.html">6.Herokuを使って公開してみる</a></li>
+            <li><a href="../3/7.html">最終課題</a>
           </ul>
         </div>
         <div id="contents">
-          <h1>STEP1-6.PHPでGET,POSTを受け取る</h1>
+          <h1>STEP1-6.ローカルストレージを使ってみる</h1>
 
-<p><a href="2.html">2.HTTPのしくみ</a>において、GETはデータの取得と説明しましたが、POSTと同様の形式のデータをURLの最後に付加することにより送信することもできます。この場合、URLが伸びることになるのでURLの長さ制限に引っかかる場合があります。</p>
+<p><a href="http://www.htmq.com/webstorage/">ローカルストレージ</a>(<a href="http://www.w3.org/TR/webstorage/">localStorage</a>)とはWebブラウザにデータを保存する仕組みです。
+HTML5になってできたWebStorageというローカル環境であるWebブラウザ側でデータを保存する仕組みの中の１つです。
+ローカルストレージは1つのオリジンに対して、数MB（2〜10MBと各ブラウザによって異なる）までデータを保存でき、ページを閉じても保存したデータは保持されます。</p>
 
-<p>GET,POSTで送信されたデータをPHPから受け取ってみましょう。以下のプログラムをpost.phpという名前で保存してください。</p>
-<div class="highlight"><pre><code class="php language-php" data-lang="php"><span class="x">&lt;!DOCTYPE html&gt;</span>
-<span class="x">&lt;html&gt;</span>
-<span class="x">  &lt;head&gt;</span>
-<span class="x">    &lt;meta charset=&quot;UTF-8&quot; /&gt;</span>
-<span class="x">    &lt;title&gt;POSTのサンプル&lt;/title&gt;</span>
-<span class="x">  &lt;/head&gt;</span>
-<span class="x">  &lt;body&gt;</span>
-<span class="x">    </span><span class="cp">&lt;?php</span>
-      <span class="c1">//commentがPOSTされているなら</span>
-      <span class="k">if</span><span class="p">(</span><span class="nb">isset</span><span class="p">(</span><span class="nv">$_POST</span><span class="p">[</span><span class="s2">&quot;comment&quot;</span><span class="p">])){</span>
-        <span class="c1">//エスケープしてから表示</span>
-        <span class="nv">$comment</span> <span class="o">=</span> <span class="nb">htmlspecialchars</span><span class="p">(</span><span class="nv">$_POST</span><span class="p">[</span><span class="s2">&quot;comment&quot;</span><span class="p">]);</span>
-        <span class="k">print</span><span class="p">(</span><span class="s2">&quot;あなたのコメントは「</span><span class="si">$comment</span><span class="s2">」です。&quot;</span><span class="p">);</span>
-      <span class="p">}</span> <span class="k">else</span> <span class="p">{</span>
-    <span class="cp">?&gt;</span><span class="x"></span>
-<span class="x">        &lt;p&gt;コメントしてください。&lt;/p&gt;</span>
-<span class="x">        &lt;form method=&quot;POST&quot; action=&quot;post.php&quot;&gt;</span>
-<span class="x">          &lt;input name=&quot;comment&quot; /&gt;</span>
-<span class="x">          &lt;input type=&quot;submit&quot; value=&quot;送信&quot; /&gt;</span>
-<span class="x">        &lt;/form&gt;</span>
-<span class="x">    </span><span class="cp">&lt;?php</span>
-      <span class="p">}</span>
-    <span class="cp">?&gt;</span><span class="x"></span>
-<span class="x">  &lt;/body&gt;</span>
-<span class="x">&lt;/html&gt;</span>
+<h3>ローカルストレージを使ってみる</h3>
+
+<p>JavaScriptでローカルストレージを扱うには以下のようにします。</p>
+<div class="highlight"><pre><code class="language-js" data-lang="js"><span class="c1">// messageというキーに「こんにちはlocalStorage」という値を保存</span>
+<span class="nx">localStorage</span><span class="p">.</span><span class="nx">setItem</span><span class="p">(</span><span class="s2">&quot;message&quot;</span><span class="p">,</span> <span class="s2">&quot;こんにちはlocalStorage&quot;</span><span class="p">);</span>
+<span class="c1">// messageというキーに保存した値を取得して表示</span>
+<span class="nx">localStorage</span><span class="p">.</span><span class="nx">getItem</span><span class="p">(</span><span class="s2">&quot;message&quot;</span><span class="p">);</span>
 </code></pre></div>
-<p>GET,POSTで送信されたデータはそれぞれ$_GET,$_POSTという連想配列に格納されています。issetで中身を確認し、存在するなら表示しています。表示の際にはhtmlspecialchars関数で必ずエスケープしましょう。エスケープとは、特殊な意味があり表示できない文字を他の文字列に変換することです。HTMLの場合、&lt;&gt;などの文字はタグに使用されるため、それらを表示するには&amp;lt; &amp;gt;と書く必要があります。</p>
+<p>これを実行すると「こんにちはlocalStorage」と表示されると思います。</p>
 
-<p>一方、送信部はformタグを用いてHTMLで書かれています。methodでメソッドを、actionで送信先URLを指定します。formタグ内のinput,select,textareaタグの内容が送信されます。送信する際の識別名はnameで指定します。</p>
+<p>ローカルストレージはキー（Key）と値（Value）をペアにしたデータのリストを保存します。
+Chromeの開発者ツールのResourcesタブからも見ることができます。
+このようにKeyとValueをペアとして保存する方式を<a href="http://e-words.jp/w/KVS.html">KVS（Key-Value Store）</a>と呼びます。
+この方式はデータベースなどにも使われています。</p>
 
-<hr>
+<h3>データの保存と読み込み</h3>
 
-<p><strong>[課題]送信する内容を変更してみよう</strong><br>
-掲示板に必要な情報としては少なくとも名前と本文が必要です。名前も送信し、受け取るように変更してみましょう。余力のある人はタイトル・文字色・メールアドレスなども追加してみましょう。</p>
+<p>ローカルストレージを使うために主に6つの操作を使います。</p>
+<div class="highlight"><pre><code class="language-js" data-lang="js"><span class="c1">// keyに対応するvalueを取得する</span>
+<span class="nx">localStorage</span><span class="p">.</span><span class="nx">getItem</span><span class="p">(</span><span class="nx">key</span><span class="p">);</span>
+
+<span class="c1">// keyに対応するvalueを保存する</span>
+<span class="nx">localStorage</span><span class="p">.</span><span class="nx">setItem</span><span class="p">(</span><span class="nx">key</span><span class="p">,</span> <span class="nx">value</span><span class="p">);</span>
+
+<span class="c1">// keyに対応するvalueを削除する</span>
+<span class="nx">localStorage</span><span class="p">.</span><span class="nx">removeItem</span><span class="p">(</span><span class="nx">key</span><span class="p">);</span>
+
+<span class="c1">// ローカルストレージに保存されたデータ数を取得する</span>
+<span class="nx">localStorage</span><span class="p">.</span><span class="nx">length</span><span class="p">;</span>
+
+<span class="c1">// ローカルストレージのインデックスからkeyを取得する</span>
+<span class="nx">localStorage</span><span class="p">.</span><span class="nx">key</span><span class="p">();</span>
+
+<span class="c1">// ローカルストレージに保存したすべてのデータを削除する</span>
+<span class="nx">localStorage</span><span class="p">.</span><span class="nx">clear</span><span class="p">();</span>
+</code></pre></div>
+<h3>配列を保存する方法</h3>
+
+<p>ローカルストレージは文字列しか保存できないのでオブジェクトを保存することができません。
+その問題を解決するために、<a href="http://www.json.org/json-ja.html">JSON</a>というデータフォーマットに変換して文字列として保存する方法がよく使われています。</p>
+<div class="highlight"><pre><code class="language-js" data-lang="js"><span class="kd">var</span> <span class="nx">messages</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;おはよう&#39;</span><span class="p">,</span> <span class="s1">&#39;こんにちは&#39;</span><span class="p">,</span> <span class="s1">&#39;おやすみ&#39;</span><span class="p">];</span>
+<span class="nx">JSON</span><span class="p">.</span><span class="nx">stringify</span><span class="p">(</span><span class="nx">messages</span><span class="p">);</span>
+</code></pre></div>
+<p>これを実行すると配列がJSON形式になった文字列として表示されると思います。</p>
+
+<p>このように配列をJSONシリアライズ（JSONに変換）することで、配列もローカルストレージに保存できます。
+JSON形式で保存するので、ローカルストレージから取得したときJavaScriptの値に変換する必要があります。</p>
+<div class="highlight"><pre><code class="language-js" data-lang="js"><span class="kd">var</span> <span class="nx">jsonMessages</span> <span class="o">=</span> <span class="s1">&#39;[&quot;おはよう&quot;,&quot;こんにちは&quot;,&quot;おやすみ&quot;]&#39;</span><span class="p">;</span>
+<span class="nx">JSON</span><span class="p">.</span><span class="nx">parse</span><span class="p">(</span><span class="nx">jsonMessages</span><span class="p">);</span>
+</code></pre></div>
+<p>これを実行するとJSONシリアライズされた文字列から配列が取得されると思います。</p>
+
+<h3>JSONシリアライズの注意点</h3>
+
+<p>JSON形式に変換することでローカルストレージに配列などを保存できるようになります。
+ですがどの値も変換できるわけではありません。</p>
+
+<p>JSONで定義されているオブジェクト、配列、文字列、数値、ブール値、null以外を変換するときには注意が必要です。
+例えば、JavaScriptで日時を扱うDateオブジェクトをJSONシリアライズしてみます。</p>
+<div class="highlight"><pre><code class="language-js" data-lang="js"><span class="kd">var</span> <span class="nx">now</span> <span class="o">=</span> <span class="k">new</span> <span class="nb">Date</span><span class="p">();</span>
+<span class="nx">JSON</span><span class="p">.</span><span class="nx">parse</span><span class="p">(</span> <span class="nx">JSON</span><span class="p">.</span><span class="nx">stringify</span><span class="p">(</span><span class="nx">now</span><span class="p">)</span> <span class="p">);</span>
+</code></pre></div>
+<p>これを実行するとDateオブジェクトではなくDateオブジェクトを変換した文字列が表示されると思います。
+JSONの定義にないオブジェクトを扱う場合、元のオブジェクトに変換する必要があります。</p>
+<div class="highlight"><pre><code class="language-js" data-lang="js"><span class="kd">var</span> <span class="nx">now</span> <span class="o">=</span> <span class="k">new</span> <span class="nb">Date</span><span class="p">();</span>
+<span class="k">new</span> <span class="nb">Date</span><span class="p">(</span> <span class="nx">JSON</span><span class="p">.</span><span class="nx">parse</span><span class="p">(</span> <span class="nx">JSON</span><span class="p">.</span><span class="nx">stringify</span><span class="p">(</span><span class="nx">now</span><span class="p">)</span> <span class="p">)</span> <span class="p">);</span>
+</code></pre></div>
+<h3>再描画とコールバック</h3>
+
+<p>実際にローカルストレージを使ったアプリケーションの例を以下に書きます。
+まず以下のHTMLを適当な名前で保存します。</p>
+<div class="highlight"><pre><code class="language-html" data-lang="html"><span class="cp">&lt;!DOCTYPE html&gt;</span>
+<span class="nt">&lt;html&gt;</span>
+<span class="nt">&lt;head&gt;</span>
+  <span class="nt">&lt;title&gt;</span>localStorageのサンプル<span class="nt">&lt;/title&gt;</span>
+<span class="nt">&lt;/head&gt;</span>
+<span class="nt">&lt;body&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">id=</span><span class="s">&quot;form&quot;</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;input</span> <span class="na">id=</span><span class="s">&quot;formText&quot;</span> <span class="na">type=</span><span class="s">&quot;text&quot;</span> <span class="na">size=</span><span class="s">&quot;50&quot;</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;input</span> <span class="na">id=</span><span class="s">&quot;formButton&quot;</span> <span class="na">type=</span><span class="s">&quot;button&quot;</span> <span class="na">value=</span><span class="s">&quot;追加&quot;</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;/div&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">id=</span><span class="s">&quot;list&quot;</span><span class="nt">&gt;&lt;/div&gt;</span>
+
+  <span class="nt">&lt;script </span><span class="na">src=</span><span class="s">&quot;//code.jquery.com/jquery-2.0.0.min.js&quot;</span><span class="nt">&gt;&lt;/script&gt;</span>
+  <span class="nt">&lt;script </span><span class="na">src=</span><span class="s">&quot;local_test.js&quot;</span><span class="nt">&gt;&lt;/script&gt;</span>
+<span class="nt">&lt;/body&gt;</span>
+<span class="nt">&lt;/html&gt;</span>
+</code></pre></div>
+<p>次に以下のJavaScriptをlocal_test.jsという名前で保存します。</p>
+<div class="highlight"><pre><code class="language-js" data-lang="js"><span class="nx">$</span><span class="p">(</span><span class="nx">loaded</span><span class="p">);</span>
+
+<span class="kd">function</span> <span class="nx">loaded</span><span class="p">()</span> <span class="p">{</span>
+  <span class="nx">showText</span><span class="p">();</span>
+  <span class="c1">// ボタンをクリックしたときに実行するイベントを設定する</span>
+  <span class="nx">$</span><span class="p">(</span><span class="s2">&quot;#formButton&quot;</span><span class="p">).</span><span class="nx">click</span><span class="p">(</span>
+    <span class="c1">// コールバックとしてメソッドを引数にわたす</span>
+    <span class="kd">function</span><span class="p">()</span> <span class="p">{</span>
+      <span class="nx">saveText</span><span class="p">();</span>
+      <span class="nx">showText</span><span class="p">();</span>
+    <span class="p">});</span>
+<span class="p">}</span>
+
+<span class="c1">// 入力された内容をローカルストレージに保存する</span>
+<span class="kd">function</span> <span class="nx">saveText</span><span class="p">()</span> <span class="p">{</span>
+  <span class="c1">// 時刻をキーにして入力されたテキストを保存する</span>
+  <span class="kd">var</span> <span class="nx">text</span> <span class="o">=</span> <span class="nx">$</span><span class="p">(</span><span class="s2">&quot;#formText&quot;</span><span class="p">);</span>
+  <span class="kd">var</span> <span class="nx">time</span> <span class="o">=</span> <span class="k">new</span> <span class="nb">Date</span><span class="p">();</span>
+  <span class="nx">localStorage</span><span class="p">.</span><span class="nx">setItem</span><span class="p">(</span><span class="nx">time</span><span class="p">,</span> <span class="nx">text</span><span class="p">.</span><span class="nx">val</span><span class="p">());</span>
+  <span class="c1">// テキストボックスを空にする</span>
+  <span class="nx">text</span><span class="p">.</span><span class="nx">val</span><span class="p">(</span><span class="s2">&quot;&quot;</span><span class="p">);</span>
+<span class="p">}</span>
+
+<span class="c1">// ローカルストレージに保存した値を再描画する</span>
+<span class="kd">function</span> <span class="nx">showText</span><span class="p">()</span> <span class="p">{</span>
+  <span class="c1">// すでにある要素を削除する</span>
+  <span class="kd">var</span> <span class="nx">list</span> <span class="o">=</span> <span class="nx">$</span><span class="p">(</span><span class="s2">&quot;#list&quot;</span><span class="p">)</span>
+  <span class="nx">list</span><span class="p">.</span><span class="nx">children</span><span class="p">().</span><span class="nx">remove</span><span class="p">();</span>
+  <span class="c1">// ローカルストレージに保存された値すべてを要素に追加する</span>
+  <span class="kd">var</span> <span class="nx">key</span><span class="p">,</span> <span class="nx">value</span><span class="p">,</span> <span class="nx">html</span> <span class="o">=</span> <span class="p">[];</span>
+  <span class="k">for</span><span class="p">(</span><span class="kd">var</span> <span class="nx">i</span><span class="o">=</span><span class="mi">0</span><span class="p">,</span> <span class="nx">len</span><span class="o">=</span><span class="nx">localStorage</span><span class="p">.</span><span class="nx">length</span><span class="p">;</span> <span class="nx">i</span><span class="o">&lt;</span><span class="nx">len</span><span class="p">;</span> <span class="nx">i</span><span class="o">++</span><span class="p">)</span> <span class="p">{</span>
+    <span class="nx">key</span> <span class="o">=</span> <span class="nx">localStorage</span><span class="p">.</span><span class="nx">key</span><span class="p">(</span><span class="nx">i</span><span class="p">);</span>
+    <span class="nx">value</span> <span class="o">=</span> <span class="nx">localStorage</span><span class="p">.</span><span class="nx">getItem</span><span class="p">(</span><span class="nx">key</span><span class="p">);</span>
+    <span class="nx">html</span><span class="p">.</span><span class="nx">push</span><span class="p">(</span><span class="s2">&quot;&lt;p&gt;&quot;</span> <span class="o">+</span> <span class="nx">value</span> <span class="o">+</span> <span class="s2">&quot;&lt;/p&gt;&quot;</span><span class="p">);</span>
+  <span class="p">}</span>
+  <span class="nx">list</span><span class="p">.</span><span class="nx">append</span><span class="p">(</span><span class="nx">html</span><span class="p">.</span><span class="nx">join</span><span class="p">(</span><span class="s1">&#39;&#39;</span><span class="p">));</span>
+<span class="p">}</span>
+</code></pre></div>
+<p>実際にブラウザで動かして見てみましょう。
+ボタンを押すと入力したテキストが表示されるはずです。
+もう一度押すと表示されるテキストが追加されます。
+また、ここに表示されるテキストはローカルストレージに保存しているので、ページを閉じても同じものが表示されるはずです。</p>
+
+<p>この例では、ボタンをクリックするとローカルストレージに保存するよう<a href="http://ja.wikipedia.org/wiki/%E3%82%B3%E3%83%BC%E3%83%AB%E3%83%90%E3%83%83%E3%82%AF_(%E6%83%85%E5%A0%B1%E5%B7%A5%E5%AD%A6)">コールバック関数</a>を設定しました。
+そしてページを開いた時とボタンを押したときに画面を再描画するようにしています。</p>
 
         </div>
       </section>

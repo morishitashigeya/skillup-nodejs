@@ -2,7 +2,7 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <title>STEP1-3.Webサーバを立ててみる / チームラボ オンラインスキルアップ課題</title>
+    <title>STEP1-3.JavaScriptを書いてみる / チームラボ オンラインスキルアップ課題</title>
     <link rel="stylesheet" href="../stylesheets/styles.css">
     <link rel="stylesheet" href="../stylesheets/pygment_trac.css">
     <!--[if lt IE 9]>
@@ -23,68 +23,137 @@
           <ul>
             <li><a href="../index.html">はじめに</a>
           </ul>
-          
-          <h3>STEP1 掲示板を作ろう</h3>
+          <h3>STEP1 TODOリスト（フロントエンド）を作ろう</h3>
           <ul>
-            <li><a href="../1/1.html">1.インターネットのしくみ</a>
-            <li><a href="../1/2.html">2.HTTPのしくみ</a>
-            <li><a href="../1/3.html">3.Webサーバを立ててみる</a>
+            <li><a href="../1/1.html">1.サンプルコードを動かしてみる</a>
+            <li><a href="../1/2.html">2.Gitを使ってみる</a>
+            <li><a href="../1/3.html">3.JavaScriptを書いてみる</a>
             <li><a href="../1/4.html">4.HTML,CSSを書いてみる</a>
-            <li><a href="../1/5.html">5.PHPを書いてみる</a>
-            <li><a href="../1/6.html">6.PHPでGET,POSTを受け取る</a>
-            <li><a href="../1/7.html">7.データベースを作成してみる</a>
-            <li><a href="../1/8.html">8.SQLを書いてみる</a>
-            <li><a href="../1/9.html">9.PHPからデータベースを操作してみる</a>
-            <li><a href="../1/s1.html">10.サイトを公開してみる</a>
-            <li><a href="../1/10.html">最終課題</a>
+            <li><a href="../1/5.html">5.jQueryを使ってみる</a>
+            <li><a href="../1/6.html">6.ローカルストレージを使ってみる</a>
+            <li><a href="../1/7.html">7.入力チェックを作ってみる</a>
+            <li><a href="../1/8.html">最終課題</a>
           </ul>
           
-          <h3>STEP2 Twitterもどきを作ろう</h3>
+          <h3>STEP2 TODOリスト（フロントエンド＋サーバサイドバージョン）を作ろう</h3>
           <ul>
-            <li><a href="../2/1.html">1.JavaScriptを書いてみる</a>
-            <li><a href="../2/2.html">2.ログイン機能を作ってみる</a>
-            <li><a href="../2/3.html">3.入力チェックを作ってみる</a>
-            <li><a href="../2/4.html">4.ログイン機能をクラス化してみる</a>
-            <li><a href="../2/5.html">5.フレームワークとは</a>
-            <li><a href="../2/6.html">6.CakePHPの基本</a>
-            <li><a href="../2/7.html">7.CakePHPでログイン機能を書いてみる</a>
-            <li><a href="../2/8.html">8.画面仕様書とは</a>
-            <li><a href="../2/9.html">9.データベースを設計してみる</a>
+            <li><a href="../2/1.html">1.インターネットのしくみ</a>
+            <li><a href="../2/2.html">2.HTTPのしくみ</a>
+            <li><a href="../2/3.html">3.NodeJSとは</a>
+            <li><a href="../2/4.html">4.パッケージマネージャのnpmとは</a>
+            <li><a href="../2/5.html">5.npmを使ってexpressをインストールして使ってみる</a>
+            <li><a href="../2/6.html">6.MongoDBをインストールして使ってみる</a>
+            <li><a href="../2/7.html">7.MongoDBを設計してみる</a>
+            <li><a href="../2/8.html">8.ブラウザ（JavaScript）とサーバ（NodeJS）を連携してみる</a>
+            <li><a href="../2/9.html">9.画面仕様書を満たす</a>
             <li><a href="../2/10.html">最終課題</a>
           </ul>
           
-          <h3>STEP3 オリジナルサイトを作ろう</h3>
+          <h3>STEP3 オリジナルチャットシステムを作ろう</h3>
           <ul>
-            <li><a href="../3/1.html">1.Ajaxを使ってみる</a>
+            <li><a href="../3/1.html">1.websocketを使ってみる</a>
             <li><a href="../3/2.html">2.画面仕様書,スケジュールを作ってみる</a>
             <li><a href="../3/3.html">3.テストとは</a>
             <li><a href="../3/4.html">4.単体テストを書いてみる</a>
-            <li><a href="../3/5.html">5.IDEを使ってみる</a>
-            <li><a href="../3/6.html">6.バージョン管理をしてみる</a>
-            <li>7.CentOSとは
-            <li>8.CentOS上でサイトを公開してみる
-            <li><a href="../3/9.html">9.セキュリティ対策をしてみる</a>
-            <li><a href="../3/10.html">最終課題</a>
+            <li><a href="../3/5.html">5.Herokuとは</a></li>
+            <li><a href="../3/6.html">6.Herokuを使って公開してみる</a></li>
+            <li><a href="../3/7.html">最終課題</a>
           </ul>
         </div>
         <div id="contents">
-          <h1>STEP1-3.Webサーバを立ててみる</h1>
+          <h1>STEP1-3.JavaScriptを書いてみる</h1>
 
-<p>それではWebサーバを実際に立ててみましょう。</p>
+<p>JavaScriptは主にブラウザ上で実行されるスクリプト言語で、ページの書き換えやアニメーションなどを含む動的なWebサイトを作成することができます。ブラウザ上で実行されるため、リアルタイムにダイナミックな動きを実現できます。</p>
 
-<p>Webサーバには無料で利用できるApache HTTP ServerやMicrosoft製のIISをはじめとして様々な種類のものがあり、当然自作することもできます。今回は最も利用者数が多いApacheを使用します。XAMPPというApacheの他にも様々なものを含んだパッケージをインストールしましょう。</p>
+<h2>基本構文</h2>
 
-<h3>Windowsの場合</h3>
+<p>以下はJavaScriptの基本的な構文とコード例です。HTMLに組み込んで使用する前に、コンソールから使用してみましょう。GoogleChromeで右クリック→「要素を検証」→「Console」タブを選択します。ここにJavaScriptのコードを記述していきます。</p>
 
-<p><a href="http://www.apachefriends.org/jp/xampp-windows.html#2671">XAMPP for Windows</a>からインストーラ版をダウンロード、実行します。途中で以下の画面になると思います。</p>
+<h3>if文</h3>
+<div class="highlight"><pre><code class="language-js" data-lang="js"><span class="nx">a</span> <span class="o">=</span> <span class="mi">5</span><span class="p">;</span>
+<span class="k">if</span><span class="p">(</span><span class="nx">a</span> <span class="o">===</span> <span class="mi">3</span><span class="p">)</span> <span class="p">{</span>
+  <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">a</span> <span class="o">+</span> <span class="s2">&quot; is 3&quot;</span><span class="p">);</span>
+<span class="p">}</span> <span class="k">else</span> <span class="p">{</span>
+  <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">a</span> <span class="o">+</span> <span class="s2">&quot; is not 3&quot;</span><span class="p">);</span>
+<span class="p">}</span>
+</code></pre></div>
+<p>出力：</p>
+<div class="highlight"><pre><code class="language-text" data-lang="text">5 is not 3
+</code></pre></div>
+<ul>
+<li>console.logはコンソールに出力する関数です。</li>
+</ul>
 
-<p><img src="../images/1_3_1.png" alt=""></p>
+<h3>for文</h3>
+<div class="highlight"><pre><code class="language-js" data-lang="js"><span class="c1">//iが0から10未満の間、1ずつ加算しながら繰り返し</span>
+<span class="k">for</span><span class="p">(</span><span class="kd">var</span> <span class="nx">i</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span> <span class="nx">i</span> <span class="o">&lt;</span> <span class="mi">10</span><span class="p">;</span> <span class="nx">i</span><span class="o">++</span><span class="p">){</span>
+  <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">i</span><span class="p">);</span>
+<span class="p">}</span>
+</code></pre></div>
+<p>出力：</p>
+<div class="highlight"><pre><code class="language-text" data-lang="text">0
+1
+2
+3
+4
+5
+6
+7
+8
+9
+</code></pre></div>
+<h3>関数</h3>
+<div class="highlight"><pre><code class="language-js" data-lang="js"><span class="c1">//引数の文字列を2回表示する関数</span>
+<span class="kd">function</span> <span class="nx">double_alert</span><span class="p">(</span><span class="nx">text</span><span class="p">){</span>
+  <span class="nx">alert</span><span class="p">(</span><span class="nx">text</span> <span class="o">+</span> <span class="nx">text</span><span class="p">);</span>
+<span class="p">}</span>
 
-<p>ここでインストールするソフトウェアを選択できます。ApacheがWebサーバ、MySQLがデータベースシステム、PHPがサーバで使用するプログラミング言語、phpMyAdminがデータベースをブラウザから操作するためのツールですのでこれらは必ずインストールしてください。インストールが完了したらコントロールパネルを起動してみましょう。</p>
+<span class="nx">double_alert</span><span class="p">(</span><span class="s2">&quot;a&quot;</span><span class="p">);</span>
+</code></pre></div>
+<ul>
+<li>alertは画面にアラートを表示する関数です。</li>
+</ul>
 
-<p><img src="../images/1_3_2.png" alt=""></p>
+<p>また、JavaScriptにおいて関数はFunctionオブジェクトであり、以下のように書くこともできます。</p>
+<div class="highlight"><pre><code class="language-js" data-lang="js"><span class="c1">//関数を作成してdouble_alertに代入</span>
+<span class="nx">double_alert</span> <span class="o">=</span> <span class="kd">function</span><span class="p">(</span><span class="nx">text</span><span class="p">){</span>
+  <span class="nx">alert</span><span class="p">(</span><span class="nx">text</span> <span class="o">+</span> <span class="nx">text</span><span class="p">);</span>
+<span class="p">};</span>
 
-<p>Apacheの横にあるStartボタンを押すとWebサーバが起動します。ブラウザで<a href="http://localhost/">http://localhost/</a>を表示してみましょう。正しく起動できていたらXAMPPのページが表示されるはずです。</p>
+<span class="nx">double_alert</span><span class="p">(</span><span class="s2">&quot;a&quot;</span><span class="p">);</span>
+</code></pre></div>
+<p>このとき元の関数は名前を付けずに定義しています。これを無名関数といいます。無名関数は、関数を引数にとる関数を使用するときに威力を発揮します。もう少し後で説明します。</p>
+
+<h3>DOM</h3>
+
+<p>DOM(Document Object Model)とはHTMLの要素へアクセスするしくみです。JavaScriptからもDOMを利用してHTMLを操作できます。例として以下にidがdom_testであるdiv要素を設置しました。この要素のテキストを書き換えてみましょう。
+<code>html
+&lt;div id=&quot;dom_test&quot;&gt;ここがid=dom_testの要素です。&lt;/div&gt;
+</code>
+<code>js
+//IDがdom_testである要素を取得する
+dom_test = document.getElementById(&quot;dom_test&quot;);
+//内部テキストを書き換える
+dom_test.innerText = &quot;書き換えました。&quot;;
+</code></p>
+
+<p>「ここがid=dom_testの要素です。」と書いてあった部分が「書き換えました。」に変わると思います。</p>
+
+<h3>規格</h3>
+
+<p>WebブラウザはInternetExplorerやSafari,GoogleChrome,Firefoxなどいろいろなものが使われています。
+それぞれJavaScriptの実装に違いがあるため、同じJavaScriptでも異なる動きをすることがあります。
+そこで<a href="http://ja.wikipedia.org/wiki/ECMAScript">ECMAScript</a>というJavaScriptの標準をまとめた規格がつくられました。
+現在ではECMAScript準拠の処理系をJavaScriptと呼びます。</p>
+
+<h3>参考になるサイト</h3>
+
+<ul>
+<li><a href="https://developer.mozilla.org/ja/docs/Web/JavaScript">JavaScript | Mozilla Developer Network</a></li>
+<li><a href="http://msdn.microsoft.com/ja-jp/library/d1et7k7c(v=vs.94).aspx">JavaScript 言語リファレンス|Microsoft Developer Network</a></li>
+<li><a href="http://crocro.com/write/manga_javascript/wiki.cgi">マンガで分かるJavaScriptプログラミング講座</a></li>
+<li><a href="http://www.tohoho-web.com/js/index.htm">とほほのJavaScriptリファレンス</a></li>
+</ul>
 
         </div>
       </section>

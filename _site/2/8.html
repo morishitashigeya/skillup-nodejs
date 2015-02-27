@@ -2,7 +2,7 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <title>STEP2-8.画面仕様書とは / チームラボ オンラインスキルアップ課題</title>
+    <title>STEP2-8.ブラウザ（JavaScript）とサーバ（NodeJS）を連携してみる / チームラボ オンラインスキルアップ課題</title>
     <link rel="stylesheet" href="../stylesheets/styles.css">
     <link rel="stylesheet" href="../stylesheets/pygment_trac.css">
     <!--[if lt IE 9]>
@@ -23,75 +23,213 @@
           <ul>
             <li><a href="../index.html">はじめに</a>
           </ul>
-          
-          <h3>STEP1 掲示板を作ろう</h3>
+          <h3>STEP1 TODOリスト（フロントエンド）を作ろう</h3>
           <ul>
-            <li><a href="../1/1.html">1.インターネットのしくみ</a>
-            <li><a href="../1/2.html">2.HTTPのしくみ</a>
-            <li><a href="../1/3.html">3.Webサーバを立ててみる</a>
+            <li><a href="../1/1.html">1.サンプルコードを動かしてみる</a>
+            <li><a href="../1/2.html">2.Gitを使ってみる</a>
+            <li><a href="../1/3.html">3.JavaScriptを書いてみる</a>
             <li><a href="../1/4.html">4.HTML,CSSを書いてみる</a>
-            <li><a href="../1/5.html">5.PHPを書いてみる</a>
-            <li><a href="../1/6.html">6.PHPでGET,POSTを受け取る</a>
-            <li><a href="../1/7.html">7.データベースを作成してみる</a>
-            <li><a href="../1/8.html">8.SQLを書いてみる</a>
-            <li><a href="../1/9.html">9.PHPからデータベースを操作してみる</a>
-            <li><a href="../1/s1.html">10.サイトを公開してみる</a>
-            <li><a href="../1/10.html">最終課題</a>
+            <li><a href="../1/5.html">5.jQueryを使ってみる</a>
+            <li><a href="../1/6.html">6.ローカルストレージを使ってみる</a>
+            <li><a href="../1/7.html">7.入力チェックを作ってみる</a>
+            <li><a href="../1/8.html">最終課題</a>
           </ul>
           
-          <h3>STEP2 Twitterもどきを作ろう</h3>
+          <h3>STEP2 TODOリスト（フロントエンド＋サーバサイドバージョン）を作ろう</h3>
           <ul>
-            <li><a href="../2/1.html">1.JavaScriptを書いてみる</a>
-            <li><a href="../2/2.html">2.ログイン機能を作ってみる</a>
-            <li><a href="../2/3.html">3.入力チェックを作ってみる</a>
-            <li><a href="../2/4.html">4.ログイン機能をクラス化してみる</a>
-            <li><a href="../2/5.html">5.フレームワークとは</a>
-            <li><a href="../2/6.html">6.CakePHPの基本</a>
-            <li><a href="../2/7.html">7.CakePHPでログイン機能を書いてみる</a>
-            <li><a href="../2/8.html">8.画面仕様書とは</a>
-            <li><a href="../2/9.html">9.データベースを設計してみる</a>
+            <li><a href="../2/1.html">1.インターネットのしくみ</a>
+            <li><a href="../2/2.html">2.HTTPのしくみ</a>
+            <li><a href="../2/3.html">3.NodeJSとは</a>
+            <li><a href="../2/4.html">4.パッケージマネージャのnpmとは</a>
+            <li><a href="../2/5.html">5.npmを使ってexpressをインストールして使ってみる</a>
+            <li><a href="../2/6.html">6.MongoDBをインストールして使ってみる</a>
+            <li><a href="../2/7.html">7.MongoDBを設計してみる</a>
+            <li><a href="../2/8.html">8.ブラウザ（JavaScript）とサーバ（NodeJS）を連携してみる</a>
+            <li><a href="../2/9.html">9.画面仕様書を満たす</a>
             <li><a href="../2/10.html">最終課題</a>
           </ul>
           
-          <h3>STEP3 オリジナルサイトを作ろう</h3>
+          <h3>STEP3 オリジナルチャットシステムを作ろう</h3>
           <ul>
-            <li><a href="../3/1.html">1.Ajaxを使ってみる</a>
+            <li><a href="../3/1.html">1.websocketを使ってみる</a>
             <li><a href="../3/2.html">2.画面仕様書,スケジュールを作ってみる</a>
             <li><a href="../3/3.html">3.テストとは</a>
             <li><a href="../3/4.html">4.単体テストを書いてみる</a>
-            <li><a href="../3/5.html">5.IDEを使ってみる</a>
-            <li><a href="../3/6.html">6.バージョン管理をしてみる</a>
-            <li>7.CentOSとは
-            <li>8.CentOS上でサイトを公開してみる
-            <li><a href="../3/9.html">9.セキュリティ対策をしてみる</a>
-            <li><a href="../3/10.html">最終課題</a>
+            <li><a href="../3/5.html">5.Herokuとは</a></li>
+            <li><a href="../3/6.html">6.Herokuを使って公開してみる</a></li>
+            <li><a href="../3/7.html">最終課題</a>
           </ul>
         </div>
         <div id="contents">
-          <h1>STEP2-8.画面仕様書とは</h1>
+          <h1>STEP2-8.ブラウザ（JavaScript）とサーバ（Node.js）を連携してみる</h1>
 
-<p>画面仕様書とはプログラムの設計図となるものです。各画面のデザイン・動作・機能・画面遷移などを記述します。画面仕様書を作る理由・利点には以下のようなものが挙げられます。</p>
+<p>WebブラウザのJavaScript（クライアントサイド）とNode.js（サーバサイド）を連携させたプログラムを作っていきます。</p>
 
-<ul>
-<li>自分が作ろうとしているものを具体的にすることで、より細かい部分まで考えをまとめることができる。</li>
-<li>自分以外の人に伝える手段となり、意見を聞いてより良いものへと改善することができる。</li>
-<li>開発に比べて非常に簡単に作成できるため、意見を聞いてから修正まで何度も繰り返すことができる。</li>
-<li>様々なルールを画面仕様書を使い統一させることができる。登録アクションはボタン、画面遷移はリンクなど。</li>
-<li>サイト全体の構成を最適化することができる。</li>
-<li>開発するときに同じ処理、同じパーツなど、洗い出すことができるため、後戻りなく開発を効率的に行うことができる。</li>
-</ul>
+<p>クライアントからリクエストをサーバに送ることでWebページは表示されます。
+表示されたページ上で動作するJavaScriptからサーバにリクエストを送ることで、Webページを読み込まずにデータのやりとりをすることができます。
+この方法を<a href="http://ja.wikipedia.org/wiki/Ajax">Ajax</a>と呼びます。
+Ajaxを使うことで動的に変化するWebアプリケーションを作ることができます。</p>
 
-<p>STEP2ではこちらで用意した画面仕様書に従って開発を行っていただきます。</p>
+<p>Ajaxを用いてリクエストを送るのは通常のWebページだけでなく、Webアプリケーションの機能やデータを利用できる<a href="http://ja.wikipedia.org/wiki/%E3%82%A2%E3%83%97%E3%83%AA%E3%82%B1%E3%83%BC%E3%82%B7%E3%83%A7%E3%83%B3%E3%83%97%E3%83%AD%E3%82%B0%E3%83%A9%E3%83%9F%E3%83%B3%E3%82%B0%E3%82%A4%E3%83%B3%E3%82%BF%E3%83%95%E3%82%A7%E3%83%BC%E3%82%B9">API</a>がよく用いられます。
+インターネット経由で使用できるAPIをWebAPIと呼び、TwitterやFacebookなどのSNSやGoogleMap、鉄道、書籍、天気、写真など様々なWebサービスで公開されています。
+（参考：<a href="http://www.find-job.net/startup/api-2013">日本の全エンジニアに捧ぐ！現在公開されているAPI一覧【2013年版】</a>）</p>
 
-<p><a href="../docs/ui.xls">Twitterもどき-画面仕様書</a></p>
+<p>ExpressとMongoDBを使って、Ajaxを用いたWebサイトを作成してみます。</p>
 
-<p>この仕様書は1画面1シートとなっており、シート名は画面名を表しています。そして、1シートの中身には必ず上部に「画面名、作成日、作成者、更新日、更新者、機能概要」が書かれています。
-これは他の人に資料を見せても、すぐにそのシートが誰がいつ、何について書いたか即座にわかるようにするためです。
-プログラム同様、チームで資料を作る際には、他の人が見てすぐ見るべき資料かどうかの判断がつくようにしておくことは非常に重要なことです。</p>
+<p>expressのジェネレーターからプロジェクトのひな形を作成します。</p>
+<div class="highlight"><pre><code class="language-text" data-lang="text">&gt; express ajaxTest
+</code></pre></div>
+<p>パッケージのインストールを行います。</p>
+<div class="highlight"><pre><code class="language-text" data-lang="text">&gt; cd ajaxTest
+&gt; npm install
+</code></pre></div>
+<p>Mongooseを追加インストールします。</p>
+<div class="highlight"><pre><code class="language-text" data-lang="text">&gt; npm install mongoose --save-dev
+</code></pre></div>
+<p>/app.jsでMongoDBを扱い、APIとして使えるようにします。</p>
+<div class="highlight"><pre><code class="language-js" data-lang="js"><span class="c1">// mongooseを用いてMongoDBに接続する</span>
+<span class="kd">var</span> <span class="nx">mongoose</span> <span class="o">=</span> <span class="nx">require</span><span class="p">(</span><span class="s1">&#39;mongoose&#39;</span><span class="p">);</span>
+<span class="nx">mongoose</span><span class="p">.</span><span class="nx">connect</span><span class="p">(</span><span class="s1">&#39;mongodb://localhost/ajax_test&#39;</span><span class="p">);</span>
 
-<p>また、各画面には共通部分が存在するはずです。
-例えばヘッダー、フッターですね。共通部分を各画面の仕様書に毎回書くのは面倒ですし、変更も大変です。漏れもでます。
-画面ではないですが、共通部分だけはそれぞれ1シートにして定義しておきます。各画面では共通部分は、そのシートを参照するよう記載します。</p>
+<span class="cm">/* （略） */</span>
+
+<span class="c1">// ToDoスキーマを定義する</span>
+<span class="kd">var</span> <span class="nx">Schema</span> <span class="o">=</span> <span class="nx">mongoose</span><span class="p">.</span><span class="nx">Schema</span><span class="p">;</span>
+<span class="kd">var</span> <span class="nx">todoSchema</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">Schema</span><span class="p">({</span>
+  <span class="nx">isCheck</span>     <span class="o">:</span> <span class="p">{</span><span class="nx">type</span><span class="o">:</span> <span class="nb">Boolean</span><span class="p">,</span> <span class="k">default</span><span class="o">:</span> <span class="kc">false</span><span class="p">},</span>
+  <span class="nx">text</span>        <span class="o">:</span> <span class="nb">String</span><span class="p">,</span>
+  <span class="nx">createdDate</span> <span class="o">:</span> <span class="p">{</span><span class="nx">type</span><span class="o">:</span> <span class="nb">Date</span><span class="p">,</span> <span class="k">default</span><span class="o">:</span> <span class="nb">Date</span><span class="p">.</span><span class="nx">now</span><span class="p">},</span>
+  <span class="nx">limitDate</span>   <span class="o">:</span> <span class="nb">Date</span>
+<span class="p">});</span>
+<span class="nx">mongoose</span><span class="p">.</span><span class="nx">model</span><span class="p">(</span><span class="s1">&#39;Todo&#39;</span><span class="p">,</span> <span class="nx">todoSchema</span><span class="p">);</span>
+
+<span class="cm">/* （略） */</span>
+
+<span class="c1">// /todoにGETアクセスしたとき、ToDo一覧を取得するAPI</span>
+<span class="nx">app</span><span class="p">.</span><span class="nx">get</span><span class="p">(</span><span class="s1">&#39;/todo&#39;</span><span class="p">,</span> <span class="kd">function</span><span class="p">(</span><span class="nx">req</span><span class="p">,</span> <span class="nx">res</span><span class="p">)</span> <span class="p">{</span>
+  <span class="kd">var</span> <span class="nx">Todo</span> <span class="o">=</span> <span class="nx">mongoose</span><span class="p">.</span><span class="nx">model</span><span class="p">(</span><span class="s1">&#39;Todo&#39;</span><span class="p">);</span>
+  <span class="c1">// すべてのToDoを取得して送る</span>
+  <span class="nx">Todo</span><span class="p">.</span><span class="nx">find</span><span class="p">({},</span> <span class="kd">function</span><span class="p">(</span><span class="nx">err</span><span class="p">,</span> <span class="nx">todos</span><span class="p">)</span> <span class="p">{</span>
+    <span class="nx">res</span><span class="p">.</span><span class="nx">send</span><span class="p">(</span><span class="nx">todos</span><span class="p">);</span>
+  <span class="p">});</span>
+<span class="p">});</span>
+
+<span class="c1">// /todoにPOSTアクセスしたとき、ToDoを追加するAPI</span>
+<span class="nx">app</span><span class="p">.</span><span class="nx">post</span><span class="p">(</span><span class="s1">&#39;/todo&#39;</span><span class="p">,</span> <span class="kd">function</span><span class="p">(</span><span class="nx">req</span><span class="p">,</span> <span class="nx">res</span><span class="p">)</span> <span class="p">{</span>
+  <span class="kd">var</span> <span class="nx">name</span> <span class="o">=</span> <span class="nx">req</span><span class="p">.</span><span class="nx">body</span><span class="p">.</span><span class="nx">name</span><span class="p">;</span>
+  <span class="kd">var</span> <span class="nx">limit</span> <span class="o">=</span> <span class="nx">req</span><span class="p">.</span><span class="nx">body</span><span class="p">.</span><span class="nx">limit</span><span class="p">;</span>
+  <span class="c1">// ToDoの名前と期限のパラーメタがあればMongoDBに保存</span>
+  <span class="k">if</span><span class="p">(</span><span class="nx">name</span> <span class="o">&amp;&amp;</span> <span class="nx">limit</span><span class="p">)</span> <span class="p">{</span>
+    <span class="kd">var</span> <span class="nx">Todo</span> <span class="o">=</span> <span class="nx">mongoose</span><span class="p">.</span><span class="nx">model</span><span class="p">(</span><span class="s1">&#39;Todo&#39;</span><span class="p">);</span>
+    <span class="kd">var</span> <span class="nx">todo</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">Todo</span><span class="p">();</span>
+    <span class="nx">todo</span><span class="p">.</span><span class="nx">text</span> <span class="o">=</span> <span class="nx">name</span><span class="p">;</span>
+    <span class="nx">todo</span><span class="p">.</span><span class="nx">limitDate</span> <span class="o">=</span> <span class="nx">limit</span><span class="p">;</span>
+    <span class="nx">todo</span><span class="p">.</span><span class="nx">save</span><span class="p">();</span>
+
+    <span class="nx">res</span><span class="p">.</span><span class="nx">send</span><span class="p">(</span><span class="kc">true</span><span class="p">);</span>
+  <span class="p">}</span> <span class="k">else</span> <span class="p">{</span>
+    <span class="nx">res</span><span class="p">.</span><span class="nx">send</span><span class="p">(</span><span class="kc">false</span><span class="p">);</span>
+  <span class="p">}</span>
+<span class="p">});</span>
+</code></pre></div>
+<p>これを保存して、ブラウザで localhost:3000/todo にアクセスするとMongoDBに保存されたToDoが表示されます。
+最初は空の配列である「[]」という文字が表示されるはずです。
+これでサーバサイドのAPIが出来ました。
+次にクライアントサイドを作っていきます。</p>
+
+<p>最初に他のViewの雛形であるviews/layout.jadeを編集します。</p>
+<div class="highlight"><pre><code class="language-jade" data-lang="jade"><span class="nt">doctype</span> html
+<span class="nt">html</span>
+  <span class="nt">head</span>
+    <span class="nt">title</span><span class="p">=</span> <span class="n">title</span>
+    <span class="nt">link</span>(<span class="na">rel=</span><span class="s">&#39;stylesheet&#39;</span><span class="err">,</span> <span class="na">href=</span><span class="s">&#39;/stylesheets/style.css&#39;</span>)
+  <span class="nt">body</span>
+    <span class="nt">block</span> content
+    <span class="nt">block</span> scripts
+</code></pre></div>
+<p>8行目にJavaScriptを読み込むためのブロックを追加します。
+このブロックの部分に他のViewで書いた内容を入れることができます。</p>
+
+<p>次にviews/index.jadeを編集し、JavaScriptの読み込みと入力フォームを追加します。</p>
+<div class="highlight"><pre><code class="language-jade" data-lang="jade"><span class="nt">extends</span> layout
+
+<span class="nt">block</span> content
+  <span class="nt">h1</span> Todo
+  <span class="c">// ToDo入力フォームを作成する</span>
+  <span class="nc">.form</span>
+    <span class="nt">form</span><span class="nf">#form</span>
+      <span class="nt">p</span>
+        <span class="nt">label</span>(<span class="na">for=</span><span class="s">&#39;text&#39;</span>) 内容
+        <span class="nt">input</span><span class="nf">#text</span>(<span class="na">type=</span><span class="s">&#39;text&#39;</span><span class="err">,</span><span class="na">name=</span><span class="s">&#39;text&#39;</span>)
+      <span class="nt">p</span>
+        <span class="nt">label</span>(<span class="na">for=</span><span class="s">&#39;limit&#39;</span>) 期限
+        <span class="nt">input</span><span class="nf">#limit</span>(<span class="na">type=</span><span class="s">&#39;date&#39;</span><span class="err">,</span><span class="na">name=</span><span class="s">&#39;limit&#39;</span>)
+      <span class="nt">p</span>
+        <span class="nt">input</span>(<span class="na">type=</span><span class="s">&#39;submit&#39;</span><span class="err">,</span><span class="na">value=</span><span class="s">&#39;登録する&#39;</span>)
+  <span class="c">// ToDo一覧を表示する</span>
+  <span class="nc">.list</span>
+
+<span class="c">// jQueryとtodo.jsを読み込む</span>
+<span class="nt">block</span> scripts
+  <span class="nt">script</span>(<span class="na">src=</span><span class="s">&#39;http://code.jquery.com/jquery-2.0.0.min.js&#39;</span>)
+  <span class="nt">script</span>(<span class="na">src=</span><span class="s">&#39;javascripts/todo.js&#39;</span>)
+</code></pre></div>
+<p>localhost:3000にアクセスすると入力フォームが表示されます。  </p>
+
+<p>最後にAjaxの処理を行うpublic/javascripts/todo.jsを作成します。</p>
+<div class="highlight"><pre><code class="language-js" data-lang="js"><span class="c1">// ページが表示されたときToDoリストを表示する</span>
+<span class="nx">$</span><span class="p">(</span><span class="kd">function</span><span class="p">(){</span>
+  <span class="nx">getList</span><span class="p">();</span>
+<span class="p">});</span>
+
+<span class="c1">// フォームを送信ボタンを押すと、ToDoを追加して再表示する。</span>
+<span class="nx">$</span><span class="p">(</span><span class="s1">&#39;#form&#39;</span><span class="p">).</span><span class="nx">submit</span><span class="p">(</span><span class="kd">function</span><span class="p">(){</span>
+  <span class="nx">postList</span><span class="p">();</span>
+  <span class="k">return</span> <span class="kc">false</span><span class="p">;</span>
+<span class="p">});</span>
+
+<span class="c1">// ToDo一覧を取得して表示する</span>
+<span class="kd">function</span> <span class="nx">getList</span><span class="p">(){</span>
+  <span class="c1">// すでに表示されている一覧を非表示にして削除する</span>
+  <span class="kd">var</span> <span class="nx">$list</span> <span class="o">=</span> <span class="nx">$</span><span class="p">(</span><span class="s1">&#39;.list&#39;</span><span class="p">);</span>
+  <span class="nx">$list</span><span class="p">.</span><span class="nx">fadeOut</span><span class="p">(</span><span class="kd">function</span><span class="p">(){</span>
+    <span class="nx">$list</span><span class="p">.</span><span class="nx">children</span><span class="p">().</span><span class="nx">remove</span><span class="p">();</span>
+    <span class="c1">// /todoにGETアクセスする</span>
+    <span class="nx">$</span><span class="p">.</span><span class="nx">get</span><span class="p">(</span><span class="s1">&#39;todo&#39;</span><span class="p">,</span> <span class="kd">function</span><span class="p">(</span><span class="nx">todos</span><span class="p">){</span>
+      <span class="c1">// 取得したToDoを追加していく</span>
+      <span class="nx">$</span><span class="p">.</span><span class="nx">each</span><span class="p">(</span><span class="nx">todos</span><span class="p">,</span> <span class="kd">function</span><span class="p">(</span><span class="nx">index</span><span class="p">,</span> <span class="nx">todo</span><span class="p">){</span>
+        <span class="kd">var</span> <span class="nx">limit</span> <span class="o">=</span> <span class="k">new</span> <span class="nb">Date</span><span class="p">(</span><span class="nx">todo</span><span class="p">.</span><span class="nx">limitDate</span><span class="p">);</span>
+        <span class="nx">$list</span><span class="p">.</span><span class="nx">append</span><span class="p">(</span><span class="s1">&#39;&lt;p&gt;&lt;input type=&quot;checkbox&quot; &#39;</span> <span class="o">+</span> <span class="p">(</span><span class="nx">todo</span><span class="p">.</span><span class="nx">isCheck</span> <span class="o">?</span> <span class="s1">&#39;checked&#39;</span> <span class="o">:</span> <span class="s1">&#39;&#39;</span><span class="p">)</span> <span class="o">+</span> <span class="s1">&#39;&gt;&#39;</span> <span class="o">+</span> <span class="nx">todo</span><span class="p">.</span><span class="nx">text</span> <span class="o">+</span> <span class="s1">&#39; (~&#39;</span> <span class="o">+</span> <span class="nx">limit</span><span class="p">.</span><span class="nx">toLocaleString</span><span class="p">()</span> <span class="o">+</span> <span class="s1">&#39;)&lt;/p&gt;&#39;</span><span class="p">);</span>
+      <span class="p">});</span>
+      <span class="c1">// 一覧を表示する</span>
+      <span class="nx">$list</span><span class="p">.</span><span class="nx">fadeIn</span><span class="p">();</span>
+    <span class="p">});</span>
+  <span class="p">});</span>
+
+
+<span class="p">}</span>
+
+<span class="c1">// フォームに入力されたToDoを追加する</span>
+<span class="kd">function</span> <span class="nx">postList</span><span class="p">(){</span>
+  <span class="c1">// フォームに入力された値を取得</span>
+  <span class="kd">var</span> <span class="nx">name</span> <span class="o">=</span> <span class="nx">$</span><span class="p">(</span><span class="s1">&#39;#text&#39;</span><span class="p">).</span><span class="nx">val</span><span class="p">();</span>
+  <span class="kd">var</span> <span class="nx">limitDate</span> <span class="o">=</span> <span class="k">new</span> <span class="nb">Date</span><span class="p">(</span><span class="nx">$</span><span class="p">(</span><span class="s1">&#39;#limit&#39;</span><span class="p">).</span><span class="nx">val</span><span class="p">());</span>
+
+  <span class="c1">//入力項目を空にする</span>
+  <span class="nx">$</span><span class="p">(</span><span class="s1">&#39;#text&#39;</span><span class="p">).</span><span class="nx">val</span><span class="p">(</span><span class="s1">&#39;&#39;</span><span class="p">);</span>
+  <span class="nx">$</span><span class="p">(</span><span class="s1">&#39;#limit&#39;</span><span class="p">).</span><span class="nx">val</span><span class="p">(</span><span class="s1">&#39;&#39;</span><span class="p">);</span>
+
+  <span class="c1">// /todoにPOSTアクセスする</span>
+  <span class="nx">$</span><span class="p">.</span><span class="nx">post</span><span class="p">(</span><span class="s1">&#39;/todo&#39;</span><span class="p">,</span> <span class="p">{</span><span class="nx">name</span><span class="o">:</span> <span class="nx">name</span><span class="p">,</span> <span class="nx">limit</span><span class="o">:</span> <span class="nx">limitDate</span><span class="p">},</span> <span class="kd">function</span><span class="p">(</span><span class="nx">res</span><span class="p">){</span>
+    <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">res</span><span class="p">);</span>
+    <span class="c1">//再度表示する</span>
+    <span class="nx">getList</span><span class="p">();</span>
+  <span class="p">});</span>
+<span class="p">}</span>
+</code></pre></div>
+<p>これで入力フォームから入力されたToDoを追加できるようになりました。</p>
+
+<p>入力チェックやToDoのチェック機能、編集機能はありませんが、このようにしてWebアプリケーションを作ることができます。</p>
 
         </div>
       </section>

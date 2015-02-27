@@ -2,7 +2,7 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <title>STEP2-4.ログイン機能をクラス化してみる / チームラボ オンラインスキルアップ課題</title>
+    <title>STEP2-4.パッケージマネージャのnpmとは / チームラボ オンラインスキルアップ課題</title>
     <link rel="stylesheet" href="../stylesheets/styles.css">
     <link rel="stylesheet" href="../stylesheets/pygment_trac.css">
     <!--[if lt IE 9]>
@@ -23,200 +23,125 @@
           <ul>
             <li><a href="../index.html">はじめに</a>
           </ul>
-          
-          <h3>STEP1 掲示板を作ろう</h3>
+          <h3>STEP1 TODOリスト（フロントエンド）を作ろう</h3>
           <ul>
-            <li><a href="../1/1.html">1.インターネットのしくみ</a>
-            <li><a href="../1/2.html">2.HTTPのしくみ</a>
-            <li><a href="../1/3.html">3.Webサーバを立ててみる</a>
+            <li><a href="../1/1.html">1.サンプルコードを動かしてみる</a>
+            <li><a href="../1/2.html">2.Gitを使ってみる</a>
+            <li><a href="../1/3.html">3.JavaScriptを書いてみる</a>
             <li><a href="../1/4.html">4.HTML,CSSを書いてみる</a>
-            <li><a href="../1/5.html">5.PHPを書いてみる</a>
-            <li><a href="../1/6.html">6.PHPでGET,POSTを受け取る</a>
-            <li><a href="../1/7.html">7.データベースを作成してみる</a>
-            <li><a href="../1/8.html">8.SQLを書いてみる</a>
-            <li><a href="../1/9.html">9.PHPからデータベースを操作してみる</a>
-            <li><a href="../1/s1.html">10.サイトを公開してみる</a>
-            <li><a href="../1/10.html">最終課題</a>
+            <li><a href="../1/5.html">5.jQueryを使ってみる</a>
+            <li><a href="../1/6.html">6.ローカルストレージを使ってみる</a>
+            <li><a href="../1/7.html">7.入力チェックを作ってみる</a>
+            <li><a href="../1/8.html">最終課題</a>
           </ul>
           
-          <h3>STEP2 Twitterもどきを作ろう</h3>
+          <h3>STEP2 TODOリスト（フロントエンド＋サーバサイドバージョン）を作ろう</h3>
           <ul>
-            <li><a href="../2/1.html">1.JavaScriptを書いてみる</a>
-            <li><a href="../2/2.html">2.ログイン機能を作ってみる</a>
-            <li><a href="../2/3.html">3.入力チェックを作ってみる</a>
-            <li><a href="../2/4.html">4.ログイン機能をクラス化してみる</a>
-            <li><a href="../2/5.html">5.フレームワークとは</a>
-            <li><a href="../2/6.html">6.CakePHPの基本</a>
-            <li><a href="../2/7.html">7.CakePHPでログイン機能を書いてみる</a>
-            <li><a href="../2/8.html">8.画面仕様書とは</a>
-            <li><a href="../2/9.html">9.データベースを設計してみる</a>
+            <li><a href="../2/1.html">1.インターネットのしくみ</a>
+            <li><a href="../2/2.html">2.HTTPのしくみ</a>
+            <li><a href="../2/3.html">3.NodeJSとは</a>
+            <li><a href="../2/4.html">4.パッケージマネージャのnpmとは</a>
+            <li><a href="../2/5.html">5.npmを使ってexpressをインストールして使ってみる</a>
+            <li><a href="../2/6.html">6.MongoDBをインストールして使ってみる</a>
+            <li><a href="../2/7.html">7.MongoDBを設計してみる</a>
+            <li><a href="../2/8.html">8.ブラウザ（JavaScript）とサーバ（NodeJS）を連携してみる</a>
+            <li><a href="../2/9.html">9.画面仕様書を満たす</a>
             <li><a href="../2/10.html">最終課題</a>
           </ul>
           
-          <h3>STEP3 オリジナルサイトを作ろう</h3>
+          <h3>STEP3 オリジナルチャットシステムを作ろう</h3>
           <ul>
-            <li><a href="../3/1.html">1.Ajaxを使ってみる</a>
+            <li><a href="../3/1.html">1.websocketを使ってみる</a>
             <li><a href="../3/2.html">2.画面仕様書,スケジュールを作ってみる</a>
             <li><a href="../3/3.html">3.テストとは</a>
             <li><a href="../3/4.html">4.単体テストを書いてみる</a>
-            <li><a href="../3/5.html">5.IDEを使ってみる</a>
-            <li><a href="../3/6.html">6.バージョン管理をしてみる</a>
-            <li>7.CentOSとは
-            <li>8.CentOS上でサイトを公開してみる
-            <li><a href="../3/9.html">9.セキュリティ対策をしてみる</a>
-            <li><a href="../3/10.html">最終課題</a>
+            <li><a href="../3/5.html">5.Herokuとは</a></li>
+            <li><a href="../3/6.html">6.Herokuを使って公開してみる</a></li>
+            <li><a href="../3/7.html">最終課題</a>
           </ul>
         </div>
         <div id="contents">
-          <h1>STEP2-4.ログイン機能をクラス化してみる</h1>
+          <h1>STEP2-4.パッケージマネージャのnpmとは</h1>
 
-<p>前々回と前回で共通部分を別ファイルにまとめました。これを更に進めて、ログイン機能を担当するAuthクラスを作成してみましょう。auth.phpを以下のように変更します。</p>
-<div class="highlight"><pre><code class="php language-php" data-lang="php"><span class="cp">&lt;?php</span>
+<h3>Node Packaged Modules(npm)とは</h3>
 
-<span class="sd">/**</span>
-<span class="sd"> * ログインクラス</span>
-<span class="sd"> */</span>
-<span class="k">class</span> <span class="nc">Auth</span><span class="p">{</span>
-  <span class="c1">//設定</span>
-  <span class="k">const</span> <span class="no">SALT</span> <span class="o">=</span> <span class="s2">&quot;mwefCMEP28DjwdW3lwdS239vVS&quot;</span><span class="p">;</span>
-  <span class="k">const</span> <span class="no">HOST_NAME</span> <span class="o">=</span> <span class="s2">&quot;localhost&quot;</span><span class="p">;</span>
-  <span class="k">const</span> <span class="no">USER_NAME</span> <span class="o">=</span> <span class="s2">&quot;root&quot;</span><span class="p">;</span>
-  <span class="k">const</span> <span class="no">PASSWORD</span> <span class="o">=</span> <span class="s2">&quot;&quot;</span><span class="p">;</span>
-  <span class="k">const</span> <span class="no">DATABASE_NAME</span> <span class="o">=</span> <span class="s2">&quot;board&quot;</span><span class="p">;</span>
+<p><a href="https://www.npmjs.org/">Node Packaged Modules(npm)</a>とはNode.jsのライブラリやパッケージを管理することができるツールです。
+ライブラリやパッケージの管理ツールを主に<a href="http://ja.wikipedia.org/wiki/%E3%83%91%E3%83%83%E3%82%B1%E3%83%BC%E3%82%B8%E7%AE%A1%E7%90%86%E3%82%B7%E3%82%B9%E3%83%86%E3%83%A0">パッケージマネージャ</a>と呼びます。
+パッケージマネージャを使うことで、使いたいライブラリの導入や削除を簡易にしたり、パッケージ同士の依存関係を管理することができます。</p>
 
-  <span class="k">private</span> <span class="nv">$mysqli</span> <span class="o">=</span> <span class="k">null</span><span class="p">;</span>
+<p>Node.jsのパッケージマネージャであるnpmは、Node.jsと一緒にインストールされています。
+またnpmでインストールできるパッケージが登録されており、<a href="https://www.npmjs.org/">npmjs.org</a>からどのようなパッケージが管理できるかを確認することができます。</p>
 
-  <span class="sd">/**</span>
-<span class="sd">   * コンストラクタ</span>
-<span class="sd">   */</span>
-  <span class="k">function</span> <span class="nf">__construct</span><span class="p">(){</span>
-    <span class="nv">$this</span><span class="o">-&gt;</span><span class="na">mysqli</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">mysqli</span><span class="p">(</span>
-      <span class="nx">self</span><span class="o">::</span><span class="na">HOST_NAME</span><span class="p">,</span>
-      <span class="nx">self</span><span class="o">::</span><span class="na">USER_NAME</span><span class="p">,</span>
-      <span class="nx">self</span><span class="o">::</span><span class="na">PASSWORD</span><span class="p">,</span>
-      <span class="nx">self</span><span class="o">::</span><span class="na">DATABASE_NAME</span>
-    <span class="p">);</span>
-    <span class="nb">session_start</span><span class="p">();</span>
-  <span class="p">}</span>
+<h3>パッケージマネージャを使ってみる</h3>
 
-  <span class="sd">/**</span>
-<span class="sd">   * 指定したユーザを新規登録します。</span>
-<span class="sd">   *</span>
-<span class="sd">   * @param string $username ユーザ名</span>
-<span class="sd">   * @param string $password パスワード</span>
-<span class="sd">   *</span>
-<span class="sd">   * @return 成功したかどうか</span>
-<span class="sd">   */</span>
-  <span class="k">public</span> <span class="k">function</span> <span class="nf">register</span><span class="p">(</span><span class="nv">$username</span><span class="p">,</span> <span class="nv">$password</span><span class="p">){</span>
-    <span class="nv">$password</span> <span class="o">=</span> <span class="nv">$this</span><span class="o">-&gt;</span><span class="na">hash</span><span class="p">(</span><span class="nv">$_POST</span><span class="p">[</span><span class="s2">&quot;password&quot;</span><span class="p">]);</span>
-    <span class="nv">$stmt</span> <span class="o">=</span> <span class="nv">$this</span><span class="o">-&gt;</span><span class="na">mysqli</span><span class="o">-&gt;</span><span class="na">prepare</span><span class="p">(</span><span class="s2">&quot;INSERT INTO users VALUES (?, ?)&quot;</span><span class="p">);</span>
-    <span class="nv">$stmt</span><span class="o">-&gt;</span><span class="na">bind_param</span><span class="p">(</span><span class="s1">&#39;ss&#39;</span><span class="p">,</span> <span class="nv">$_POST</span><span class="p">[</span><span class="s2">&quot;username&quot;</span><span class="p">],</span> <span class="nv">$password</span><span class="p">);</span>
-    <span class="k">return</span> <span class="nv">$stmt</span><span class="o">-&gt;</span><span class="na">execute</span><span class="p">();</span>
-  <span class="p">}</span>
-
-  <span class="sd">/**</span>
-<span class="sd">   * 指定したユーザでログインします。</span>
-<span class="sd">   *</span>
-<span class="sd">   * @param string $username ユーザ名</span>
-<span class="sd">   * @param string $password パスワード</span>
-<span class="sd">   *</span>
-<span class="sd">   * @return 成功したかどうか</span>
-<span class="sd">   */</span>
-  <span class="k">public</span> <span class="k">function</span> <span class="nf">login</span><span class="p">(</span><span class="nv">$username</span><span class="p">,</span> <span class="nv">$password</span><span class="p">){</span>
-    <span class="nv">$password</span> <span class="o">=</span> <span class="nv">$this</span><span class="o">-&gt;</span><span class="na">hash</span><span class="p">(</span><span class="nv">$_POST</span><span class="p">[</span><span class="s2">&quot;password&quot;</span><span class="p">]);</span>
-    <span class="nv">$stmt</span> <span class="o">=</span> <span class="nv">$this</span><span class="o">-&gt;</span><span class="na">mysqli</span><span class="o">-&gt;</span><span class="na">prepare</span><span class="p">(</span>
-      <span class="s2">&quot;SELECT * FROM users WHERE username = ? AND password = ?&quot;</span><span class="p">);</span>
-    <span class="nv">$stmt</span><span class="o">-&gt;</span><span class="na">bind_param</span><span class="p">(</span><span class="s1">&#39;ss&#39;</span><span class="p">,</span> <span class="nv">$_POST</span><span class="p">[</span><span class="s2">&quot;username&quot;</span><span class="p">],</span> <span class="nv">$password</span><span class="p">);</span>
-    <span class="nv">$stmt</span><span class="o">-&gt;</span><span class="na">execute</span><span class="p">();</span>
-
-    <span class="nv">$stmt</span><span class="o">-&gt;</span><span class="na">store_result</span><span class="p">();</span>
-    <span class="k">if</span><span class="p">(</span><span class="nv">$stmt</span><span class="o">-&gt;</span><span class="na">num_rows</span> <span class="o">==</span> <span class="mi">1</span><span class="p">){</span>
-      <span class="nv">$_SESSION</span><span class="p">[</span><span class="s2">&quot;username&quot;</span><span class="p">]</span> <span class="o">=</span> <span class="nv">$_POST</span><span class="p">[</span><span class="s2">&quot;username&quot;</span><span class="p">];</span>
-      <span class="k">return</span> <span class="k">true</span><span class="p">;</span>
-    <span class="p">}</span>
-    <span class="k">return</span> <span class="k">false</span><span class="p">;</span>
-  <span class="p">}</span>
-
-  <span class="sd">/**</span>
-<span class="sd">   * 現在ログイン中のユーザ名を返します。</span>
-<span class="sd">   *</span>
-<span class="sd">   * @return ユーザ名 未ログインの場合はnull</span>
-<span class="sd">   */</span>
-  <span class="k">public</span> <span class="k">function</span> <span class="nf">getUser</span><span class="p">(){</span>
-    <span class="k">if</span><span class="p">(</span><span class="nb">isset</span><span class="p">(</span><span class="nv">$_SESSION</span><span class="p">[</span><span class="s2">&quot;username&quot;</span><span class="p">]))</span>
-      <span class="k">return</span> <span class="nv">$_SESSION</span><span class="p">[</span><span class="s2">&quot;username&quot;</span><span class="p">];</span>
-    <span class="k">return</span> <span class="k">null</span><span class="p">;</span>
-  <span class="p">}</span>
-
-  <span class="sd">/**</span>
-<span class="sd">   * 現在ログイン中のユーザをログアウトします。</span>
-<span class="sd">   */</span>
-  <span class="k">public</span> <span class="k">function</span> <span class="nf">logout</span><span class="p">(){</span>
-    <span class="nv">$_SESSION</span> <span class="o">=</span> <span class="k">array</span><span class="p">();</span> 
-    <span class="nb">session_destroy</span><span class="p">();</span>
-  <span class="p">}</span>
-
-  <span class="c1">//ハッシュ化</span>
-  <span class="k">private</span> <span class="k">function</span> <span class="nf">hash</span><span class="p">(</span><span class="nv">$password</span><span class="p">){</span>
-    <span class="k">return</span> <span class="nb">md5</span><span class="p">(</span><span class="nv">$password</span> <span class="o">.</span> <span class="nx">self</span><span class="o">::</span><span class="na">SALT</span><span class="p">)</span>
-  <span class="p">}</span>
-<span class="p">}</span>
-
-<span class="cp">?&gt;</span><span class="x"></span>
+<p>コマンドライン上でnpmを使います。</p>
+<div class="highlight"><pre><code class="language-text" data-lang="text">&gt; npm list -g
 </code></pre></div>
-<p>constは定数の宣言です。その後$mysqliというプロパティを宣言していますが、MySQLへの接続情報にはprivateを付けることで外部からアクセスできないようにしています。これは、データベースを直接扱う操作はこのクラスに記述し、データベースはこのクラスのメソッドを通して操作しなければならないという制約にするためです。__constructメソッドはインスタンスの作成時に呼び出される関数（コンストラクタ）です。ここでMySQLへの接続およびセッションの開始を行います。プロパティにアクセスする際は$this-&gt;を付けます。</p>
+<p>とコマンドラインで実行すること既にインストールされたパッケージを確認することができます。
+「-g」というパラメータはグローバル（PC内のすべてのプロジェクトで使える）のパッケージを指定します。
+「-g」を除くとローカル（現在のディレクトリ内）のパッケージの指定になります。</p>
 
-<p>register.php, login.php, logout.phpの3つの上部をAuthクラスを利用するように書き換えると以下のようになります。このようにログインに必要なデータベースアクセスなどの内部処理をクラスに分割することで、利用する側は何をしているのかが分かりやすくなり、可読性が向上するなどといった利点があります。</p>
-<div class="highlight"><pre><code class="php language-php" data-lang="php"><span class="cp">&lt;?php</span>
+<p>コマンドラインから実行するものはグローバルに、ソースコードの中で読み込むライブラリはローカルにパッケージをインストールするという風にして、「-g」をつけるかどうかの区別を行えばいいです。</p>
 
-<span class="k">require_once</span><span class="p">(</span><span class="s2">&quot;auth.php&quot;</span><span class="p">);</span>
-<span class="nv">$auth</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">Auth</span><span class="p">();</span>
+<h3>supervisorを使ってみる</h3>
 
-<span class="nv">$status</span> <span class="o">=</span> <span class="s2">&quot;none&quot;</span><span class="p">;</span>
+<p>コマンドライン上で実行するコマンドとして<a href="https://www.npmjs.org/package/supervisor">supervisor</a>というパッケージをインストールしてみます。
+supervisorはNode.jsのプログラムを監視し、エラーが発生してプログラムが終了した場合に自動に再起動してくれます。</p>
+<div class="highlight"><pre><code class="language-js" data-lang="js"><span class="kd">var</span> <span class="nx">http</span> <span class="o">=</span> <span class="nx">require</span><span class="p">(</span><span class="s1">&#39;http&#39;</span><span class="p">);</span>
+<span class="kd">var</span> <span class="nx">num</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span>
 
-<span class="k">if</span><span class="p">(</span><span class="o">!</span><span class="k">empty</span><span class="p">(</span><span class="nv">$_POST</span><span class="p">[</span><span class="s2">&quot;username&quot;</span><span class="p">])</span> <span class="o">&amp;&amp;</span> <span class="o">!</span><span class="k">empty</span><span class="p">(</span><span class="nv">$_POST</span><span class="p">[</span><span class="s2">&quot;password&quot;</span><span class="p">])){</span>
-  <span class="c1">//ユーザ名のチェック</span>
-  <span class="k">if</span><span class="p">(</span><span class="o">!</span><span class="nb">preg_match</span><span class="p">(</span><span class="s1">&#39;/^[0-9a-zA-Z]{2,32}$/&#39;</span><span class="p">,</span> <span class="nv">$_POST</span><span class="p">[</span><span class="s2">&quot;username&quot;</span><span class="p">]))</span>
-    <span class="nv">$status</span> <span class="o">=</span> <span class="s2">&quot;error_username&quot;</span><span class="p">;</span>
-  <span class="c1">//パスワードのチェック</span>
-  <span class="k">else</span> <span class="k">if</span><span class="p">(</span><span class="o">!</span><span class="nb">preg_match</span><span class="p">(</span><span class="s1">&#39;/^[0-9a-zA-Z]{8,32}$/&#39;</span><span class="p">,</span> <span class="nv">$_POST</span><span class="p">[</span><span class="s2">&quot;password&quot;</span><span class="p">]))</span>
-    <span class="nv">$status</span> <span class="o">=</span> <span class="s2">&quot;error_password&quot;</span><span class="p">;</span>
-  <span class="k">else</span> <span class="k">if</span><span class="p">(</span><span class="nv">$auth</span><span class="o">-&gt;</span><span class="na">register</span><span class="p">(</span><span class="nv">$_POST</span><span class="p">[</span><span class="s2">&quot;username&quot;</span><span class="p">],</span> <span class="nv">$_POST</span><span class="p">[</span><span class="s2">&quot;password&quot;</span><span class="p">]))</span>
-    <span class="nv">$status</span> <span class="o">=</span> <span class="s2">&quot;ok&quot;</span><span class="p">;</span>
-  <span class="k">else</span>
-    <span class="nv">$status</span> <span class="o">=</span> <span class="s2">&quot;failed&quot;</span><span class="p">;</span>
-<span class="p">}</span>
+<span class="nx">http</span><span class="p">.</span><span class="nx">createServer</span><span class="p">(</span><span class="kd">function</span><span class="p">(</span><span class="nx">req</span><span class="p">,</span> <span class="nx">res</span><span class="p">)</span> <span class="p">{</span>
+  <span class="k">if</span><span class="p">(</span><span class="nx">num</span> <span class="o">&lt;</span> <span class="mi">10</span><span class="p">)</span> <span class="p">{</span>
+    <span class="nx">res</span><span class="p">.</span><span class="nx">writeHead</span><span class="p">(</span><span class="mi">200</span><span class="p">,</span> <span class="p">{</span><span class="s1">&#39;Content-Type&#39;</span> <span class="o">:</span> <span class="s1">&#39;text/plain&#39;</span><span class="p">});</span>
+    <span class="nx">res</span><span class="p">.</span><span class="nx">end</span><span class="p">(</span><span class="s1">&#39;Hey, you are No.&#39;</span> <span class="o">+</span> <span class="nx">num</span> <span class="o">+</span> <span class="s1">&#39; user!&#39;</span><span class="p">);</span>
+    <span class="nx">num</span> <span class="o">+=</span> <span class="mi">1</span><span class="p">;</span>
+  <span class="p">}</span> <span class="k">else</span> <span class="p">{</span>
+    <span class="c1">// エラーを発生させる</span>
+    <span class="k">throw</span> <span class="s2">&quot;exception!&quot;</span><span class="p">;</span>
+  <span class="p">}</span>
+<span class="p">}).</span><span class="nx">listen</span><span class="p">(</span><span class="mi">1337</span><span class="p">,</span> <span class="s1">&#39;localhost&#39;</span><span class="p">);</span>
 
-<span class="cp">?&gt;</span><span class="x"></span>
-</code></pre></div><div class="highlight"><pre><code class="php language-php" data-lang="php"><span class="cp">&lt;?php</span>
-
-<span class="k">require_once</span><span class="p">(</span><span class="s2">&quot;auth.php&quot;</span><span class="p">);</span>
-<span class="nv">$auth</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">Auth</span><span class="p">();</span>
-
-<span class="nv">$status</span> <span class="o">=</span> <span class="s2">&quot;none&quot;</span><span class="p">;</span>
-
-<span class="k">if</span><span class="p">(</span><span class="nv">$auth</span><span class="o">-&gt;</span><span class="na">getUser</span><span class="p">())</span>
-  <span class="nv">$status</span> <span class="o">=</span> <span class="s2">&quot;logged_in&quot;</span><span class="p">;</span>
-<span class="k">else</span> <span class="k">if</span><span class="p">(</span><span class="o">!</span><span class="k">empty</span><span class="p">(</span><span class="nv">$_POST</span><span class="p">[</span><span class="s2">&quot;username&quot;</span><span class="p">])</span> <span class="o">&amp;&amp;</span> <span class="o">!</span><span class="k">empty</span><span class="p">(</span><span class="nv">$_POST</span><span class="p">[</span><span class="s2">&quot;password&quot;</span><span class="p">])){</span>
-  <span class="k">if</span><span class="p">(</span><span class="nv">$auth</span><span class="o">-&gt;</span><span class="na">login</span><span class="p">(</span><span class="nv">$_POST</span><span class="p">[</span><span class="s2">&quot;username&quot;</span><span class="p">],</span> <span class="nv">$_POST</span><span class="p">[</span><span class="s2">&quot;password&quot;</span><span class="p">]))</span>
-    <span class="nv">$status</span> <span class="o">=</span> <span class="s2">&quot;ok&quot;</span><span class="p">;</span>
-  <span class="k">else</span>
-    <span class="nv">$status</span> <span class="o">=</span> <span class="s2">&quot;failed&quot;</span><span class="p">;</span>
-<span class="p">}</span>
-
-<span class="cp">?&gt;</span><span class="x"></span>
-</code></pre></div><div class="highlight"><pre><code class="php language-php" data-lang="php"><span class="cp">&lt;?php</span>
-
-<span class="k">require_once</span><span class="p">(</span><span class="s2">&quot;auth.php&quot;</span><span class="p">);</span>
-<span class="nv">$auth</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">Auth</span><span class="p">();</span>
-<span class="nv">$auth</span><span class="o">-&gt;</span><span class="na">logout</span><span class="p">();</span>
-
-<span class="cp">?&gt;</span><span class="x"></span>
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s1">&#39;server running at localhost:1337&#39;</span><span class="p">);</span>
 </code></pre></div>
-<hr>
+<p>このプログラムを実行すると、アクセスした回数を数えて表示していき10を超えるとエラーメッセージが表示されて終了するはずです。</p>
 
-<p><strong>[課題]オブジェクト指向について調べよう</strong><br>
-オブジェクト指向のメリットやデメリットについて調べてみましょう。また、「継承」とは何かについて調べてみましょう。</p>
+<blockquote>
+<p>※ Chromeでは内部処理によってページアクセス時にfaviconへのアクセスも同時に行わるため、このプログラムではカウントが２ずつ増えます。</p>
+</blockquote>
+
+<p>Webサイトとして公開するときはエラーが発生したときに終了してしまうと、毎回手動でサーバを再起動しなければいけません。
+SupervisorというNode.jsでプロセスを監視するプログラムを用いて、Webサイトを監視するようにします。</p>
+<div class="highlight"><pre><code class="language-text" data-lang="text">&gt; npm install -g supervisor
+</code></pre></div>
+<p>このようにコマンドラインで実行することでsupervisorをインストールします。
+Supervisorはコマンドライン上で実行するので「-g」を足してグローバルにインストールします。</p>
+
+<p>再度、<code>npm list -g</code> を実行すると、supervisorがインストールされていることがわかります。</p>
+
+<p>この状態でSupervisorを実行します。コマンドは以下のようになり、引数に先ほどのファイルを指定します。</p>
+<div class="highlight"><pre><code class="language-text" data-lang="text">&gt; supervisor server.js
+</code></pre></div><div class="highlight"><pre><code class="language-text" data-lang="text">Running node-supervisor with
+  program &#39;server.js&#39;
+  --watch &#39;.&#39;
+  --extensions &#39;node,js&#39;
+  --exec &#39;node&#39;
+
+Starting child process with &#39;node server.js&#39;
+...
+server running at localhost:1337
+</code></pre></div>
+<p>先ほど同じように10を超えた時点で前回と同様にプログラムが停止しますが、
+自動的にプログラムを再起動しているのがコマンドプロンプト上で確認することができます。</p>
+<div class="highlight"><pre><code class="language-text" data-lang="text">/Users/xxx/nodeStudy/server.js:11
+    throw &quot;exception!&quot;;
+    ^
+exception!
+Program node server.js exited with code 8
+
+Starting child process with &#39;node server.js&#39;
+server running at localhost:1337
+</code></pre></div>
+<p>再度アクセスするとカウントが0からになっており、再起動が行われたことがわかります。</p>
 
         </div>
       </section>
